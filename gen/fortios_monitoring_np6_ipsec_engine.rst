@@ -97,9 +97,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">threshold</span> - IPsec engine status check threshold (x x x x x x x x, 8 integers from <1> to <255>). Example: Log is generated if IPsec engine 0 is busy each of every 15 consecutive interval checks. <span class="li-normal">type: list</span> </li>

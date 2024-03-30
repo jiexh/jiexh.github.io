@@ -97,7 +97,8 @@ Parameters
  </tr>
  <tr>
  <td>[captive-portal]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.11</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">vlan</span> - Names of VLANs that use captive portal authentication. Source system.interface.name. <span class="li-normal">type: str</span>

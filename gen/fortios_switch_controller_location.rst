@@ -637,9 +637,11 @@ Parameters
  </tr>
  <tr>
  <td>[m]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.3</code></td>
+ <tr>
  <td>[f]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">datum</span> - WGS84, NAD83, NAD83/MLLW. <span class="li-normal">type: str</span> <span class="li-normal">choices: WGS84, NAD83, NAD83/MLLW</span>
@@ -656,11 +658,14 @@ Parameters
  </tr>
  <tr>
  <td>[WGS84]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.3</code></td>
+ <tr>
  <td>[NAD83]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.3</code></td>
+ <tr>
  <td>[NAD83/MLLW]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">latitude</span> - Floating point starting with +/- or ending with (N or S). For example, +/-16.67 or 16.67N. <span class="li-normal">type: str</span>
