@@ -16,10 +16,12 @@ Bug Fixes
 ^^^^^^^^^^^^^^^
 - Github issue #273.
 - Github issue #280.
+- Github issue #283.
 - Github issue #290.
 - Github issue #301.
 - Github issue #305.
 - mantis issue #1003948.
+- Fix the issue that ssl-certificate cannot be set in `fortios_firewall_vip` and `fortios_firewall_vip6`.
 
 Improvements
 ^^^^^^^^^^^^^^^
