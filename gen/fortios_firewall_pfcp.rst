@@ -85,9 +85,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">forwarded_log</span> - Enable/disable logging forwarded PFCP packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -106,9 +108,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">invalid_reserved_field</span> - Allow or deny invalid reserved field in PFCP header packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -127,9 +131,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">log_freq</span> - Logging frequency of PFCP packets. <span class="li-normal">type: int</span>
@@ -216,11 +222,14 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[vdom]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">name</span> - PFCP profile name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
@@ -273,9 +282,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">unknown_version</span> - Allow or deny unknown version packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -294,9 +305,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         </ul>

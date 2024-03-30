@@ -78,9 +78,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">auto_discovery_shortcut_mode</span> - Control deletion of child short-cut tunnels when the parent tunnel goes down. <span class="li-normal">type: str</span> <span class="li-normal">choices: independent, dependent</span>
@@ -97,9 +99,11 @@ Parameters
  </tr>
  <tr>
  <td>[independent]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.2.4</code></td>
+ <tr>
  <td>[dependent]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.1 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">eap</span> - Enable/disable EAP client authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -116,9 +120,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">eap_users</span> - EAP authentication user group. Source user.group.name. <span class="li-normal">type: str</span>
@@ -257,9 +263,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -308,9 +316,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">nat</span> - Enable/disable NAT support. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -327,9 +337,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">overlays</span> - Network overlays to register with Overlay Controller VPN service. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: overlays:overlay_name</span>
@@ -361,9 +373,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.0</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">id</span> - ID. <span class="li-normal">type: int</span>
@@ -395,9 +409,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_end_ip</span> - End of IPv4 range. <span class="li-normal">type: str</span>
@@ -534,9 +550,11 @@ Parameters
  </tr>
  <tr>
  <td>[subnet]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[interface]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
                 </ul>
@@ -570,11 +588,14 @@ Parameters
  </tr>
  <tr>
  <td>[spoke]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[primary-hub]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ <tr>
  <td>[secondary-hub]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sdwan</span> - Enable/disable adding OCVPN tunnels to SD-WAN. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -591,9 +612,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sdwan_zone</span> - Set SD-WAN zone. Source system.sdwan.zone.name. <span class="li-normal">type: str</span>
@@ -625,9 +648,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.2.4</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.2.4</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">subnets</span> - Internal subnets to register with Overlay Controller VPN service. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: subnets:id</span>
@@ -704,9 +729,11 @@ Parameters
  </tr>
  <tr>
  <td>[subnet]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.11</code></td>
+ <tr>
  <td>[interface]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.11</code></td>
+ </table>
  </div>
  </li>
             </ul>

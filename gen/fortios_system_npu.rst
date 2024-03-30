@@ -78,9 +78,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">dedicated_management_affinity</span> - Affinity setting for management daemons (hexadecimal value up to 256 bits in the format of xxxxxxxxxxxxxxxx). <span class="li-normal">type: str</span>
@@ -112,9 +114,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">default_qos_type</span> - Set default QoS type. <span class="li-normal">type: str</span> <span class="li-normal">choices: policing, shaping, policing-enhanced</span>
@@ -131,11 +135,14 @@ Parameters
  </tr>
  <tr>
  <td>[policing]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[shaping]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[policing-enhanced]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">dos_options</span> - NPU DoS configurations. <span class="li-normal">type: dict</span>
@@ -167,9 +174,11 @@ Parameters
  </tr>
  <tr>
  <td>[global]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[local]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">npu_dos_tpe_mode</span> - Enable/disable insertion of DoS meter ID to session table. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -186,9 +195,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -206,9 +217,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">dsw_dts_profile</span> - Configure NPU DSW DTS profile. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: dsw_dts_profile:profile_id</span>
@@ -240,19 +253,26 @@ Parameters
  </tr>
  <tr>
  <td>[wait]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop_tmr_0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop_tmr_1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enque]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enque_0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enque_1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">min_limit</span> - Set NPU DSW DTS profile min-limt. <span class="li-normal">type: int</span>
@@ -330,67 +350,98 @@ Parameters
  </tr>
  <tr>
  <td>[eif0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[htx0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[htx1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[rlt]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[dfr]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipseci]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipseco]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipti]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipto]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ivs]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2ti1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2to]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2ti0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ple]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[spath]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[qtm]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">name</span> - Name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
@@ -422,69 +473,101 @@ Parameters
  </tr>
  <tr>
  <td>[eif0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[eif7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[hrx]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sse3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[rlt]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[dfr]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipseci]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipseco]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipti]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ipto]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[vep6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ivs]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2ti1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2to]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[l2ti0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[ple]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[sync]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[nss]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[tsk]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[qtm]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">profile_id</span> - Set NPU DSW DTS profile ID. <span class="li-normal">type: int</span>
@@ -533,9 +616,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">fp_anomaly</span> - IPv4/IPv6 anomaly protection. <span class="li-normal">type: dict</span>
@@ -567,9 +652,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">icmp_frag</span> - Layer 3 fragmented packets that could be part of layer 4 ICMP anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -586,11 +673,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">icmp_land</span> - ICMP land anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -607,11 +697,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_csum_err</span> - Invalid IPv4 IP checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: drop, trap-to-host</span>
@@ -628,9 +721,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_land</span> - Land anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -647,11 +742,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_optlsrr</span> - Loose source record route option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -668,11 +766,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_optrr</span> - Record route option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -689,11 +790,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_optsecurity</span> - Security option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -710,11 +814,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_optssrr</span> - Strict source record route option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -731,11 +838,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_optstream</span> - Stream option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -752,11 +862,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_opttimestamp</span> - Timestamp option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -773,11 +886,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_proto_err</span> - Invalid layer 4 protocol anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -794,11 +910,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv4_unknopt</span> - Unknown option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -815,11 +934,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_daddr_err</span> - Destination address as unspecified or loopback address anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -836,11 +958,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_land</span> - Land anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -857,11 +982,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_optendpid</span> - End point identification anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -878,11 +1006,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_opthomeaddr</span> - Home address option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -899,11 +1030,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_optinvld</span> - Invalid option anomalies.Invalid option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -920,11 +1054,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_optjumbo</span> - Jumbo options anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -941,11 +1078,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_optnsap</span> - Network service access point address option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -962,11 +1102,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_optralert</span> - Router alert option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -983,11 +1126,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_opttunnel</span> - Tunnel encapsulation limit option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1004,11 +1150,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_proto_err</span> - Layer 4 invalid protocol anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1025,11 +1174,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_saddr_err</span> - Source address as multicast anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1046,11 +1198,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ipv6_unknopt</span> - Unknown option anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1067,11 +1222,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_csum_err</span> - Invalid IPv4 TCP checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: drop, trap-to-host</span>
@@ -1088,9 +1246,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_fin_noack</span> - TCP SYN flood with FIN flag set without ACK setting anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1107,11 +1267,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_fin_only</span> - TCP SYN flood with only FIN flag set anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1128,11 +1291,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_land</span> - TCP land anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1149,11 +1315,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_no_flag</span> - TCP SYN flood with no flag set anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1170,11 +1339,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_syn_data</span> - TCP SYN flood packets with data anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1191,11 +1363,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_syn_fin</span> - TCP SYN flood SYN/FIN flag set anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1212,11 +1387,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_winnuke</span> - TCP WinNuke anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1233,11 +1411,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">udp_csum_err</span> - Invalid IPv4 UDP checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: drop, trap-to-host</span>
@@ -1254,9 +1435,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">udp_land</span> - UDP land anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, drop, trap-to-host</span>
@@ -1273,11 +1456,14 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[trap-to-host]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -1296,11 +1482,14 @@ Parameters
  </tr>
  <tr>
  <td>[0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">gtp_enhanced_mode</span> - Enable/disable GTP enhanced mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1317,9 +1506,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">gtp_support</span> - Enable/Disable NP7 GTP support <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1336,9 +1527,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">hash_tbl_spread</span> - Enable/disable hash table entry spread . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1355,9 +1548,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">hpe</span> - Host protection engine configuration. <span class="li-normal">type: dict</span>
@@ -1419,9 +1614,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">esp_max</span> - Maximum ESP packet rate (1K - 32M pps). <span class="li-normal">type: int</span>
@@ -1634,11 +1831,14 @@ Parameters
  </tr>
  <tr>
  <td>[data]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[idle]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[dedicated]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">htx_icmp_csum_chk</span> - Set HTX icmp csum checking mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: drop, pass</span>
@@ -1655,9 +1855,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[pass]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">inbound_dscp_copy_port</span> - Physical interfaces that support inbound-dscp-copy. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: inbound_dscp_copy_port:interface</span>
@@ -1706,9 +1908,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ip_fragment_offload</span> - Enable/disable NP7 NPU IP fragment offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
@@ -1725,9 +1929,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ip_reassembly</span> - IP reassebmly engine configuration. <span class="li-normal">type: dict</span>
@@ -1789,9 +1995,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -1842,9 +2050,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ipsec_mtu_override</span> - Enable/disable NP6 IPsec MTU override. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
@@ -1864,9 +2074,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ipsec_ob_np_sel</span> - IPsec NP selection for OB SA offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: rr, Packet, Hash</span>
@@ -1883,11 +2095,14 @@ Parameters
  </tr>
  <tr>
  <td>[rr]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[Packet]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[Hash]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ipsec_over_vlink</span> - Enable/disable IPsec over vlink. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1905,9 +2120,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">isf_np_queues</span> - Configure queues of switch port connected to NP6 XAUI on ingress path. <span class="li-normal">type: dict</span>
@@ -2089,9 +2306,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.7</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.7</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">max_receive_unit</span> - Set the maximum packet size for receive, larger packets will be silently dropped. <span class="li-normal">type: int</span>
@@ -2142,11 +2361,14 @@ Parameters
  </tr>
  <tr>
  <td>[tpe-based]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ <tr>
  <td>[session-based]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">napi_break_interval</span> - NAPI break interval . <span class="li-normal">type: int</span>
@@ -2466,21 +2688,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos1</span> - Queue number of CoS 1. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2497,21 +2727,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos2</span> - Queue number of CoS 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2528,21 +2766,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos3</span> - Queue number of CoS 3. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2559,21 +2805,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos4</span> - Queue number of CoS 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2590,21 +2844,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos5</span> - Queue number of CoS 5. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2621,21 +2883,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos6</span> - Queue number of CoS 6. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2652,21 +2922,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">cos7</span> - Queue number of CoS 7. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2683,21 +2961,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp0</span> - Queue number of DSCP 0. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2714,21 +3000,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp1</span> - Queue number of DSCP 1. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2745,21 +3039,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp10</span> - Queue number of DSCP 10. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2776,21 +3078,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp11</span> - Queue number of DSCP 11. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2807,21 +3117,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp12</span> - Queue number of DSCP 12. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2838,21 +3156,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp13</span> - Queue number of DSCP 13. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2869,21 +3195,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp14</span> - Queue number of DSCP 14. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2900,21 +3234,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp15</span> - Queue number of DSCP 15. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2931,21 +3273,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp16</span> - Queue number of DSCP 16. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2962,21 +3312,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp17</span> - Queue number of DSCP 17. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -2993,21 +3351,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp18</span> - Queue number of DSCP 18. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3024,21 +3390,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp19</span> - Queue number of DSCP 19. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3055,21 +3429,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp2</span> - Queue number of DSCP 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3086,21 +3468,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp20</span> - Queue number of DSCP 20. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3117,21 +3507,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp21</span> - Queue number of DSCP 21. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3148,21 +3546,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp22</span> - Queue number of DSCP 22. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3179,21 +3585,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp23</span> - Queue number of DSCP 23. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3210,21 +3624,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp24</span> - Queue number of DSCP 24. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3241,21 +3663,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp25</span> - Queue number of DSCP 25. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3272,21 +3702,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp26</span> - Queue number of DSCP 26. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3303,21 +3741,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp27</span> - Queue number of DSCP 27. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3334,21 +3780,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp28</span> - Queue number of DSCP 28. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3365,21 +3819,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp29</span> - Queue number of DSCP 29. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3396,21 +3858,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp3</span> - Queue number of DSCP 3. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3427,21 +3897,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp30</span> - Queue number of DSCP 30. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3458,21 +3936,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp31</span> - Queue number of DSCP 31. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3489,21 +3975,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp32</span> - Queue number of DSCP 32. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3520,21 +4014,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp33</span> - Queue number of DSCP 33. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3551,21 +4053,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp34</span> - Queue number of DSCP 34. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3582,21 +4092,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp35</span> - Queue number of DSCP 35. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3613,21 +4131,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp36</span> - Queue number of DSCP 36. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3644,21 +4170,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp37</span> - Queue number of DSCP 37. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3675,21 +4209,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp38</span> - Queue number of DSCP 38. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3706,21 +4248,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp39</span> - Queue number of DSCP 39. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3737,21 +4287,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp4</span> - Queue number of DSCP 4. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3768,21 +4326,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp40</span> - Queue number of DSCP 40. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3799,21 +4365,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp41</span> - Queue number of DSCP 41. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3830,21 +4404,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp42</span> - Queue number of DSCP 42. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3861,21 +4443,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp43</span> - Queue number of DSCP 43. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3892,21 +4482,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp44</span> - Queue number of DSCP 44. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3923,21 +4521,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp45</span> - Queue number of DSCP 45. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3954,21 +4560,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp46</span> - Queue number of DSCP 46. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -3985,21 +4599,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp47</span> - Queue number of DSCP 47. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4016,21 +4638,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp48</span> - Queue number of DSCP 48. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4047,21 +4677,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp49</span> - Queue number of DSCP 49. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4078,21 +4716,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp5</span> - Queue number of DSCP 5. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4109,21 +4755,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp50</span> - Queue number of DSCP 50. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4140,21 +4794,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp51</span> - Queue number of DSCP 51. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4171,21 +4833,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp52</span> - Queue number of DSCP 52. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4202,21 +4872,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp53</span> - Queue number of DSCP 53. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4233,21 +4911,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp54</span> - Queue number of DSCP 54. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4264,21 +4950,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp55</span> - Queue number of DSCP 55. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4295,21 +4989,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp56</span> - Queue number of DSCP 56. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4326,21 +5028,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp57</span> - Queue number of DSCP 57. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4357,21 +5067,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp58</span> - Queue number of DSCP 58. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4388,21 +5106,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp59</span> - Queue number of DSCP 59. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4419,21 +5145,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp6</span> - Queue number of DSCP 6. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4450,21 +5184,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp60</span> - Queue number of DSCP 60. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4481,21 +5223,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp61</span> - Queue number of DSCP 61. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4512,21 +5262,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp62</span> - Queue number of DSCP 62. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4543,21 +5301,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp63</span> - Queue number of DSCP 63. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4574,21 +5340,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp7</span> - Queue number of DSCP 7. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4605,21 +5379,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp8</span> - Queue number of DSCP 8. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4636,21 +5418,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dscp9</span> - Queue number of DSCP 9. <span class="li-normal">type: str</span> <span class="li-normal">choices: queue0, queue1, queue2, queue3, queue4, queue5, queue6, queue7</span>
@@ -4667,21 +5457,29 @@ Parameters
  </tr>
  <tr>
  <td>[queue0]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue3]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue6]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[queue7]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">id</span> - Profile ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
@@ -4713,9 +5511,11 @@ Parameters
  </tr>
  <tr>
  <td>[cos]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[dscp]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">weight</span> - Class weight. <span class="li-normal">type: int</span>
@@ -4763,11 +5563,14 @@ Parameters
  </tr>
  <tr>
  <td>[none]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[priority]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[round-robin]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">name</span> - Scheduler name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
@@ -4846,9 +5649,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dstip</span> - tcam data dst ipv4 address. <span class="li-normal">type: str</span>
@@ -4940,9 +5745,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">frag_off</span> - tcam data ip flag fragment offset. <span class="li-normal">type: int</span>
@@ -4989,9 +5796,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">gen_l3_flags</span> - tcam data gen info L3 flags. <span class="li-normal">type: int</span>
@@ -5068,9 +5877,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">gen_tv</span> - tcam data gen info tv. <span class="li-normal">type: str</span> <span class="li-normal">choices: valid, invalid</span>
@@ -5087,9 +5898,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">ihl</span> - tcam data ipv4 IHL. <span class="li-normal">type: int</span>
@@ -5226,9 +6039,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">protocol</span> - tcam data ip protocol. <span class="li-normal">type: int</span>
@@ -5275,9 +6090,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">sp</span> - tcam data source port. <span class="li-normal">type: int</span>
@@ -5309,9 +6126,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">src_prio</span> - tcam data source priority. <span class="li-normal">type: int</span>
@@ -5343,9 +6162,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">srcip</span> - tcam data src ipv4 address. <span class="li-normal">type: str</span>
@@ -5437,9 +6258,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_cwr</span> - tcam data tcp flag cwr. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5456,9 +6279,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_ece</span> - tcam data tcp flag ece. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5475,9 +6300,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_fin</span> - tcam data tcp flag fin. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5494,9 +6321,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_push</span> - tcam data tcp flag push. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5513,9 +6342,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_rst</span> - tcam data tcp flag rst. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5532,9 +6363,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_syn</span> - tcam data tcp flag syn. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5551,9 +6384,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_urg</span> - tcam data tcp flag urg. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5570,9 +6405,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_cfi</span> - tcam data target cfi. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -5589,9 +6426,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_prio</span> - tcam data target priority. <span class="li-normal">type: int</span>
@@ -5623,9 +6462,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_v</span> - tcam data target valid. <span class="li-normal">type: str</span> <span class="li-normal">choices: valid, invalid</span>
@@ -5642,9 +6483,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tos</span> - tcam data ip tos. <span class="li-normal">type: int</span>
@@ -5752,9 +6595,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dstip</span> - tcam mask dst ipv4 address. <span class="li-normal">type: str</span>
@@ -5846,9 +6691,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">frag_off</span> - tcam data ip flag fragment offset. <span class="li-normal">type: int</span>
@@ -5895,9 +6742,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">gen_l3_flags</span> - tcam mask gen info L3 flags. <span class="li-normal">type: int</span>
@@ -5974,9 +6823,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">gen_tv</span> - tcam mask gen info tv. <span class="li-normal">type: str</span> <span class="li-normal">choices: valid, invalid</span>
@@ -5993,9 +6844,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">ihl</span> - tcam mask ipv4 IHL. <span class="li-normal">type: int</span>
@@ -6132,9 +6985,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">protocol</span> - tcam mask ip protocol. <span class="li-normal">type: int</span>
@@ -6181,9 +7036,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">sp</span> - tcam mask source port. <span class="li-normal">type: int</span>
@@ -6215,9 +7072,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">src_prio</span> - tcam mask source priority. <span class="li-normal">type: int</span>
@@ -6249,9 +7108,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">srcip</span> - tcam mask src ipv4 address. <span class="li-normal">type: str</span>
@@ -6343,9 +7204,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_cwr</span> - tcam mask tcp flag cwr. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6362,9 +7225,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_ece</span> - tcam mask tcp flag ece. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6381,9 +7246,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_fin</span> - tcam mask tcp flag fin. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6400,9 +7267,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_push</span> - tcam mask tcp flag push. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6419,9 +7288,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_rst</span> - tcam mask tcp flag rst. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6438,9 +7309,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_syn</span> - tcam mask tcp flag syn. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6457,9 +7330,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tcp_urg</span> - tcam mask tcp flag urg. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6476,9 +7351,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_cfi</span> - tcam mask target cfi. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -6495,9 +7372,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_prio</span> - tcam mask target priority. <span class="li-normal">type: int</span>
@@ -6529,9 +7408,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgt_v</span> - tcam mask target valid. <span class="li-normal">type: str</span> <span class="li-normal">choices: valid, invalid</span>
@@ -6548,9 +7429,11 @@ Parameters
  </tr>
  <tr>
  <td>[valid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[invalid]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tos</span> - tcam mask ip tos. <span class="li-normal">type: int</span>
@@ -6780,9 +7663,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">bmproc</span> - tcam sact bmproc. <span class="li-normal">type: int</span>
@@ -6814,9 +7699,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">df_lif</span> - tcam sact df-lif. <span class="li-normal">type: int</span>
@@ -6848,9 +7735,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dfr</span> - tcam sact dfr. <span class="li-normal">type: int</span>
@@ -6882,9 +7771,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dmac_skip</span> - tcam sact dmac-skip. <span class="li-normal">type: int</span>
@@ -6916,9 +7807,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">dosen</span> - tcam sact dosen. <span class="li-normal">type: int</span>
@@ -6950,9 +7843,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">espff_proc</span> - tcam sact espff-proc. <span class="li-normal">type: int</span>
@@ -6984,9 +7879,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">etype_pid</span> - tcam sact etype-pid. <span class="li-normal">type: int</span>
@@ -7018,9 +7915,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">frag_proc</span> - tcam sact frag-proc. <span class="li-normal">type: int</span>
@@ -7052,9 +7951,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">fwd</span> - tcam sact fwd. <span class="li-normal">type: int</span>
@@ -7101,9 +8002,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">fwd_tvid</span> - tcam sact fwd-tvid. <span class="li-normal">type: int</span>
@@ -7135,9 +8038,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">fwd_v</span> - Enable to set sact fwd. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -7154,9 +8059,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">icpen</span> - tcam sact icpen. <span class="li-normal">type: int</span>
@@ -7188,9 +8095,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">igmp_mld_snp</span> - tcam sact igmp-mld-snp. <span class="li-normal">type: int</span>
@@ -7222,9 +8131,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">learn</span> - tcam sact learn. <span class="li-normal">type: int</span>
@@ -7256,9 +8167,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">m_srh_ctrl</span> - tcam sact m-srh-ctrl. <span class="li-normal">type: int</span>
@@ -7290,9 +8203,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mac_id</span> - tcam sact mac-id. <span class="li-normal">type: int</span>
@@ -7324,9 +8239,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mss</span> - tcam sact mss. <span class="li-normal">type: int</span>
@@ -7358,9 +8275,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">pleen</span> - tcam sact pleen. <span class="li-normal">type: int</span>
@@ -7392,9 +8311,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">prio_pid</span> - tcam sact prio-pid. <span class="li-normal">type: int</span>
@@ -7426,9 +8347,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">promis</span> - tcam sact promis. <span class="li-normal">type: int</span>
@@ -7460,9 +8383,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">rfsh</span> - tcam sact rfsh. <span class="li-normal">type: int</span>
@@ -7494,9 +8419,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">smac_skip</span> - tcam sact smac-skip. <span class="li-normal">type: int</span>
@@ -7528,9 +8455,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tp_smchk</span> - tcam sact tp mode. <span class="li-normal">type: int</span>
@@ -7562,9 +8491,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tpe_id</span> - tcam sact tpe-id. <span class="li-normal">type: int</span>
@@ -7596,9 +8527,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">vdm</span> - tcam sact vdm. <span class="li-normal">type: int</span>
@@ -7630,9 +8563,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">vdom_id</span> - tcam sact vdom-id. <span class="li-normal">type: int</span>
@@ -7664,9 +8599,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">x_mode</span> - tcam sact x-mode. <span class="li-normal">type: int</span>
@@ -7698,9 +8635,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 </ul>
@@ -7748,9 +8687,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">fmtuv4_s</span> - tcam tact fmtuv4-s. <span class="li-normal">type: int</span>
@@ -7782,9 +8723,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">fmtuv6_s</span> - tcam tact fmtuv6-s. <span class="li-normal">type: int</span>
@@ -7816,9 +8759,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">lnkid</span> - tcam tact lnkid. <span class="li-normal">type: int</span>
@@ -7850,9 +8795,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mac_id</span> - tcam tact mac-id. <span class="li-normal">type: int</span>
@@ -7884,9 +8831,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mss_t</span> - tcam tact mss. <span class="li-normal">type: int</span>
@@ -7918,9 +8867,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mtuv4</span> - tcam tact mtuv4. <span class="li-normal">type: int</span>
@@ -7952,9 +8903,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">mtuv6</span> - tcam tact mtuv6. <span class="li-normal">type: int</span>
@@ -7986,9 +8939,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">slif_act</span> - tcam tact slif-act. <span class="li-normal">type: int</span>
@@ -8020,9 +8975,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">sublnkid</span> - tcam tact sublnkid. <span class="li-normal">type: int</span>
@@ -8054,9 +9011,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tgtv_act</span> - tcam tact tgtv-act. <span class="li-normal">type: int</span>
@@ -8088,9 +9047,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tlif_act</span> - tcam tact tlif-act. <span class="li-normal">type: int</span>
@@ -8122,9 +9083,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">tpeid</span> - tcam tact tpeid. <span class="li-normal">type: int</span>
@@ -8156,9 +9119,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">v6fe</span> - tcam tact v6fe. <span class="li-normal">type: int</span>
@@ -8190,9 +9155,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">vep_en</span> - tcam tact vep_en. <span class="li-normal">type: int</span>
@@ -8224,9 +9191,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">vep_slid</span> - tcam tact vep_slid. <span class="li-normal">type: int</span>
@@ -8258,9 +9227,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">xlt_lif</span> - tcam tact xlt-lif. <span class="li-normal">type: int</span>
@@ -8292,9 +9263,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 <li> <span class="li-head">xlt_vid</span> - tcam tact xlt-vid. <span class="li-normal">type: int</span>
@@ -8326,9 +9299,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
                 </ul>
@@ -8346,41 +9321,59 @@ Parameters
  </tr>
  <tr>
  <td>[L2_src_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[L2_tgt_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[L2_src_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[L2_tgt_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[L2_src_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[L2_tgt_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_src_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_tgt_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_src_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_tgt_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_src_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv4_tgt_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_src_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_tgt_tc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_src_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_tgt_mir]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_src_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[IPv6_tgt_act]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">vid</span> - NPU TCAM VID. <span class="li-normal">type: int</span>
@@ -8413,11 +9406,14 @@ Parameters
  </tr>
  <tr>
  <td>[traffic-log-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">port_cpu_map</span> - Configure NPU interface to CPU core mapping. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: port_cpu_map:interface</span>
@@ -8610,9 +9606,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">bgp</span> - Enable/disable NPU BGP priority protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8631,9 +9629,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">slbc</span> - Enable/disable NPU SLBC priority protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8652,9 +9652,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v6.0.0</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -8675,11 +9677,14 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></td>
+ <tr>
  <td>[priority]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></td>
+ <tr>
  <td>[round-robin]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">qtm_buf_mode</span> - QTM channel configuration for packet buffer. <span class="li-normal">type: str</span> <span class="li-normal">choices: 6ch, 4ch</span>
@@ -8696,9 +9701,11 @@ Parameters
  </tr>
  <tr>
  <td>[6ch]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[4ch]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">rdp_offload</span> - Enable/disable RDP offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8716,9 +9723,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">session_acct_interval</span> - Session accounting update interval (1 - 10 sec). <span class="li-normal">type: int</span>
@@ -8751,9 +9760,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">shaping_stats</span> - Enable/disable NP7 traffic shaping statistics . <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
@@ -8770,9 +9781,11 @@ Parameters
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sse_backpressure</span> - Enable/disable SSE backpressure. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8790,9 +9803,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">strip_clear_text_padding</span> - Enable/disable stripping clear text padding. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8810,9 +9825,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">strip_esp_padding</span> - Enable/disable stripping ESP padding. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -8830,9 +9847,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sw_eh_hash</span> - Configure switch enhanced hashing. <span class="li-normal">type: dict</span>
@@ -8868,13 +9887,17 @@ Parameters
  </tr>
  <tr>
  <td>[xor16]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[xor8]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[xor4]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[crc16]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">destination_ip_lower_16</span> - Include/exclude destination IP address lower 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -8893,9 +9916,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">destination_ip_upper_16</span> - Include/exclude destination IP address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -8914,9 +9939,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">destination_port</span> - Include/exclude destination port if TCP/UDP. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -8935,9 +9962,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ip_protocol</span> - Include/exclude IP protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -8956,9 +9985,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">netmask_length</span> - Network mask length. <span class="li-normal">type: int</span>
@@ -8994,9 +10025,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">source_ip_upper_16</span> - Include/exclude source IP address upper 16 bits. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -9015,9 +10048,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">source_port</span> - Include/exclude source port if TCP/UDP. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -9036,9 +10071,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.0</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -9057,15 +10094,20 @@ Parameters
  </tr>
  <tr>
  <td>[0G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[2G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[4G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[5G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[6G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.1</code></td>
+ <tr>
  <td>[7G]</td>
  <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></td>
  <td><code class="docutils literal notranslate">v7.4.3 -> 7.4.3</code></td>
@@ -9114,9 +10156,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">tcp_udp_port</span> - Include/exclude TCP/UDP source and destination port for unicast trunk traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
@@ -9134,9 +10178,11 @@ Parameters
  </tr>
  <tr>
  <td>[include]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></td>
+ <tr>
  <td>[exclude]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -9155,9 +10201,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.4.1</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.4.1</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ull_port_mode</span> - Set ULL port"s speed to 10G/25G . <span class="li-normal">type: str</span> <span class="li-normal">choices: 10G, 25G</span>
@@ -9174,9 +10222,11 @@ Parameters
  </tr>
  <tr>
  <td>[10G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[25G]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">vlan_lookup_cache</span> - Enable/disable vlan lookup cache . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -9193,9 +10243,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ </table>
  </div>
  </li>
         </ul>

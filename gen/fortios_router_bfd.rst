@@ -93,9 +93,11 @@ Parameters
  </tr>
  <tr>
  <td>[none]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v7.0.6 -> 7.4.3</code></td>
+ <tr>
  <td>[md5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v7.0.6 -> 7.4.3</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">bfd_desired_min_tx</span> - BFD desired minimal transmit interval (milliseconds). <span class="li-normal">type: int</span>

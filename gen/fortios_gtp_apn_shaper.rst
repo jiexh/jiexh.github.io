@@ -85,9 +85,11 @@ Parameters
  </tr>
  <tr>
  <td>[drop]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[reject]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">apn</span> - APN names to match. Leave empty to match ANY. Source gtp.apn.name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: apn:name</span>

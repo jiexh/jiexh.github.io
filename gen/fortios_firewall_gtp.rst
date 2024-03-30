@@ -119,9 +119,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: apn:id/apnmember:name</span>
@@ -192,11 +194,14 @@ Parameters
  </tr>
  <tr>
  <td>[ms]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[net]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[vrf]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -216,9 +221,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">authorized_ggsns</span> - Authorized GGSN/PGW group. Source firewall.address.name firewall.addrgrp.name. <span class="li-normal">type: str</span>
@@ -358,9 +365,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">default_imsi_action</span> - default imsi action <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -379,9 +388,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">default_ip_action</span> - default action for encapsulated IP traffic <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -400,9 +411,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">default_noip_action</span> - default action for encapsulated non-IP traffic <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -421,9 +434,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">default_policy_action</span> - default advanced policy action <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -442,9 +457,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">denied_log</span> - log denied <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -463,9 +480,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">echo_request_interval</span> - echo request interval (in seconds) <span class="li-normal">type: int</span>
@@ -501,9 +520,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">forwarded_log</span> - log forwarded <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -522,9 +543,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">global_tunnel_limit</span> - Global tunnel limit. Source gtp.tunnel-limit.name. <span class="li-normal">type: str</span>
@@ -560,9 +583,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">gtpu_denied_log</span> - Enable/disable logging of denied GTP-U packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -581,9 +606,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">gtpu_forwarded_log</span> - Enable/disable logging of forwarded GTP-U packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -602,9 +629,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">gtpu_log_freq</span> - Logging of frequency of GTP-U packets. <span class="li-normal">type: int</span>
@@ -777,15 +806,20 @@ Parameters
  </tr>
  <tr>
  <td>[apn-restriction]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[rat-type]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[rai]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[uli]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[imei]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">sgsn_addr</span> - SGSN address name. Source firewall.address.name firewall.addrgrp.name. <span class="li-normal">type: str</span>
@@ -840,9 +874,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ie_validation</span> - IE validation. <span class="li-normal">type: dict</span>
@@ -878,9 +914,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">charging_gateway_addr</span> - Validate charging gateway address. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -899,9 +937,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">charging_ID</span> - Validate charging ID. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -920,9 +960,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">end_user_addr</span> - Validate end user address. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -941,9 +983,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">gsn_addr</span> - Validate GSN address. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -962,9 +1006,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">imei</span> - Validate IMEI(SV). <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -983,9 +1029,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">imsi</span> - Validate IMSI. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1004,9 +1052,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">mm_context</span> - Validate MM context. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1025,9 +1075,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ms_tzone</span> - Validate MS time zone. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1046,9 +1098,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">ms_validated</span> - Validate MS validated. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1067,9 +1121,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">msisdn</span> - Validate MSISDN. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1088,9 +1144,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">nsapi</span> - Validate NSAPI. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1109,9 +1167,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">pdp_context</span> - Validate PDP context. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1130,9 +1190,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">qos_profile</span> - Validate Quality of Service(QoS) profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1151,9 +1213,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">rai</span> - Validate RAI. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1172,9 +1236,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">rat_type</span> - Validate RAT type. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1193,9 +1259,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">reordering_required</span> - Validate re-ordering required. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1214,9 +1282,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">selection_mode</span> - Validate selection mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1235,9 +1305,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">uli</span> - Validate user location information. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -1256,9 +1328,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -1325,9 +1399,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: imsi:id/apnmember:name</span>
@@ -1432,11 +1508,14 @@ Parameters
  </tr>
  <tr>
  <td>[ms]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[net]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[vrf]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -1456,9 +1535,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">interface_notify</span> - overbilling interface Source system.interface.name. <span class="li-normal">type: str</span>
@@ -1494,9 +1575,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">invalid_sgsns_to_log</span> - Invalid SGSN group to be logged Source firewall.address.name firewall.addrgrp.name. <span class="li-normal">type: str</span>
@@ -1550,9 +1633,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">ip_policy</span> - IP policy. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: ip_policy:id</span>
@@ -1588,9 +1673,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">dstaddr</span> - Destination address name. Source firewall.address.name firewall.addrgrp.name. <span class="li-normal">type: str</span>
@@ -3044,9 +3131,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">monitor_mode</span> - GTP monitor mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable, vdom</span>
@@ -3065,9 +3154,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[vdom]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
  <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.4</code></td>
@@ -3109,9 +3200,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">noip_policy</span> - No IP policy. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: noip_policy:id</span>
@@ -3147,9 +3240,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">end</span> - End of protocol range (0 - 255). <span class="li-normal">type: int</span>
@@ -3219,9 +3314,11 @@ Parameters
  </tr>
  <tr>
  <td>[etsi]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[ietf]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             </ul>
@@ -3241,9 +3338,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">out_of_state_message</span> - Out of state GTP message <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -3262,9 +3361,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">per_apn_shaper</span> - Per APN shaper. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: per_apn_shaper:id</span>
@@ -3386,9 +3487,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apn_sel_mode</span> - APN selection mode. <span class="li-normal">type: list</span> <span class="li-normal">choices: ms, net, vrf</span>
@@ -3407,11 +3510,14 @@ Parameters
  </tr>
  <tr>
  <td>[ms]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[net]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[vrf]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: policy:id/apnmember:name</span>
@@ -3531,15 +3637,20 @@ Parameters
  </tr>
  <tr>
  <td>[all]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[public-1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[public-2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[private-1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[private-2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">messages</span> - GTP messages. <span class="li-normal">type: list</span> <span class="li-normal">choices: create-req, create-res, update-req, update-res</span>
@@ -3558,13 +3669,17 @@ Parameters
  </tr>
  <tr>
  <td>[create-req]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[create-res]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[update-req]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[update-res]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">msisdn</span> - MSISDN prefix. <span class="li-normal">type: str</span>
@@ -3632,17 +3747,23 @@ Parameters
  </tr>
  <tr>
  <td>[any]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[utran]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[geran]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[wlan]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[gan]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[hspa]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[eutran]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
  <td><code class="docutils literal notranslate">v7.2.0 -> v7.2.4</code></td>
@@ -3697,9 +3818,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">policy_v2</span> - Apply allow or deny action to each GTPv2-c packet. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: policy_v2:id</span>
@@ -3735,9 +3858,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apn_sel_mode</span> - APN selection mode. <span class="li-normal">type: list</span> <span class="li-normal">choices: ms, net, vrf</span>
@@ -3756,11 +3881,14 @@ Parameters
  </tr>
  <tr>
  <td>[ms]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[net]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[vrf]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">apnmember</span> - APN member. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: policy_v2:id/apnmember:name</span>
@@ -3848,15 +3976,20 @@ Parameters
  </tr>
  <tr>
  <td>[all]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[public-1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[public-2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[private-1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[private-2]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">mei</span> - MEI pattern. <span class="li-normal">type: str</span>
@@ -3892,13 +4025,17 @@ Parameters
  </tr>
  <tr>
  <td>[create-ses-req]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[create-ses-res]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[modify-bearer-req]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[modify-bearer-res]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
             <li> <span class="li-head">msisdn_prefix</span> - MSISDN prefix. <span class="li-normal">type: str</span>
@@ -3934,23 +4071,32 @@ Parameters
  </tr>
  <tr>
  <td>[any]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[utran]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[geran]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[wlan]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[gan]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[hspa]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[eutran]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[virtual]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[nbiot]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[ltem]</td>
  <td><code class="docutils literal notranslate">v6.4.0 -> v6.4.0</code></td>
  <td><code class="docutils literal notranslate">v6.4.4 -> v7.0.8</code></td>
@@ -4019,11 +4165,14 @@ Parameters
  </tr>
  <tr>
  <td>[per-profile]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[per-stream]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[per-apn]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">rate_limited_log</span> - log rate limited <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4042,9 +4191,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">rate_sampling_interval</span> - rate sampling interval (1-3600 seconds) <span class="li-normal">type: int</span>
@@ -4080,9 +4231,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">remove_if_recovery_differ</span> - remove upon different Recovery IE <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4101,9 +4254,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">reserved_ie</span> - reserved information element <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -4122,9 +4277,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">send_delete_when_timeout</span> - send DELETE request to path endpoints when GTPv0/v1 tunnel timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4143,9 +4300,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">send_delete_when_timeout_v2</span> - send DELETE request to path endpoints when GTPv2 tunnel timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4164,9 +4323,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">spoof_src_addr</span> - Spoofed source address for Mobile Station. <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, deny</span>
@@ -4185,9 +4346,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">state_invalid_log</span> - log state invalid <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4206,9 +4369,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sub_second_interval</span> - Sub-second interval (0.1, 0.25, or 0.5 sec). <span class="li-normal">type: str</span> <span class="li-normal">choices: 0.5, 0.25, 0.1</span>
@@ -4227,11 +4392,14 @@ Parameters
  </tr>
  <tr>
  <td>[0.5]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[0.25]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[0.1]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">sub_second_sampling</span> - Enable/disable sub-second sampling. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4250,9 +4418,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">traffic_count_log</span> - log tunnel traffic counter <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
@@ -4271,9 +4441,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">tunnel_limit</span> - tunnel limit <span class="li-normal">type: int</span>
@@ -4309,9 +4481,11 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">tunnel_timeout</span> - Established tunnel timeout (in seconds). <span class="li-normal">type: int</span>
@@ -4347,9 +4521,11 @@ Parameters
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> <tr>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.3</code></td> </table>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.0.8</code></td>
+ </table>
  </div>
  </li>
         <li> <span class="li-head">user_plane_message_rate_limit</span> - user plane message rate limit <span class="li-normal">type: int</span>
