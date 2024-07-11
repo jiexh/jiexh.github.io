@@ -166,6 +166,7 @@ Parameters
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
  <tr>
  <td>[SHA256]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  </table>
  </div>
@@ -324,17 +325,21 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>key_type</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4 </code></td>
  </tr>
  <tr>
  <td>[MD5]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  <tr>
  <td>[SHA1]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  <tr>
  <td>[SHA256]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </table>
  </div>
  </li>

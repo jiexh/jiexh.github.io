@@ -1202,6 +1202,7 @@ Parameters
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
  <tr>
  <td>[802.11n-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n-5G]</td>
@@ -1213,9 +1214,11 @@ Parameters
  </tr>
  <tr>
  <td>[802.11ac-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G]</td>
@@ -1228,64 +1231,75 @@ Parameters
  </tr>
  <tr>
  <td>[802.11be-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-6G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11g-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  </table>
  </div>
@@ -1718,6 +1732,7 @@ Parameters
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
  <tr>
  <td>[802.11n-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n-5G]</td>
@@ -1729,9 +1744,11 @@ Parameters
  </tr>
  <tr>
  <td>[802.11ac-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G]</td>
@@ -1744,64 +1761,75 @@ Parameters
  </tr>
  <tr>
  <td>[802.11be-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-6G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11g-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac-only]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax,n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[802.11ax-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
  </tr>
  </table>
  </div>
@@ -2234,6 +2262,7 @@ Parameters
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
  <tr>
  <td>[802.11n-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n-5G]</td>
@@ -2245,9 +2274,11 @@ Parameters
  </tr>
  <tr>
  <td>[802.11ac-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G]</td>
@@ -2259,58 +2290,76 @@ Parameters
  </tr>
  <tr>
  <td>[802.11be-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-6G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11g-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax-5G-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,n-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,n,g-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax-only]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.4.3</code></td>
+ </tr>
  </table>
  </div>
  </li>
@@ -2746,6 +2795,7 @@ Parameters
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
  <tr>
  <td>[802.11n-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n-5G]</td>
@@ -2757,9 +2807,11 @@ Parameters
  </tr>
  <tr>
  <td>[802.11ac-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11ax-5G]</td>
@@ -2771,58 +2823,91 @@ Parameters
  </tr>
  <tr>
  <td>[802.11be-2G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-5G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11be-6G]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[802.11n]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n,g-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11g-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11n-5G-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac,n-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ac-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,ac,n-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax-5G-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,n-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax,n,g-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  <tr>
  <td>[802.11ax-only]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.5 -> v7.4.3</code></td>
+ </tr>
  </table>
  </div>
  </li>

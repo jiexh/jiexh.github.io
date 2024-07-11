@@ -284,15 +284,19 @@ Parameters
  </tr>
  <tr>
  <td>[registry]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[hwp]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[rpm]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[c/cpp]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </tr>
  <tr>
  <td>[msc]</td>

@@ -1327,10 +1327,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>dhcp_lease_backup_interval</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4 </code></td>
  </tr>
  </table>
  </div>
@@ -2719,8 +2720,12 @@ Parameters
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
+ </tr>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
+ </tr>
  </table>
  </div>
  </li>
@@ -2814,15 +2819,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>ipv6_allow_local_in_silent_drop</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </table>
  </div>
  </li>
@@ -2837,7 +2845,7 @@ Parameters
  <tr>
  <td>ipv6_allow_local_in_slient_drop</td>
  <td><code class="docutils literal notranslate">v7.0.6 -> v7.0.12 </code></td>
- <td><code class="docutils literal notranslate">v7.2.1 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.1 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
@@ -3414,15 +3422,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>npu_neighbor_update</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.4.4 -> 7.4.4</code></td>
  </table>
  </div>
  </li>
@@ -4126,14 +4137,14 @@ Parameters
  </tr>
  <tr>
  <td>security_rating_result_submission</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3</code></td>
  </table>
  </div>
  </li>
@@ -4517,56 +4528,56 @@ Parameters
  </tr>
  <tr>
  <td>ssh_enc_algo</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[chacha20-poly1305@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes128-ctr]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes192-ctr]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes256-ctr]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[arcfour256]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[arcfour128]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes128-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[3des-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[blowfish-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[cast128-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes192-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes256-cbc]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[arcfour]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[rijndael-cbc@lysator.liu.se]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes128-gcm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[aes256-gcm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  </table>
  </div>
  </li>
@@ -4601,7 +4612,7 @@ Parameters
  </tr>
  <tr>
  <td>ssh_hostkey</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3 </code></td>
  </tr>
  </table>
  </div>
@@ -4616,31 +4627,31 @@ Parameters
  </tr>
  <tr>
  <td>ssh_hostkey_algo</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[ssh-rsa]</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></td>
  <tr>
  <td>[ecdsa-sha2-nistp521]</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></td>
  <tr>
  <td>[ecdsa-sha2-nistp384]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[ecdsa-sha2-nistp256]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[rsa-sha2-256]</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></td>
  <tr>
  <td>[rsa-sha2-512]</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></td>
  <tr>
  <td>[ssh-ed25519]</td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.4.3</code></td>
  </table>
  </div>
  </li>
@@ -4654,14 +4665,14 @@ Parameters
  </tr>
  <tr>
  <td>ssh_hostkey_override</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3</code></td>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3</code></td>
  </table>
  </div>
  </li>
@@ -4675,7 +4686,7 @@ Parameters
  </tr>
  <tr>
  <td>ssh_hostkey_password</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.3 </code></td>
  </tr>
  </table>
  </div>
@@ -4690,44 +4701,44 @@ Parameters
  </tr>
  <tr>
  <td>ssh_kex_algo</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[diffie-hellman-group1-sha1]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[diffie-hellman-group14-sha1]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[diffie-hellman-group14-sha256]</td>
- <td><code class="docutils literal notranslate">v7.4.1 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[diffie-hellman-group16-sha512]</td>
- <td><code class="docutils literal notranslate">v7.4.1 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[diffie-hellman-group18-sha512]</td>
- <td><code class="docutils literal notranslate">v7.4.1 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></td>
  </tr>
  <tr>
  <td>[diffie-hellman-group-exchange-sha1]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[diffie-hellman-group-exchange-sha256]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[curve25519-sha256@libssh.org]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[ecdh-sha2-nistp256]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[ecdh-sha2-nistp384]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[ecdh-sha2-nistp521]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  </table>
  </div>
  </li>
@@ -4762,59 +4773,59 @@ Parameters
  </tr>
  <tr>
  <td>ssh_mac_algo</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3 </code></td>
  </tr>
  <tr>
  <td>[hmac-md5]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-md5-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-md5-96]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-md5-96-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha1]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha1-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha2-256]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha2-256-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha2-512]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-sha2-512-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-ripemd160]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-ripemd160@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[hmac-ripemd160-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[umac-64@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[umac-128@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[umac-64-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  <tr>
  <td>[umac-128-etm@openssh.com]</td>
- <td><code class="docutils literal notranslate">v7.0.2 -> 7.4.4</code></td>
+ <td><code class="docutils literal notranslate">v7.0.2 -> v7.4.3</code></td>
  </table>
  </div>
  </li>

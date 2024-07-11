@@ -164,7 +164,7 @@ Parameters
  </tr>
  <tr>
  <td>reply_to</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.4.4 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.3 </code></td>
  </tr>
  </table>
  </div>
