@@ -36,7 +36,6 @@ FortiOS Version Compatibility
 Supported Version Ranges: v7.4.1 -> 7.4.4
 
 
-
 Parameters
 ----------
 
