@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fortios_log_fact – Retrieve Log Data of Fortios Log Objects. &mdash; Ansible Galaxy FortiOS Collection 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapse.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/util.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Export playbooks" href="export.html" />
+    <link rel="prev" title="fortios_monitor_fact – Retrieve Facts of FortiOS Monitor Objects." href="fortios_monitor_fact.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Ansible Galaxy FortiOS Collection
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">FortiOS/Galaxy Version Mapping Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="version.html">FortiOS Galaxy Versioning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install FortiOS Ansible Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="playbook.html">Run Your First Playbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Get Help</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">modules index</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Configuration Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monitor.html">Monitor Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="fact.html">Facts Gathering Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="fortios_configuration_fact.html">fortios_configuration_fact – Retrieve Facts of FortiOS Configurable Objects.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fortios_monitor_fact.html">fortios_monitor_fact – Retrieve Facts of FortiOS Monitor Objects.</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">fortios_log_fact – Retrieve Log Data of Fortios Log Objects.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#return-values">Return Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#status">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#authors">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export.html">Export playbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic.html">Generic Modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible Galaxy FortiOS Collection</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="fact.html">Facts Gathering Modules</a></li>
+      <li class="breadcrumb-item active">fortios_log_fact – Retrieve Log Data of Fortios Log Objects.</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/fortios_log_fact.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fortios-log-fact-retrieve-log-data-of-fortios-log-objects">
+<h1>fortios_log_fact – Retrieve Log Data of Fortios Log Objects.<a class="headerlink" href="#fortios-log-fact-retrieve-log-data-of-fortios-log-objects" title="Permalink to this heading"></a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 2.10.</span></p>
+</div>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#synopsis" id="id1">Synopsis</a></p></li>
+<li><p><a class="reference internal" href="#requirements" id="id2">Requirements</a></p></li>
+<li><p><a class="reference internal" href="#parameters" id="id3">Parameters</a></p></li>
+<li><p><a class="reference internal" href="#notes" id="id4">Notes</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id5">Examples</a></p></li>
+<li><p><a class="reference internal" href="#return-values" id="id6">Return Values</a></p></li>
+<li><p><a class="reference internal" href="#status" id="id7">Status</a></p></li>
+<li><p><a class="reference internal" href="#authors" id="id8">Authors</a></p></li>
+</ul>
+</nav>
+<section id="synopsis">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Synopsis</a><a class="headerlink" href="#synopsis" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Collects log data from network devices running the fortios operating system.  This module will only collect the log data specified in the playbook.</p></li>
+</ul>
+</section>
+<section id="requirements">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<p>The below requirements are needed on the host that executes this module.</p>
+<ul class="simple">
+<li><p>install galaxy collection fortinet.fortios &gt;= <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>.</p></li>
+</ul>
+</section>
+<section id="parameters">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h2>
+<ul>
+<li> <span class="li-head">vdom</span> - Virtual domain, among those defined previously. A vdom is a virtual instance of the FortiGate that can be configured and used as a different unit. <span class="li-normal">type: str</span> <span class="li-required">required: False</span> <span class="li-normal">default: root</span></li>
+<li> <span class="li-head">enable_log</span> - Enable/Disable logging for task. <span class="li-normal">type: bool</span> <span class="li-required">required: False</span> <span class="li-normal">default: False</span> </li>
+<li> <span class="li-head">access_token</span> - Token-based authentication. Generated from GUI of Fortigate. <span class="li-normal">type: str</span> <span class="li-required">required: False</span> </li>
+<li> <span class="li-head">filters</span> - A list of expressions to filter the returned results. <span class="li-normal">type: list</span> <span class="li-required">required: False</span>
+ <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ Filter item must be in the following format: <code class="docutils literal notranslate"><span class="pre">[key][operator][pattern]</span></code>, operators could be found in the table:
+ <table border="1">
+    <tr>
+     <td><code class="docutils literal notranslate">Operator </code></td>
+     <td><code class="docutils literal notranslate">Case sensitive </code></td>
+     <td><code class="docutils literal notranslate">Description </code></td>
+    </tr>
+  <tr>
+   <td>==</td>
+   <td>Yes</td>
+   <td>Pattern must be identical to the value.</td>
+  </tr>
+  <tr>
+   <td>=*</td>
+   <td>No</td>
+   <td>Pattern must be identical to the value.</td>
+  </tr>
+  <tr>
+   <td>!=</td>
+   <td>Yes</td>
+   <td>Pattern does not match the value.</td>
+  </tr>
+  <tr>
+   <td>!*</td>
+   <td>No</td>
+   <td>Pattern does not match the value.</td>
+  </tr>
+  <tr>
+   <td>=@</td>
+   <td>No</td>
+   <td>Pattern found within value.</td>
+  </tr>
+  <tr>
+   <td>!@</td>
+   <td>No</td>
+   <td>Pattern not found within value.</td>
+  </tr>
+  <tr>
+   <td><=</td>
+   <td>n/a</td>
+   <td>Value must be less than or equal to pattern.</td>
+  </tr>
+  <tr>
+   <td><</td>
+   <td>n/a</td>
+   <td>Value must be less than pattern.</td>
+  </tr>
+  <tr>
+   <td>>=</td>
+   <td>n/a</td>
+   <td>Value must be greater than or equal to pattern.</td>
+  </tr>
+  <tr>
+   <td>></td>
+   <td>n/a</td>
+   <td>Value must be greater than pattern.</td>
+  </tr>
+  </table>
+ </div>
+</li>
+<li> <span class="li-head">sorters</span> - A list of expressions to sort the returned results. <span class="li-normal">type: list</span> <span class="li-required">required: False</span>
+    <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+   <div id="label3" style="display:none">
+   Sorter item must be a <code class="docutils literal notranslate"><span class="pre">[key]</span></code> followed by a <code class="docutils literal notranslate"><span class="pre">,asc</span></code> or <code class="docutils literal notranslate"><span class="pre">,dsc</span></code> order derective.
+   <br>
+   examples: <code class="docutils literal notranslate"><span class="pre">name,asc</span></code> to sort the result by name in ascending order; <code class="docutils literal notranslate"><span class="pre">vlanid,asc</span></code> to sort the result by vlanid in descending order.
+   </div>
+</li>
+<li> <span class="li-head">formatters</span> - A list of fields to display for returned results. <span class="li-normal">type: list</span> <span class="li-required">required: False</span> </li>
+<li><span class="li-head">selector</span> - selector of the retrieved log data <span class="li-normal">type: str</span> <span class="li-required">choices:</span></li>
+    <li style="list-style: none;"><section class="accordion">
+    <input type="checkbox" name="collapse" id="handle2">
+    <h2 class="handle">
+        <label for="handle2"><u>Show full selector list...</u></label>
+    </h2>
+    <div class="content">
+    <ul class="ul-self">
+    disk_anomaly_raw
+    <li><span class="li-head">disk_anomaly_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_app-ctrl_archive
+    <li><span class="li-head">disk_app-ctrl_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    disk_app-ctrl_archive-download
+    <li><span class="li-head">disk_app-ctrl_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_app-ctrl_raw
+    <li><span class="li-head">disk_app-ctrl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_cifs_raw
+    <li><span class="li-head">disk_cifs_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_dlp_raw
+    <li><span class="li-head">disk_dlp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_dns_raw
+    <li><span class="li-head">disk_dns_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_emailfilter_raw
+    <li><span class="li-head">disk_emailfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_compliance-check
+    <li><span class="li-head">disk_event_compliance-check</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_connector
+    <li><span class="li-head">disk_event_connector</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_endpoint
+    <li><span class="li-head">disk_event_endpoint</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_fortiextender
+    <li><span class="li-head">disk_event_fortiextender</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_ha
+    <li><span class="li-head">disk_event_ha</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_router
+    <li><span class="li-head">disk_event_router</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_security-rating
+    <li><span class="li-head">disk_event_security-rating</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_system
+    <li><span class="li-head">disk_event_system</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_user
+    <li><span class="li-head">disk_event_user</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_vpn
+    <li><span class="li-head">disk_event_vpn</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_wad
+    <li><span class="li-head">disk_event_wad</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_event_wireless
+    <li><span class="li-head">disk_event_wireless</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_file-filter_raw
+    <li><span class="li-head">disk_file-filter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_gtp_raw
+    <li><span class="li-head">disk_gtp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_ips_archive
+    <li><span class="li-head">disk_ips_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    disk_ips_archive-download
+    <li><span class="li-head">disk_ips_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_ips_raw
+    <li><span class="li-head">disk_ips_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_ssh_raw
+    <li><span class="li-head">disk_ssh_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_ssl_raw
+    <li><span class="li-head">disk_ssl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_fortiview
+    <li><span class="li-head">disk_traffic_fortiview</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_forward
+    <li><span class="li-head">disk_traffic_forward</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_local
+    <li><span class="li-head">disk_traffic_local</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_multicast
+    <li><span class="li-head">disk_traffic_multicast</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_sniffer
+    <li><span class="li-head">disk_traffic_sniffer</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_traffic_threat
+    <li><span class="li-head">disk_traffic_threat</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_virus_archive
+    <li><span class="li-head">disk_virus_archive</span> - Return a description of the quarantined virus file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - The checksum column from the virus log. <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    disk_virus_raw
+    <li><span class="li-head">disk_virus_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_voip_raw
+    <li><span class="li-head">disk_voip_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_waf_raw
+    <li><span class="li-head">disk_waf_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    disk_webfilter_raw
+    <li><span class="li-head">disk_webfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_anomaly_raw
+    <li><span class="li-head">fortianalyzer_anomaly_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_app-ctrl_archive
+    <li><span class="li-head">fortianalyzer_app-ctrl_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_app-ctrl_archive-download
+    <li><span class="li-head">fortianalyzer_app-ctrl_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_app-ctrl_raw
+    <li><span class="li-head">fortianalyzer_app-ctrl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_cifs_raw
+    <li><span class="li-head">fortianalyzer_cifs_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_dlp_raw
+    <li><span class="li-head">fortianalyzer_dlp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_dns_raw
+    <li><span class="li-head">fortianalyzer_dns_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_emailfilter_raw
+    <li><span class="li-head">fortianalyzer_emailfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_compliance-check
+    <li><span class="li-head">fortianalyzer_event_compliance-check</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_connector
+    <li><span class="li-head">fortianalyzer_event_connector</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_endpoint
+    <li><span class="li-head">fortianalyzer_event_endpoint</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_fortiextender
+    <li><span class="li-head">fortianalyzer_event_fortiextender</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_ha
+    <li><span class="li-head">fortianalyzer_event_ha</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_router
+    <li><span class="li-head">fortianalyzer_event_router</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_security-rating
+    <li><span class="li-head">fortianalyzer_event_security-rating</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_system
+    <li><span class="li-head">fortianalyzer_event_system</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_user
+    <li><span class="li-head">fortianalyzer_event_user</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_vpn
+    <li><span class="li-head">fortianalyzer_event_vpn</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_wad
+    <li><span class="li-head">fortianalyzer_event_wad</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_event_wireless
+    <li><span class="li-head">fortianalyzer_event_wireless</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_file-filter_raw
+    <li><span class="li-head">fortianalyzer_file-filter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_gtp_raw
+    <li><span class="li-head">fortianalyzer_gtp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_ips_archive
+    <li><span class="li-head">fortianalyzer_ips_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_ips_archive-download
+    <li><span class="li-head">fortianalyzer_ips_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_ips_raw
+    <li><span class="li-head">fortianalyzer_ips_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_ssh_raw
+    <li><span class="li-head">fortianalyzer_ssh_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_ssl_raw
+    <li><span class="li-head">fortianalyzer_ssl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_fortiview
+    <li><span class="li-head">fortianalyzer_traffic_fortiview</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_forward
+    <li><span class="li-head">fortianalyzer_traffic_forward</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_local
+    <li><span class="li-head">fortianalyzer_traffic_local</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_multicast
+    <li><span class="li-head">fortianalyzer_traffic_multicast</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_sniffer
+    <li><span class="li-head">fortianalyzer_traffic_sniffer</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_traffic_threat
+    <li><span class="li-head">fortianalyzer_traffic_threat</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_virus_archive
+    <li><span class="li-head">fortianalyzer_virus_archive</span> - Return a description of the quarantined virus file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - The checksum column from the virus log. <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_virus_raw
+    <li><span class="li-head">fortianalyzer_virus_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_voip_raw
+    <li><span class="li-head">fortianalyzer_voip_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_waf_raw
+    <li><span class="li-head">fortianalyzer_waf_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    fortianalyzer_webfilter_raw
+    <li><span class="li-head">fortianalyzer_webfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_anomaly_raw
+    <li><span class="li-head">forticloud_anomaly_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_app-ctrl_archive
+    <li><span class="li-head">forticloud_app-ctrl_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_app-ctrl_archive-download
+    <li><span class="li-head">forticloud_app-ctrl_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_app-ctrl_raw
+    <li><span class="li-head">forticloud_app-ctrl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_cifs_raw
+    <li><span class="li-head">forticloud_cifs_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_dlp_raw
+    <li><span class="li-head">forticloud_dlp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_dns_raw
+    <li><span class="li-head">forticloud_dns_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_emailfilter_raw
+    <li><span class="li-head">forticloud_emailfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_compliance-check
+    <li><span class="li-head">forticloud_event_compliance-check</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_connector
+    <li><span class="li-head">forticloud_event_connector</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_endpoint
+    <li><span class="li-head">forticloud_event_endpoint</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_fortiextender
+    <li><span class="li-head">forticloud_event_fortiextender</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_ha
+    <li><span class="li-head">forticloud_event_ha</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_router
+    <li><span class="li-head">forticloud_event_router</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_security-rating
+    <li><span class="li-head">forticloud_event_security-rating</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_system
+    <li><span class="li-head">forticloud_event_system</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_user
+    <li><span class="li-head">forticloud_event_user</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_vpn
+    <li><span class="li-head">forticloud_event_vpn</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_wad
+    <li><span class="li-head">forticloud_event_wad</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_event_wireless
+    <li><span class="li-head">forticloud_event_wireless</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_file-filter_raw
+    <li><span class="li-head">forticloud_file-filter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_gtp_raw
+    <li><span class="li-head">forticloud_gtp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_ips_archive
+    <li><span class="li-head">forticloud_ips_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_ips_archive-download
+    <li><span class="li-head">forticloud_ips_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_ips_raw
+    <li><span class="li-head">forticloud_ips_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_ssh_raw
+    <li><span class="li-head">forticloud_ssh_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_ssl_raw
+    <li><span class="li-head">forticloud_ssl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_fortiview
+    <li><span class="li-head">forticloud_traffic_fortiview</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_forward
+    <li><span class="li-head">forticloud_traffic_forward</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_local
+    <li><span class="li-head">forticloud_traffic_local</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_multicast
+    <li><span class="li-head">forticloud_traffic_multicast</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_sniffer
+    <li><span class="li-head">forticloud_traffic_sniffer</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_traffic_threat
+    <li><span class="li-head">forticloud_traffic_threat</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_virus_archive
+    <li><span class="li-head">forticloud_virus_archive</span> - Return a description of the quarantined virus file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - The checksum column from the virus log. <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_virus_raw
+    <li><span class="li-head">forticloud_virus_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_voip_raw
+    <li><span class="li-head">forticloud_voip_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_waf_raw
+    <li><span class="li-head">forticloud_waf_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    forticloud_webfilter_raw
+    <li><span class="li-head">forticloud_webfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_anomaly_raw
+    <li><span class="li-head">memory_anomaly_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_app-ctrl_archive
+    <li><span class="li-head">memory_app-ctrl_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    memory_app-ctrl_archive-download
+    <li><span class="li-head">memory_app-ctrl_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_app-ctrl_raw
+    <li><span class="li-head">memory_app-ctrl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_cifs_raw
+    <li><span class="li-head">memory_cifs_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_dlp_raw
+    <li><span class="li-head">memory_dlp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_dns_raw
+    <li><span class="li-head">memory_dns_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_emailfilter_raw
+    <li><span class="li-head">memory_emailfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_compliance-check
+    <li><span class="li-head">memory_event_compliance-check</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_connector
+    <li><span class="li-head">memory_event_connector</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_endpoint
+    <li><span class="li-head">memory_event_endpoint</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_fortiextender
+    <li><span class="li-head">memory_event_fortiextender</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_ha
+    <li><span class="li-head">memory_event_ha</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_router
+    <li><span class="li-head">memory_event_router</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_security-rating
+    <li><span class="li-head">memory_event_security-rating</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_system
+    <li><span class="li-head">memory_event_system</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_user
+    <li><span class="li-head">memory_event_user</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_vpn
+    <li><span class="li-head">memory_event_vpn</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_wad
+    <li><span class="li-head">memory_event_wad</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_event_wireless
+    <li><span class="li-head">memory_event_wireless</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_file-filter_raw
+    <li><span class="li-head">memory_file-filter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_gtp_raw
+    <li><span class="li-head">memory_gtp_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_ips_archive
+    <li><span class="li-head">memory_ips_archive</span> - Return a list of archived items for the desired type. :type can be app-ctrl or ips
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number. (required if source is not fortianalyzer) <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    memory_ips_archive-download
+    <li><span class="li-head">memory_ips_archive-download</span> - Download an archived file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - Archive identifier. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">roll</span> - Log roll number (required if source is not fortianalyzer). <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">filename</span> - File name to use when saving the file in the browser. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_ips_raw
+    <li><span class="li-head">memory_ips_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_ssh_raw
+    <li><span class="li-head">memory_ssh_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_ssl_raw
+    <li><span class="li-head">memory_ssl_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_fortiview
+    <li><span class="li-head">memory_traffic_fortiview</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_forward
+    <li><span class="li-head">memory_traffic_forward</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_local
+    <li><span class="li-head">memory_traffic_local</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_multicast
+    <li><span class="li-head">memory_traffic_multicast</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_sniffer
+    <li><span class="li-head">memory_traffic_sniffer</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_traffic_threat
+    <li><span class="li-head">memory_traffic_threat</span> - Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">extra</span> - Flag(s) for extra data to be included [reverse_lookup|country_id]. <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_virus_archive
+    <li><span class="li-head">memory_virus_archive</span> - Return a description of the quarantined virus file.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">mkey</span> - The checksum column from the virus log. <span class="li-normal">type: int </span> </li>
+
+        </ul>
+
+    </li>
+    memory_virus_raw
+    <li><span class="li-head">memory_virus_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_voip_raw
+    <li><span class="li-head">memory_voip_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_waf_raw
+    <li><span class="li-head">memory_waf_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    memory_webfilter_raw
+    <li><span class="li-head">memory_webfilter_raw</span> - Log data for the given log type in raw format.
+    <ul class="ul-self">
+            <li> <span class="li-required">vdom</span> - The name of the virtual domain <span class="li-normal">type: str</span>
+            <li><span class="li-required">rows</span> - Number of rows to return. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">session_id</span> - Provide a session_id to continue getting data for that request. <span class="li-normal">type: int </span> </li>
+            <li><span class="li-required">serial_no</span> - Retrieve log from the specified device. <span class="li-normal">type: string </span> </li>
+            <li><span class="li-required">is_ha_member</span> - Is the specified device an HA member. <span class="li-normal">type: boolean </span> </li>
+            <li><span class="li-required">filter</span> - Filter expression(s). <span class="li-normal">type: string </span> </li>
+
+        </ul>
+
+    </li>
+    </ul>
+    </div>
+    </section>
+<li><span class="li-head">params</span> - the parameter for each selector, see definition in above list.<span class="li-normal">type: dict</span></li></section>
+<section id="notes">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Notes</a><a class="headerlink" href="#notes" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Different <code class="docutils literal notranslate"><span class="pre">selector</span></code> may have different parameters, users are expected to look up them for a specific selector.</p></li>
+<li><p>For some selectors, the objects are global, no <code class="docutils literal notranslate"><span class="pre">params</span></code> are allowed to appear.</p></li>
+<li><p>Not all parameters are required for a slector.</p></li>
+<li><p>This module is exclusivly for FortiOS monitor API.</p></li>
+<li><p>The result of API request is stored in <code class="docutils literal notranslate"><span class="pre">results</span></code>.</p></li>
+<li><p>There are three filtering parameters: <code class="docutils literal notranslate"><span class="pre">filters</span></code>, <code class="docutils literal notranslate"><span class="pre">sorters</span></code> and <code class="docutils literal notranslate"><span class="pre">formatters</span></code>, please see <a class="reference external" href="https://fndn.fortinet.net/index.php?/fortiapi/1-fortios/597/">filtering spec</a> for more information.</p></li>
+</ul>
+</div>
+</section>
+<section id="examples">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<div class="highlight-yaml+jinja notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fortigates</span>
+<span class="w">  </span><span class="nt">connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">httpapi</span>
+<span class="w">  </span><span class="nt">collections</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fortinet.fortios</span>
+<span class="w">  </span><span class="nt">vars</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">vdom</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;root&quot;</span>
+<span class="w">   </span><span class="nt">ansible_httpapi_use_ssl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">   </span><span class="nt">ansible_httpapi_validate_certs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">   </span><span class="nt">ansible_httpapi_port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">443</span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Get system event log with logid==0100032038</span>
+<span class="w">    </span><span class="nt">fortios_log_fact</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">filters</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">logid==0100032038</span>
+<span class="w">      </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;disk_event_system&quot;</span>
+<span class="w">      </span><span class="nt">params</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">rows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Get a description of the quarantined virus file</span>
+<span class="w">    </span><span class="nt">fortios_log_fact</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;forticloud_virus_archive&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="return-values">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Return Values</a><a class="headerlink" href="#return-values" title="Permalink to this heading"></a></h2>
+<p>Common return values are documented: <a class="reference external" href="https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values">https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values</a>, the following are the fields unique to this module:</p>
+<ul>
+
+<li> <span class="li-return">build</span> - Build number of the fortigate image <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: 1547</span></li>
+<li> <span class="li-return">rows</span> - Number of rows to return <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 400</span></li>
+<li> <span class="li-return">serial</span> - Serial number of the unit <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: FGVMEVYYQT3AB5352</span></li>
+<li> <span class="li-return">session_id</span> - Session id for the request <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 7</span></li>
+<li> <span class="li-return">start</span> - Row number for the first row to return <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+<li> <span class="li-return">status</span> - Indication of the operation's result <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: success</span></li>
+<li> <span class="li-return">subcategory</span> - Type of log that can be retrieved <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: system</span></li>
+<li> <span class="li-return">total_lines</span> - Total lines returned from the result <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 510</span></li>
+<li> <span class="li-return">vdom</span> - Virtual domain used <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: root</span></li>
+<li> <span class="li-return">version</span> - Version of the FortiGate <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: v5.6.3</span></li>
+</ul></section>
+<section id="status">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Status</a><a class="headerlink" href="#status" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This module is not guaranteed to have a backwards compatible interface.</p></li>
+</ul>
+</section>
+<section id="authors">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Authors</a><a class="headerlink" href="#authors" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Link Zheng (&#64;chillancezen)</p></li>
+<li><p>Jie Xue (&#64;JieX19)</p></li>
+<li><p>Hongbin Lu (&#64;fgtdev-hblu)</p></li>
+<li><p>Frank Shen (&#64;fshen01)</p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you notice any issues in this documentation, you can create a pull request to improve it.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fortios_monitor_fact.html" class="btn btn-neutral float-left" title="fortios_monitor_fact – Retrieve Facts of FortiOS Monitor Objects." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="export.html" class="btn btn-neutral float-right" title="Export playbooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2023, Fortinet.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
