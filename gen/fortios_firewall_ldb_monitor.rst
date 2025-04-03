@@ -115,7 +115,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">http_get</span> - URL used to send a GET request to check the health of an HTTP server. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">http_get</span> - Request URI used to send a GET request to check the health of an HTTP server. Optionally provide a hostname before the first "/" and it will be used as the HTTP Host Header. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">

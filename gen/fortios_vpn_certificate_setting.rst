@@ -790,6 +790,20 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
+ <div id="label81" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -853,6 +867,7 @@ Examples
               strict_ocsp_check: "enable"
               subject_match: "substring"
               subject_set: "subset"
+              vrf_select: "0"
 
 
 Return Values

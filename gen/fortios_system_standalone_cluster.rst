@@ -534,9 +534,80 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">pingsvr_monitor_interface</span> - List of pingsvr monitor interface to check for remote IP monitoring. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: pingsvr_monitor_interface:name</span>
+        <li> <span class="li-head">monitor_prefix</span> - Configure a list of routing prefixes to monitor. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: monitor_prefix:id</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>monitor_prefix</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">id</span> - ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>id</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">prefix</span> - Prefix. <span class="li-normal">type: str</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>prefix</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">vdom</span> - VDOM name. Source system.vdom.name. <span class="li-normal">type: str</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vdom</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">vrf</span> - VRF ID. <span class="li-normal">type: int</span>
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
+        <li> <span class="li-head">pingsvr_monitor_interface</span> - List of pingsvr monitor interface to check for remote IP monitoring. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: pingsvr_monitor_interface:name</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -550,8 +621,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Interface name. Source system.interface.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
- <div id="label63" style="display:none">
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -566,8 +637,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">psksecret</span> - Pre-shared secret for session synchronization (ASCII string or hexadecimal encoded with a leading 0x). <span class="li-normal">type: str</span>
- <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -582,8 +653,8 @@ Parameters
  </li>
         <li> <span class="li-head">session_sync_dev</span> - Offload session-sync process to kernel and sync sessions using connected interface(s) directly. Source system.interface.name. <span class="li-normal">type: list</span> </li>
         <li> <span class="li-head">standalone_group_id</span> - Cluster group ID (0 - 255). Must be the same for all members. <span class="li-normal">type: int</span>
- <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
- <div id="label67" style="display:none">
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -654,9 +725,15 @@ Examples
               monitor_interface:
                   -
                       name: "default_name_31 (source system.interface.name)"
+              monitor_prefix:
+                  -
+                      id: "33"
+                      prefix: "<your_own_value>"
+                      vdom: "<your_own_value> (source system.vdom.name)"
+                      vrf: "0"
               pingsvr_monitor_interface:
                   -
-                      name: "default_name_33 (source system.interface.name)"
+                      name: "default_name_38 (source system.interface.name)"
               psksecret: "<your_own_value>"
               session_sync_dev: "<your_own_value> (source system.interface.name)"
               standalone_group_id: "0"

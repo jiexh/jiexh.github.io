@@ -841,6 +841,20 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
+ <div id="label87" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -909,6 +923,7 @@ Examples
               type: "simple"
               user_info_exchange_server: "<your_own_value> (source user.exchange.name)"
               username: "<your_own_value>"
+              vrf_select: "0"
 
 
 Return Values

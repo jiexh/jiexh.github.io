@@ -64,9 +64,47 @@ Parameters
  </div>
  </li>
         <ul class="ul-self">
-        <li> <span class="li-head">host</span> - The host name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">client_cert</span> - Enable/disable requesting client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>client_cert</td>
+ </tr>
+ <tr>
+ <td>[disable]</td>
+ <tr>
+ <td>[enable]</td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">empty_cert_action</span> - Action for an empty client certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: accept, block, accept-unmanageable</span>
+ <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>empty_cert_action</td>
+ </tr>
+ <tr>
+ <td>[accept]</td>
+ <tr>
+ <td>[block]</td>
+ <tr>
+ <td>[accept-unmanageable]</td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">host</span> - The host name. <span class="li-normal">type: str</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -80,8 +118,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">host_type</span> - Type of host pattern. <span class="li-normal">type: str</span> <span class="li-normal">choices: sub-string, wildcard</span>
- <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -101,8 +139,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">name</span> - Virtual host name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -116,8 +154,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">replacemsg_group</span> - Access-proxy-virtual-host replacement message override group. Source system.replacemsg-group.name. <span class="li-normal">type: str</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -132,8 +170,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssl_certificate</span> - SSL certificate for this host. Source vpn.certificate.local.name. <span class="li-normal">type: str</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -147,8 +185,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssl_certificate_dict</span> - SSL certificates for this host. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: ssl_certificate_dict:name</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -162,8 +200,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Certificate list. Source vpn.certificate.local.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -177,6 +215,24 @@ Parameters
  </div>
  </li>
             </ul>
+        <li> <span class="li-head">user_agent_detect</span> - Enable/disable detecting device type by HTTP user-agent if no client certificate is provided. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>user_agent_detect</td>
+ </tr>
+ <tr>
+ <td>[disable]</td>
+ <tr>
+ <td>[enable]</td>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -203,14 +259,17 @@ Examples
           state: "present"
           access_token: "<your_own_value>"
           firewall_access_proxy_virtual_host:
+              client_cert: "disable"
+              empty_cert_action: "accept"
               host: "myhostname"
               host_type: "sub-string"
-              name: "default_name_5"
+              name: "default_name_7"
               replacemsg_group: "<your_own_value> (source system.replacemsg-group.name)"
               ssl_certificate: "<your_own_value> (source vpn.certificate.local.name)"
               ssl_certificate_dict:
                   -
-                      name: "default_name_9 (source vpn.certificate.local.name)"
+                      name: "default_name_11 (source vpn.certificate.local.name)"
+              user_agent_detect: "disable"
 
 
 Return Values

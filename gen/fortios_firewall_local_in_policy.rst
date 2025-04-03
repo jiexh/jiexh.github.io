@@ -369,7 +369,7 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">name</span> - Address name. Source system.zone.name system.interface.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+            <li> <span class="li-head">name</span> - Address name. Source system.zone.name system.sdwan.zone.name system.interface.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <table border="1">
@@ -649,7 +649,7 @@ Examples
               intf: "<your_own_value> (source system.zone.name system.interface.name)"
               intf_dict:
                   -
-                      name: "default_name_21 (source system.zone.name system.interface.name)"
+                      name: "default_name_21 (source system.zone.name system.sdwan.zone.name system.interface.name)"
               logtraffic: "enable"
               policyid: "<you_own_value>"
               schedule: "<your_own_value> (source firewall.schedule.onetime.name firewall.schedule.recurring.name firewall.schedule.group.name)"

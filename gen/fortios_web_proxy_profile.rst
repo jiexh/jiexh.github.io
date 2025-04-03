@@ -306,7 +306,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">add_option</span> - Configure options to append content to existing HTTP header or add new HTTP header. <span class="li-normal">type: str</span> <span class="li-normal">choices: append, new-on-not-found, new</span>
+            <li> <span class="li-head">add_option</span> - Configure options to append content to existing HTTP header or add new HTTP header. <span class="li-normal">type: str</span> <span class="li-normal">choices: append, new-on-not-found, new, replace, replace-when-match</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table border="1">
@@ -327,6 +327,12 @@ Parameters
  <tr>
  <td>[new]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0</code></td>
+ <tr>
+ <td>[replace]</td>
+ </tr>
+ <tr>
+ <td>[replace-when-match]</td>
+ </tr>
  </table>
  </div>
  </li>

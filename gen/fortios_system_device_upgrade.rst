@@ -92,7 +92,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">failure_reason</span> - Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, csf-tree-not-supported, node-failed</span>
+        <li> <span class="li-head">failure_reason</span> - Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, csf-tree-not-supported, firmware-changed, node-failed</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
@@ -151,6 +151,9 @@ Parameters
  <td><code class="docutils literal notranslate">v7.4.1 -> 7.6.0</code></td>
  </tr>
  <tr>
+ <td>[firmware-changed]</td>
+ </tr>
+ <tr>
  <td>[node-failed]</td>
  <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.0</code></td>
  </table>
@@ -171,9 +174,23 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">known_ha_members</span> - Known members of the HA cluster. If a member is missing at upgrade time, the upgrade will be cancelled. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: known_ha_members:serial</span>
+        <li> <span class="li-head">initial_version</span> - Firmware version when the upgrade was set up. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>initial_version</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">known_ha_members</span> - Known members of the HA cluster. If a member is missing at upgrade time, the upgrade will be cancelled. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: known_ha_members:serial</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -187,8 +204,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">serial</span> - Serial number of HA member <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -203,8 +220,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">maximum_minutes</span> - Maximum number of minutes to allow for immediate upgrade preparation. <span class="li-normal">type: int</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -218,8 +235,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">next_path_index</span> - The index of the next image to upgrade to. <span class="li-normal">type: int</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -233,8 +250,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">serial</span> - Serial number of the node to include. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -248,8 +265,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">setup_time</span> - Upgrade preparation start time in UTC (hh:mm yyyy/mm/dd UTC). <span class="li-normal">type: str</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -262,9 +279,23 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">starter_admin</span> - Admin that started the upgrade. <span class="li-normal">type: str</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>starter_admin</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         <li> <span class="li-head">status</span> - Current status of the upgrade. <span class="li-normal">type: str</span> <span class="li-normal">choices: disabled, initialized, downloading, device-disconnected, ready, coordinating, staging, final-check, upgrade-devices, cancelled, confirmed, done, dry-run-done, failed</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -321,8 +352,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">time</span> - Scheduled upgrade execution time in UTC (hh:mm yyyy/mm/dd UTC). <span class="li-normal">type: str</span>
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -336,8 +367,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">timing</span> - Run immediately or at a scheduled time. <span class="li-normal">type: str</span> <span class="li-normal">choices: immediate, scheduled</span>
- <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
- <div id="label25" style="display:none">
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -357,8 +388,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">upgrade_path</span> - Fortinet OS image versions to upgrade through in major-minor-patch format, such as 7-0-4. <span class="li-normal">type: str</span>
- <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
- <div id="label27" style="display:none">
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -367,6 +398,20 @@ Parameters
  <tr>
  <td>upgrade_path</td>
  <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.0 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">vdom</span> - Limit upgrade to this virtual domain (VDOM). Source system.vdom.name. <span class="li-normal">type: str</span>
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vdom</td>
  </tr>
  </table>
  </div>
@@ -400,6 +445,7 @@ Examples
               device_type: "fortigate"
               failure_reason: "none"
               ha_reboot_controller: "<your_own_value>"
+              initial_version: "<your_own_value>"
               known_ha_members:
                   -
                       serial: "<your_own_value>"
@@ -407,10 +453,12 @@ Examples
               next_path_index: "0"
               serial: "<your_own_value>"
               setup_time: "<your_own_value>"
+              starter_admin: "<your_own_value>"
               status: "disabled"
               time: "<your_own_value>"
               timing: "immediate"
               upgrade_path: "<your_own_value>"
+              vdom: "<your_own_value> (source system.vdom.name)"
 
 
 Return Values

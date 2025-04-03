@@ -438,9 +438,23 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">mesh_eth_type</span> - Mesh Ethernet identifier included in backhaul packets (0 - 65535). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">max_wids_entry</span> - Maximum number of wids entries stored on the controller . <span class="li-normal">type: int</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>max_wids_entry</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">mesh_eth_type</span> - Mesh Ethernet identifier included in backhaul packets (0 - 65535). <span class="li-normal">type: int</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -454,8 +468,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">nac_interval</span> - Interval in seconds between two WiFi network access control (NAC) checks (10 - 600). <span class="li-normal">type: int</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -469,8 +483,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">name</span> - Name of the wireless controller. <span class="li-normal">type: str</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -484,8 +498,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">rogue_scan_mac_adjacency</span> - Maximum numerical difference between an AP"s Ethernet and wireless MAC values to match for rogue detection (0 - 31). <span class="li-normal">type: int</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -499,8 +513,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">rolling_wtp_upgrade</span> - Enable/disable rolling WTP upgrade . <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -520,8 +534,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">rolling_wtp_upgrade_threshold</span> - Minimum signal level/threshold in dBm required for the managed WTP to be included in rolling WTP upgrade (-95 to -20). <span class="li-normal">type: str</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -535,8 +549,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tunnel_mode</span> - Compatible/strict tunnel mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: compatible, strict</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -556,8 +570,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wpad_process_count</span> - Wpad daemon process count for multi-core CPU support. <span class="li-normal">type: int</span>
- <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -571,8 +585,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wtp_share</span> - Enable/disable sharing of WTPs between VDOMs. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -636,9 +650,10 @@ Examples
               max_rogue_sta: "0"
               max_sta_cap: "0"
               max_sta_cap_wtp: "8"
+              max_wids_entry: "0"
               mesh_eth_type: "8755"
               nac_interval: "120"
-              name: "default_name_26"
+              name: "default_name_27"
               rogue_scan_mac_adjacency: "7"
               rolling_wtp_upgrade: "enable"
               rolling_wtp_upgrade_threshold: "<your_own_value>"

@@ -66,7 +66,7 @@ Parameters
  </div>
  </li>
         <ul class="ul-self">
-        <li> <span class="li-head">affinity_cpumask</span> - Affinity setting for VM throughput (64-bit hexadecimal value in the format of 0xxxxxxxxxxxxxxxxx). <span class="li-normal">type: str</span>
+        <li> <span class="li-head">affinity_cpumask</span> - Hexadecimal cpumask, empty value means all CPUs. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
@@ -187,7 +187,7 @@ Examples
               id: "4"
               interface: "<your_own_value> (source system.interface.name)"
               round_robin: "enable"
-              rxqid: "0"
+              rxqid: "255"
 
 
 Return Values

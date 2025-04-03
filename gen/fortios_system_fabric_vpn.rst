@@ -161,7 +161,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">bgp_as</span> - BGP Router AS number, valid from 1 to 4294967295. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">bgp_as</span> - BGP Router AS number, asplain/asdot/asdot+ format. <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table border="1">
@@ -582,7 +582,7 @@ Examples
                       id: "7"
                       policies: "<your_own_value> (source firewall.policy.policyid)"
                       prefix: "<your_own_value>"
-              bgp_as: "0"
+              bgp_as: "<your_own_value>"
               branch_name: "<your_own_value>"
               health_checks: "<your_own_value> (source system.sdwan.health-check.name)"
               loopback_address_block: "<your_own_value>"

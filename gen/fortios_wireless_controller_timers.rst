@@ -490,6 +490,20 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">wids_entry_cleanup</span> - Time period in minutes to keep wids entry after it is gone . <span class="li-normal">type: int</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>wids_entry_cleanup</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -542,6 +556,7 @@ Examples
               sta_locate_timer: "1800"
               sta_stats_interval: "10"
               vap_stats_interval: "15"
+              wids_entry_cleanup: "0"
 
 
 Return Values
