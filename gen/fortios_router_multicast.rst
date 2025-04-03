@@ -1163,9 +1163,191 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">route_limit</span> - Maximum number of multicast routes. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">pim_sm_global_vrf</span> - per-VRF PIM sparse-mode global settings. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: pim_sm_global_vrf:vrf</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>pim_sm_global_vrf</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">bsr_allow_quick_refresh</span> - Enable/disable accept BSR quick refresh packets from neighbors. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
+ <div id="label135" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>bsr_allow_quick_refresh</td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <tr>
+ <td>[disable]</td>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">bsr_candidate</span> - Enable/disable allowing this router to become a bootstrap router (BSR). <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>bsr_candidate</td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <tr>
+ <td>[disable]</td>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">bsr_hash</span> - BSR hash length (0 - 32). <span class="li-normal">type: int</span>
+ <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>bsr_hash</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">bsr_interface</span> - Interface to advertise as candidate BSR. Source system.interface.name. <span class="li-normal">type: str</span>
+ <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
+ <div id="label141" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>bsr_interface</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">bsr_priority</span> - BSR priority (0 - 255). <span class="li-normal">type: int</span>
+ <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
+ <div id="label143" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>bsr_priority</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">cisco_crp_prefix</span> - Enable/disable making candidate RP compatible with old Cisco IOS. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
+ <div id="label145" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>cisco_crp_prefix</td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <tr>
+ <td>[disable]</td>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">rp_address</span> - Statically configure RP addresses. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: pim_sm_global_vrf:vrf/rp_address:id</span>
+ <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
+ <div id="label147" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>rp_address</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                <ul class="ul-self">
+                <li> <span class="li-head">group</span> - Groups to use this RP. Source router.access-list.name. <span class="li-normal">type: str</span>
+ <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
+ <div id="label149" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>group</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                <li> <span class="li-head">id</span> - ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
+ <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
+ <div id="label151" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>id</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                <li> <span class="li-head">ip_address</span> - RP router address. <span class="li-normal">type: str</span>
+ <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
+ <div id="label153" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>ip_address</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                </ul>
+            <li> <span class="li-head">vrf</span> - VRF ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
+ <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
+ <div id="label155" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
+        <li> <span class="li-head">route_limit</span> - Maximum number of multicast routes. <span class="li-normal">type: int</span>
+ <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
+ <div id="label157" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1179,8 +1361,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">route_threshold</span> - Generate warnings when the number of multicast routes exceeds this number, must not be greater than route-limit. <span class="li-normal">type: int</span>
- <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
- <div id="label135" style="display:none">
+ <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
+ <div id="label159" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1285,6 +1467,20 @@ Examples
                   spt_threshold_group: "<your_own_value> (source router.access-list.name)"
                   ssm: "enable"
                   ssm_range: "<your_own_value> (source router.access-list.name)"
+              pim_sm_global_vrf:
+                  -
+                      bsr_allow_quick_refresh: "enable"
+                      bsr_candidate: "enable"
+                      bsr_hash: "10"
+                      bsr_interface: "<your_own_value> (source system.interface.name)"
+                      bsr_priority: "0"
+                      cisco_crp_prefix: "enable"
+                      rp_address:
+                          -
+                              group: "<your_own_value> (source router.access-list.name)"
+                              id: "77"
+                              ip_address: "<your_own_value>"
+                      vrf: "<you_own_value>"
               route_limit: "2147483647"
               route_threshold: ""
 

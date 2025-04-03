@@ -152,7 +152,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">dstintf</span> - IPv6 destination interface name. Source system.interface.name system.zone.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">dstintf</span> - IPv6 destination interface name. Source system.interface.name system.zone.name system.sdwan.zone.name. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table border="1">
@@ -304,7 +304,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">srcintf</span> - IPv6 source interface name. Source system.interface.name system.zone.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">srcintf</span> - IPv6 source interface name. Source system.interface.name system.zone.name system.sdwan.zone.name. <span class="li-normal">type: str</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table border="1">
@@ -425,7 +425,7 @@ Examples
               dstaddr:
                   -
                       name: "default_name_7 (source firewall.multicast-address6.name)"
-              dstintf: "<your_own_value> (source system.interface.name system.zone.name)"
+              dstintf: "<your_own_value> (source system.interface.name system.zone.name system.sdwan.zone.name)"
               end_port: "65535"
               id: "10"
               ips_sensor: "<your_own_value> (source ips.sensor.name)"
@@ -435,7 +435,7 @@ Examples
               srcaddr:
                   -
                       name: "default_name_16 (source firewall.address6.name firewall.addrgrp6.name)"
-              srcintf: "<your_own_value> (source system.interface.name system.zone.name)"
+              srcintf: "<your_own_value> (source system.interface.name system.zone.name system.sdwan.zone.name)"
               start_port: "1"
               status: "enable"
               utm_status: "enable"

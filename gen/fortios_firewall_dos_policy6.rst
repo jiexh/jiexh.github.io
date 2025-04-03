@@ -553,7 +553,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">interface</span> - Incoming interface name from available interfaces. Source system.zone.name system.interface.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">interface</span> - Incoming interface name from available interfaces. Source system.zone.name system.sdwan.zone.name system.interface.name. <span class="li-normal">type: str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <table border="1">
@@ -732,7 +732,7 @@ Examples
               dstaddr:
                   -
                       name: "default_name_22 (source firewall.address6.name firewall.addrgrp6.name)"
-              interface: "<your_own_value> (source system.zone.name system.interface.name)"
+              interface: "<your_own_value> (source system.zone.name system.sdwan.zone.name system.interface.name)"
               name: "default_name_24"
               policyid: "<you_own_value>"
               service:

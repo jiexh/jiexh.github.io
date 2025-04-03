@@ -244,9 +244,23 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sleep_on_idle</span> - Enable/disable sleep-on-idle support for all FDH engines. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
+        <li> <span class="li-head">session_table_percentage</span> - Percentage of main memory allocated to DPDK session table. <span class="li-normal">type: int</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>session_table_percentage</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">sleep_on_idle</span> - Enable/disable sleep-on-idle support for all FDH engines. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -268,8 +282,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">status</span> - Enable/disable DPDK operation for the entire system. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -324,6 +338,7 @@ Examples
               multiqueue: "disable"
               per_session_accounting: "disable"
               protects: "<your_own_value>"
+              session_table_percentage: "5"
               sleep_on_idle: "disable"
               status: "disable"
 

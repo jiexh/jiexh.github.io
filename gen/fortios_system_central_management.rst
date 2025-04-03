@@ -595,6 +595,20 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -648,6 +662,7 @@ Examples
                       server_type: "update"
               type: "fortimanager"
               vdom: "<your_own_value> (source system.vdom.name)"
+              vrf_select: "0"
 
 
 Return Values

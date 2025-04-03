@@ -94,7 +94,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">platform_type</span> - FortiAP models to define the WTP group platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: AP-11N, C24JE, 421E, 423E, 221E, 222E, 223E, 224E, 231E, 321E, 431F, 431FL, 432F, 432FR, 433F, 433FL, 231F, 231FL, 234F, 23JF, 831F, 231G, 233G, 234G, 431G, 432G, 433G, 241K, 243K, 441K, 443K, U421E, U422EV, U423E, U221EV, U223EV, U24JEV, U321EV, U323EV, U431F, U433F, U231F, U234F, U432F, U231G, 220B, 210B, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, C23JD, S321C, S322C, S323C, S311C, S313C, S321CR, S322CR, S323CR, S421E, S422E, S423E, S221E, S223E, U441G</span>
+        <li> <span class="li-head">platform_type</span> - FortiAP models to define the WTP group platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: AP-11N, C24JE, 421E, 423E, 221E, 222E, 223E, 224E, 231E, 321E, 431F, 431FL, 432F, 432FR, 433F, 433FL, 231F, 231FL, 234F, 23JF, 831F, 231G, 233G, 234G, 431G, 432G, 433G, 231K, 23JK, 241K, 243K, 441K, 443K, U421E, U422EV, U423E, U221EV, U223EV, U24JEV, U321EV, U323EV, U431F, U433F, U231F, U234F, U432F, U231G, 220B, 210B, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, C23JD, S321C, S322C, S323C, S311C, S313C, S321CR, S322CR, S323CR, S421E, S422E, S423E, S221E, S223E, U441G</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">
@@ -224,6 +224,12 @@ Parameters
  <td>[433G]</td>
  <td><code class="docutils literal notranslate">v7.0.8 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> 7.6.0</code></td>
+ </tr>
+ <tr>
+ <td>[231K]</td>
+ </tr>
+ <tr>
+ <td>[23JK]</td>
  </tr>
  <tr>
  <td>[241K]</td>

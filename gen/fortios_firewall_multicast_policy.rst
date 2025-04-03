@@ -167,7 +167,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">dstintf</span> - Destination interface name. Source system.interface.name system.zone.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">dstintf</span> - Destination interface name. Source system.interface.name system.zone.name system.sdwan.zone.name. <span class="li-normal">type: str</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table border="1">
@@ -355,7 +355,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">srcintf</span> - Source interface name. Source system.interface.name system.zone.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">srcintf</span> - Source interface name. Source system.interface.name system.zone.name system.sdwan.zone.name. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table border="1">
@@ -492,7 +492,7 @@ Examples
               dstaddr:
                   -
                       name: "default_name_8 (source firewall.multicast-address.name)"
-              dstintf: "<your_own_value> (source system.interface.name system.zone.name)"
+              dstintf: "<your_own_value> (source system.interface.name system.zone.name system.sdwan.zone.name)"
               end_port: "65535"
               id: "11"
               ips_sensor: "<your_own_value> (source ips.sensor.name)"
@@ -504,7 +504,7 @@ Examples
               srcaddr:
                   -
                       name: "default_name_19 (source firewall.address.name firewall.addrgrp.name)"
-              srcintf: "<your_own_value> (source system.interface.name system.zone.name)"
+              srcintf: "<your_own_value> (source system.interface.name system.zone.name system.sdwan.zone.name)"
               start_port: "1"
               status: "enable"
               traffic_shaper: "<your_own_value> (source firewall.shaper.traffic-shaper.name)"

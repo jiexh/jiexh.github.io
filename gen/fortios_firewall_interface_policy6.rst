@@ -369,7 +369,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">interface</span> - Monitored interface name from available interfaces. Source system.zone.name system.interface.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">interface</span> - Monitored interface name from available interfaces. Source system.zone.name system.sdwan.zone.name system.interface.name. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <table border="1">
@@ -715,7 +715,7 @@ Examples
                       name: "default_name_17 (source firewall.address6.name firewall.addrgrp6.name)"
               emailfilter_profile: "<your_own_value> (source emailfilter.profile.name)"
               emailfilter_profile_status: "enable"
-              interface: "<your_own_value> (source system.zone.name system.interface.name)"
+              interface: "<your_own_value> (source system.zone.name system.sdwan.zone.name system.interface.name)"
               ips_sensor: "<your_own_value> (source ips.sensor.name)"
               ips_sensor_status: "enable"
               label: "<your_own_value>"

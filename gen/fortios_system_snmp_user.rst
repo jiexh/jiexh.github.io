@@ -116,7 +116,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">events</span> - SNMP notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, ha-hb-failure, ips-signature, ips-anomaly, av-virus, av-oversize, av-pattern, av-fragmented, fm-if-change, fm-conf-change, bgp-established, bgp-backward-transition, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, ips-fail-open, faz-disconnect, faz, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, load-balance-real-server-down, device-new, per-cpu-high, dhcp, pool-usage, ippool, interface, ospf-nbr-state-change, ospf-virtnbr-state-change, temperature-high, voltage-alert, power-supply, fan-failure, power-supply-failure</span>
+        <li> <span class="li-head">events</span> - SNMP notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, ha-hb-failure, ips-signature, ips-anomaly, av-virus, av-oversize, av-pattern, av-fragmented, fm-if-change, fm-conf-change, bgp-established, bgp-backward-transition, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, ips-fail-open, temperature-high, voltage-alert, power-supply, faz-disconnect, faz, fan-failure, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, load-balance-real-server-down, device-new, per-cpu-high, dhcp, pool-usage, ippool, interface, ospf-nbr-state-change, ospf-virtnbr-state-change, power-supply-failure</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">
@@ -210,12 +210,25 @@ Parameters
  <td>[ips-fail-open]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
  <tr>
+ <td>[temperature-high]</td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
+ <tr>
+ <td>[voltage-alert]</td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
+ <tr>
+ <td>[power-supply]</td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> 7.6.0</code></td>
+ </tr>
+ <tr>
  <td>[faz-disconnect]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
  <tr>
  <td>[faz]</td>
  <td><code class="docutils literal notranslate">v7.4.1 -> 7.6.0</code></td>
  </tr>
+ <tr>
+ <td>[fan-failure]</td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
  <tr>
  <td>[wc-ap-up]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
@@ -262,19 +275,6 @@ Parameters
  <td>[ospf-virtnbr-state-change]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> 7.6.0</code></td>
  </tr>
- <tr>
- <td>[temperature-high]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
- <tr>
- <td>[voltage-alert]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
- <tr>
- <td>[power-supply]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> 7.6.0</code></td>
- </tr>
- <tr>
- <td>[fan-failure]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
  <tr>
  <td>[power-supply-failure]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> v7.4.1</code></td>
@@ -609,6 +609,20 @@ Parameters
  </div>
  </li>
             </ul>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -659,6 +673,7 @@ Examples
               vdoms:
                   -
                       name: "default_name_25 (source system.vdom.name)"
+              vrf_select: "0"
 
 
 Return Values

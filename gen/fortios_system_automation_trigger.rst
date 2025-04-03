@@ -79,7 +79,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">event_type</span> - Event type. <span class="li-normal">type: str</span> <span class="li-normal">choices: ioc, event-log, reboot, low-memory, high-cpu, license-near-expiry, local-cert-near-expiry, ha-failover, config-change, security-rating-summary, virus-ips-db-updated, faz-event, incoming-webhook, fabric-event, ips-logs, anomaly-logs, virus-logs, ssh-logs, webfilter-violation, traffic-violation</span>
+        <li> <span class="li-head">event_type</span> - Event type. <span class="li-normal">type: str</span> <span class="li-normal">choices: ioc, event-log, reboot, low-memory, high-cpu, license-near-expiry, local-cert-near-expiry, ha-failover, config-change, security-rating-summary, virus-ips-db-updated, faz-event, incoming-webhook, fabric-event, ips-logs, anomaly-logs, virus-logs, ssh-logs, webfilter-violation, traffic-violation, stitch</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
@@ -160,6 +160,9 @@ Parameters
  <tr>
  <td>[traffic-violation]</td>
  <td><code class="docutils literal notranslate">v7.2.0 -> 7.6.0</code></td>
+ </tr>
+ <tr>
+ <td>[stitch]</td>
  </tr>
  </table>
  </div>
@@ -466,9 +469,23 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">trigger_datetime</span> - Trigger date and time (YYYY-MM-DD HH:MM:SS). <span class="li-normal">type: str</span>
+        <li> <span class="li-head">stitch_name</span> - Triggering stitch name. Source system.automation-stitch.name. <span class="li-normal">type: str</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>stitch_name</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">trigger_datetime</span> - Trigger date and time (YYYY-MM-DD HH:MM:SS). <span class="li-normal">type: str</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -482,8 +499,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_day</span> - Day within a month to trigger. <span class="li-normal">type: int</span>
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -497,8 +514,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_frequency</span> - Scheduled trigger frequency . <span class="li-normal">type: str</span> <span class="li-normal">choices: hourly, daily, weekly, monthly, once</span>
- <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -528,8 +545,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_hour</span> - Hour of the day on which to trigger (0 - 23). <span class="li-normal">type: int</span>
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -543,8 +560,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_minute</span> - Minute of the hour on which to trigger (0 - 59). <span class="li-normal">type: int</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -558,8 +575,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_type</span> - Trigger type. <span class="li-normal">type: str</span> <span class="li-normal">choices: event-based, scheduled</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -579,8 +596,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trigger_weekday</span> - Day of week for trigger. <span class="li-normal">type: str</span> <span class="li-normal">choices: sunday, monday, tuesday, wednesday, thursday, friday, saturday</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -615,8 +632,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vdom</span> - Virtual domain(s) that this trigger is valid for. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: vdom:name</span>
- <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -630,8 +647,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Virtual domain name. Source system.vdom.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -691,6 +708,7 @@ Examples
               name: "default_name_18"
               report_type: "posture"
               serial: "<your_own_value>"
+              stitch_name: "<your_own_value> (source system.automation-stitch.name)"
               trigger_datetime: "<your_own_value>"
               trigger_day: "1"
               trigger_frequency: "hourly"
@@ -700,7 +718,7 @@ Examples
               trigger_weekday: "sunday"
               vdom:
                   -
-                      name: "default_name_29 (source system.vdom.name)"
+                      name: "default_name_30 (source system.vdom.name)"
 
 
 Return Values

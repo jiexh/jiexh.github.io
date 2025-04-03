@@ -589,6 +589,20 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
+ </tr>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -647,6 +661,7 @@ Examples
               ssl_trusted_cert: "<your_own_value> (source vpn.certificate.remote.name vpn.certificate.ca.name)"
               type: "default"
               user_info_server: "<your_own_value> (source user.ldap.name)"
+              vrf_select: "0"
 
 
 Return Values

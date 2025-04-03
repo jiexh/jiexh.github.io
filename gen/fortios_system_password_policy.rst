@@ -141,9 +141,27 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">min_change_characters</span> - Minimum number of unique characters in new password which do not exist in old password (0 - 128). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">login_lockout_upon_downgrade</span> - Enable/disable administrative user login lockout upon downgrade (defaut = disable). If enabled, downgrading the FortiOS firmware to a lower version where safer passwords are unsupported will lock out administrative users. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>login_lockout_upon_downgrade</td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <tr>
+ <td>[disable]</td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">min_change_characters</span> - Minimum number of unique characters in new password which do not exist in old password (0 - 128). <span class="li-normal">type: int</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -157,8 +175,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">min_lower_case_letter</span> - Minimum number of lowercase characters in password (0 - 128). <span class="li-normal">type: int</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -172,8 +190,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">min_non_alphanumeric</span> - Minimum number of non-alphanumeric characters in password (0 - 128). <span class="li-normal">type: int</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -187,8 +205,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">min_number</span> - Minimum number of numeric characters in password (0 - 128). <span class="li-normal">type: int</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -202,8 +220,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">min_upper_case_letter</span> - Minimum number of uppercase characters in password (0 - 128). <span class="li-normal">type: int</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -217,8 +235,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">minimum_length</span> - Minimum password length (8 - 128). <span class="li-normal">type: int</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -232,8 +250,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">reuse_password</span> - Enable/disable reuse of password. If both reuse-password and min-change-characters are enabled, min-change-characters overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -253,8 +271,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">reuse_password_limit</span> - Number of times passwords can be reused (0 - 20). <span class="li-normal">type: int</span>
- <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
- <div id="label25" style="display:none">
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -268,8 +286,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">status</span> - Enable/disable setting a password policy for locally defined administrator passwords and IPsec VPN pre-shared keys. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
- <div id="label27" style="display:none">
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -316,6 +334,7 @@ Examples
               change_4_characters: "enable"
               expire_day: "90"
               expire_status: "enable"
+              login_lockout_upon_downgrade: "enable"
               min_change_characters: "0"
               min_lower_case_letter: "0"
               min_non_alphanumeric: "0"

@@ -249,7 +249,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">protocol</span> - Authentication is required for the selected protocol . <span class="li-normal">type: str</span> <span class="li-normal">choices: http, ftp, socks, ssh</span>
+        <li> <span class="li-head">protocol</span> - Authentication is required for the selected protocol . <span class="li-normal">type: str</span> <span class="li-normal">choices: http, ftp, socks, ssh, ztna-portal</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table border="1">
@@ -273,6 +273,9 @@ Parameters
  <tr>
  <td>[ssh]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
+ <tr>
+ <td>[ztna-portal]</td>
+ </tr>
  </table>
  </div>
  </li>

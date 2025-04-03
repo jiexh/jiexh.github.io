@@ -506,9 +506,23 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">ssl_certificate</span> - Name of local certificate for SSL connections. Source certificate.local.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">source_ip_interface</span> - IP address of the specified interface as the source IP address. Source system.interface.name. <span class="li-normal">type: str</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>source_ip_interface</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">ssl_certificate</span> - Name of local certificate for SSL connections. Source certificate.local.name. <span class="li-normal">type: str</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -522,8 +536,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">timeout</span> - DNS query timeout interval in seconds (1 - 10). <span class="li-normal">type: int</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -532,6 +546,20 @@ Parameters
  <tr>
  <td>timeout</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vrf_select</td>
  </tr>
  </table>
  </div>
@@ -589,8 +617,10 @@ Examples
                       hostname: "myhostname"
               server_select_method: "least-rtt"
               source_ip: "84.230.14.43"
+              source_ip_interface: "<your_own_value> (source system.interface.name)"
               ssl_certificate: "<your_own_value> (source certificate.local.name)"
               timeout: "5"
+              vrf_select: "0"
 
 
 Return Values

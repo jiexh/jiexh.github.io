@@ -220,6 +220,24 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">server_type</span> - Configure syslog server type . <span class="li-normal">type: str</span> <span class="li-normal">choices: standard, fortianalyzer</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>server_type</td>
+ </tr>
+ <tr>
+ <td>[standard]</td>
+ <tr>
+ <td>[fortianalyzer]</td>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -254,6 +272,7 @@ Examples
               server_ip: "<your_own_value>"
               server_port: "514"
               server_status: "enable"
+              server_type: "standard"
 
 
 Return Values

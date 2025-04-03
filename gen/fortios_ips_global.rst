@@ -569,7 +569,7 @@ Examples
               packet_log_queue_depth: "128"
               session_limit_mode: "accurate"
               skype_client_public_ipaddr: "<your_own_value>"
-              socket_size: "256"
+              socket_size: "128"
               sync_session_ttl: "enable"
               tls_active_probe:
                   interface: "<your_own_value> (source system.interface.name)"

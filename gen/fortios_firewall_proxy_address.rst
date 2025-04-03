@@ -319,7 +319,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">method</span> - HTTP request methods to be used. <span class="li-normal">type: list</span> <span class="li-normal">choices: get, post, put, head, connect, trace, options, delete</span>
+        <li> <span class="li-head">method</span> - HTTP request methods to be used. <span class="li-normal">type: list</span> <span class="li-normal">choices: get, post, put, head, connect, trace, options, delete, update, patch, other</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table border="1">
@@ -355,6 +355,15 @@ Parameters
  <tr>
  <td>[delete]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.0</code></td>
+ <tr>
+ <td>[update]</td>
+ </tr>
+ <tr>
+ <td>[patch]</td>
+ </tr>
+ <tr>
+ <td>[other]</td>
+ </tr>
  </table>
  </div>
  </li>

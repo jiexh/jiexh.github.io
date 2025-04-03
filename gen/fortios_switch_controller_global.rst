@@ -537,9 +537,27 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">update_user_device</span> - Control which sources update the device user list. <span class="li-normal">type: list</span> <span class="li-normal">choices: mac-cache, lldp, dhcp-snooping, l2-db, l3-db</span>
+        <li> <span class="li-head">switch_on_deauth</span> - No-operation/Factory-reset the managed FortiSwitch on deauthorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: no-op, factory-reset</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="0">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>switch_on_deauth</td>
+ </tr>
+ <tr>
+ <td>[no-op]</td>
+ <tr>
+ <td>[factory-reset]</td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">update_user_device</span> - Control which sources update the device user list. <span class="li-normal">type: list</span> <span class="li-normal">choices: mac-cache, lldp, dhcp-snooping, l2-db, l3-db</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -569,8 +587,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_all_mode</span> - VLAN configuration mode, user-defined-vlans or all-possible-vlans. <span class="li-normal">type: str</span> <span class="li-normal">choices: all, defined</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -590,8 +608,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_identity</span> - Identity of the VLAN. Commonly used for RADIUS Tunnel-Private-Group-Id. <span class="li-normal">type: str</span> <span class="li-normal">choices: description, name</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -610,9 +628,9 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">vlan_optimization</span> - FortiLink VLAN optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+        <li> <span class="li-head">vlan_optimization</span> - FortiLink VLAN optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: prune, configured, none, enable, disable</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -621,6 +639,15 @@ Parameters
  <tr>
  <td>vlan_optimization</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0 </code></td>
+ </tr>
+ <tr>
+ <td>[prune]</td>
+ </tr>
+ <tr>
+ <td>[configured]</td>
+ </tr>
+ <tr>
+ <td>[none]</td>
  </tr>
  <tr>
  <td>[enable]</td>
@@ -682,10 +709,11 @@ Examples
               mac_violation_timer: "0"
               quarantine_mode: "by-vlan"
               sn_dns_resolution: "enable"
+              switch_on_deauth: "no-op"
               update_user_device: "mac-cache"
               vlan_all_mode: "all"
               vlan_identity: "description"
-              vlan_optimization: "enable"
+              vlan_optimization: "prune"
 
 
 Return Values

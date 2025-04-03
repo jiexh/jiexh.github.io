@@ -177,7 +177,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">srcintf</span> - Source interface name from available interfaces. Source system.zone.name system.interface.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">srcintf</span> - Source interface name from available interfaces. Source system.zone.name system.sdwan.zone.name system.interface.name. <span class="li-normal">type: str</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table border="1">
@@ -265,7 +265,7 @@ Examples
               srcaddr:
                   -
                       name: "default_name_9 (source firewall.address.name firewall.addrgrp.name)"
-              srcintf: "<your_own_value> (source system.zone.name system.interface.name)"
+              srcintf: "<your_own_value> (source system.zone.name system.sdwan.zone.name system.interface.name)"
               status: "enable"
               ttl: "<your_own_value>"
 

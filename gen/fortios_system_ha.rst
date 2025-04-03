@@ -2111,7 +2111,7 @@ Examples
               ha_uptime_diff_margin: "300"
               hb_interval: "2"
               hb_interval_in_milliseconds: "100ms"
-              hb_lost_threshold: "20"
+              hb_lost_threshold: "6"
               hbdev: "<your_own_value>"
               hc_eth_type: "<your_own_value>"
               hello_holddown: "20"
