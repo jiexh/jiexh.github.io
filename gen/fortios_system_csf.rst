@@ -975,7 +975,7 @@ Examples
               fabric_object_unification: "default"
               fabric_workers: "2"
               file_mgmt: "enable"
-              file_quota: "268435456"
+              file_quota: "0"
               file_quota_warning: "90"
               fixed_key: "<your_own_value>"
               forticloud_account_enforcement: "enable"
