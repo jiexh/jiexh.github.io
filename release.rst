@@ -21,11 +21,12 @@ Bug Fixes
 - Github Issue #355
 - Github Issue #366
 - Github Issue #364
+- Github Issue #383
 - Mantis Issue #1109817
 
 Improvements
 ^^^^^^^^^^^^^^^
-- Supported fortiOS 7.2.11, 7.6.1 and 7.6.2
+- Supported fortiOS 7.6.1 and 7.6.2
 - Updated the examples with correct values that have minimum or maximum values.
 
 Release Galaxy 2.3.9
