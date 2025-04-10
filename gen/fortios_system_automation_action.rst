@@ -150,9 +150,11 @@ Parameters
  </tr>
  <tr>
  <td>[diagnose-script]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[regular-expression]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[slack-notification]</td>
@@ -520,10 +522,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>duration</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -974,10 +977,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>regular_expression</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>

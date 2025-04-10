@@ -70,15 +70,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>auth_method</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[token]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[base]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -122,14 +125,14 @@ Parameters
  </tr>
  <tr>
  <td>client_authentication_method</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.0 </code></td>
  </tr>
  <tr>
  <td>[token]</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.0</code></td>
  <tr>
  <td>[base]</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -164,7 +167,7 @@ Parameters
  </tr>
  <tr>
  <td>client_secret_token</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -205,10 +208,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>secret</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -240,10 +244,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>token_certificate</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>

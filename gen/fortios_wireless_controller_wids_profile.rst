@@ -70,15 +70,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>adhoc_network</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -88,15 +91,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>adhoc_valid_ssid</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -106,15 +112,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>air_jack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -332,15 +341,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>ap_impersonation</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -469,15 +481,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>ap_spoofing</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -610,15 +625,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>bcn_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -628,10 +646,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>bcn_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -642,10 +661,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>bcn_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -656,15 +676,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>beacon_wrong_channel</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -674,15 +697,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>block_ack_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -692,10 +718,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>block_ack_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -706,10 +733,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>block_ack_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -720,15 +748,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>chan_based_mitm</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -738,15 +769,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>client_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -756,10 +790,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>client_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -770,10 +805,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>client_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -799,15 +835,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>cts_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -817,10 +856,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>cts_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -831,10 +871,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>cts_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -881,15 +922,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>disassoc_broadcast</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -899,15 +943,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>disconnect_station</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -968,15 +1015,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>eapol_key_overflow</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1241,15 +1291,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>fata_jack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1259,15 +1312,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>fuzzed_beacon</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1277,15 +1333,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>fuzzed_probe_request</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1295,15 +1354,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>fuzzed_probe_response</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1313,15 +1375,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>hotspotter_attack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1331,15 +1396,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>ht_40mhz_intolerance</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1349,15 +1417,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>ht_greenfield</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1367,15 +1438,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>invalid_addr_combination</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1442,15 +1516,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>malformed_association</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1460,15 +1537,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>malformed_auth</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1478,15 +1558,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>malformed_ht_ie</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1511,15 +1594,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>netstumbler</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1529,10 +1615,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>netstumbler_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1543,10 +1630,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>netstumbler_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1578,15 +1666,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>omerta_attack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1596,15 +1687,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>overflow_ie</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1614,15 +1708,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>probe_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1632,10 +1729,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>probe_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1646,10 +1744,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>probe_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1660,15 +1759,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>pspoll_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1678,10 +1780,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>pspoll_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1692,10 +1795,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>pspoll_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1706,15 +1810,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>pwsave_dos_attack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1724,15 +1831,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>reassoc_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1742,10 +1852,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>reassoc_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1756,10 +1867,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>reassoc_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1770,15 +1882,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>risky_encryption</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1788,15 +1903,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>rts_flood</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1806,10 +1924,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>rts_flood_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1820,10 +1939,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>rts_flood_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1879,15 +1999,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>unencrypted_valid</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1897,15 +2020,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>valid_client_misassociation</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1915,15 +2041,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>valid_ssid_misuse</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1954,15 +2083,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>wellenreiter</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1972,10 +2104,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>wellenreiter_thresh</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -1986,10 +2119,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>wellenreiter_time</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>
@@ -2000,15 +2134,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>windows_bridge</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -2039,15 +2176,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>wpa_ft_attack</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>

@@ -226,15 +226,18 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>server_type</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  <tr>
  <td>[standard]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  <tr>
  <td>[fortianalyzer]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </table>
  </div>
  </li>

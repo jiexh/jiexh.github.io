@@ -227,9 +227,11 @@ Parameters
  </tr>
  <tr>
  <td>[231K]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[23JK]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[241K]</td>

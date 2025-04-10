@@ -344,13 +344,13 @@ Parameters
  <td>[enable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  <tr>
  <td>[disable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  </table>
  </div>
@@ -1090,10 +1090,11 @@ Parameters
  <table border="1">
  <tr>
  <td></td>
- <td colspan="0">Supported Version Ranges</td>
+ <td colspan="1">Supported Version Ranges</td>
  </tr>
  <tr>
  <td>vrf_select</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0 </code></td>
  </tr>
  </table>
  </div>

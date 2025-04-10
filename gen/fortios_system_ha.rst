@@ -767,14 +767,14 @@ Parameters
  </tr>
  <tr>
  <td>logical_sn</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.0 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.0</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.0</code></td>
  </table>
  </div>
  </li>
@@ -1605,13 +1605,13 @@ Parameters
  <td>[enable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  <tr>
  <td>[disable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  </table>
  </div>
@@ -1670,7 +1670,7 @@ Parameters
  <td>id</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12 </code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2 </code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1 </code></td>
  </tr>
  </table>
  </div>
@@ -1687,7 +1687,7 @@ Parameters
  <td>peer_ip</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12 </code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2 </code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1 </code></td>
  </tr>
  </table>
  </div>
@@ -1708,13 +1708,13 @@ Parameters
  <td>[enable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  <tr>
  <td>[disable]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> v7.0.12</code></td>
  <td><code class="docutils literal notranslate">v7.2.1 -> v7.2.2</code></td>
- <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.0</code></td>
+ <td><code class="docutils literal notranslate">v7.4.0 -> v7.6.1</code></td>
  </tr>
  </table>
  </div>

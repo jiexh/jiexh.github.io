@@ -119,7 +119,7 @@ Parameters
  </tr>
  <tr>
  <td>cifs_profile</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.0 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.0 </code></td>
  </tr>
  </table>
  </div>

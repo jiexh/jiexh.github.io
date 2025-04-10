@@ -178,9 +178,11 @@ Parameters
  </tr>
  <tr>
  <td>[log.syslogd.setting]</td>
+ <td><code class="docutils literal notranslate">v7.6.2 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[log.syslogd.override-setting]</td>
+ <td><code class="docutils literal notranslate">v7.6.2 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[firewall.address]</td>

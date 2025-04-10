@@ -315,6 +315,7 @@ Parameters
  </tr>
  <tr>
  <td>[shellscript]</td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.0</code></td>
  </tr>
  <tr>
  <td>[msc]</td>
