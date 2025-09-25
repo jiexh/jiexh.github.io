@@ -339,6 +339,27 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">validate_server_certificate</span> - Enable/disable exchange server certificate validation. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>validate_server_certificate</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -380,6 +401,7 @@ Examples
               server_name: "<your_own_value>"
               ssl_min_proto_version: "default"
               username: "<your_own_value>"
+              validate_server_certificate: "disable"
 
 
 Return Values

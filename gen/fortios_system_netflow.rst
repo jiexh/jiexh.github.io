@@ -413,9 +413,33 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">source_ip</span> - Source IP address for communication with the NetFlow agent. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">session_cache_size</span> - Maximum RAM usage allowed for Netflow session cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: min, default, max</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>session_cache_size</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[min]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[default]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[max]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">source_ip</span> - Source IP address for communication with the NetFlow agent. <span class="li-normal">type: str</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -429,8 +453,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">template_tx_counter</span> - Counter of flowset records before resending a template flowset record. <span class="li-normal">type: int</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -444,8 +468,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">template_tx_timeout</span> - Timeout for periodic template flowset transmission (60 - 86400 sec). <span class="li-normal">type: int</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -506,6 +530,7 @@ Examples
               inactive_flow_timeout: "15"
               interface: "<your_own_value> (source system.interface.name)"
               interface_select_method: "auto"
+              session_cache_size: "min"
               source_ip: "84.230.14.43"
               template_tx_counter: "20"
               template_tx_timeout: "1800"

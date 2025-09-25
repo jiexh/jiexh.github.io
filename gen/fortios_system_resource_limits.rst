@@ -288,7 +288,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sslvpn</span> - Maximum number of SSL-VPN. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">sslvpn</span> - Maximum number of Agentless VPN. <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table border="1">

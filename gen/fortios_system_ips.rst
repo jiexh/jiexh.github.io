@@ -86,7 +86,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">signature_hold_time</span> - Time to hold and monitor IPS signatures. Format <#d##h> (day range: 0 - 7, hour range: 0 - 23, max hold time: 7d0h). <span class="li-normal">type: str</span>
+        <li> <span class="li-head">signature_hold_time</span> - Time to hold and monitor IPS signatures. Format <#d##h> (day range: 0 - 21, hour range: 0 - 23, max hold time: 21d0h). <span class="li-normal">type: str</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">

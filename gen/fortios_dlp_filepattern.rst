@@ -94,7 +94,7 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">file_type</span> - Select a file type. <span class="li-normal">type: str</span> <span class="li-normal">choices: 7z, arj, cab, lzh, rar, tar, zip, bzip, gzip, bzip2, xz, bat, uue, mime, base64, binhex, elf, exe, hta, html, jad, class, cod, javascript, msoffice, msofficex, fsg, upx, petite, aspack, sis, hlp, activemime, jpeg, gif, tiff, png, bmp, unknown, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, msi, mach-o, dmg, .net, xar, chm, iso, crx, flac, registry, hwp, rpm, c/cpp, pfile, lzip, wasm, sylk, shellscript, msc, ignored</span>
+            <li> <span class="li-head">file_type</span> - Select a file type. <span class="li-normal">type: str</span> <span class="li-normal">choices: 7z, arj, cab, lzh, rar, tar, zip, bzip, gzip, bzip2, xz, bat, uue, mime, base64, binhex, elf, exe, dll, jnlp, hta, html, jad, class, cod, javascript, msoffice, msofficex, fsg, upx, petite, aspack, sis, hlp, activemime, jpeg, gif, tiff, png, bmp, unknown, mpeg, mov, mp3, wma, wav, pdf, avi, rm, torrent, hibun, msi, mach-o, dmg, .net, xar, chm, iso, crx, flac, registry, hwp, rpm, genscript, python, c/cpp, pfile, lzip, wasm, sylk, shellscript, msc, ignored</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">
@@ -160,6 +160,14 @@ Parameters
  <tr>
  <td>[exe]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[dll]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[jnlp]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
  <tr>
  <td>[hta]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
@@ -292,6 +300,14 @@ Parameters
  <tr>
  <td>[rpm]</td>
  <td><code class="docutils literal notranslate">v7.4.4 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[genscript]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[python]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
  </tr>
  <tr>
  <td>[c/cpp]</td>

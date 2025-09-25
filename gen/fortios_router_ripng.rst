@@ -324,7 +324,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">garbage_timer</span> - Garbage timer. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">garbage_timer</span> - Garbage timer in seconds. <span class="li-normal">type: int</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table border="1">
@@ -786,7 +786,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">timeout_timer</span> - Timeout timer. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">timeout_timer</span> - Timeout timer in seconds. <span class="li-normal">type: int</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <table border="1">
@@ -801,7 +801,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">update_timer</span> - Update timer. <span class="li-normal">type: int</span>
+        <li> <span class="li-head">update_timer</span> - Update timer in seconds. <span class="li-normal">type: int</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <table border="1">

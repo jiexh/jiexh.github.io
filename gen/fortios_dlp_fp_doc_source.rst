@@ -208,7 +208,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">scan_on_creation</span> - Enable to keep the fingerprint database up to date when a file is added or changed on the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">scan_on_creation</span> - Initiate an immediate update of the fingerprint database after creating this fp-doc-source entry. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table border="1">

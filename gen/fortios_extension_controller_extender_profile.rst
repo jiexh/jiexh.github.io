@@ -1584,7 +1584,7 @@ Parameters
  </table>
  </div>
  </li>
-                <li> <span class="li-head">port</span> - FortiExtender LAN extension downlink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: port1, port2, port3, port4, port5, lan1, lan2</span>
+                <li> <span class="li-head">port</span> - FortiExtender LAN extension downlink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: port1, port2, port3, port4, port5, lan1, lan2, lan</span>
  <a id='label172' href="javascript:ContentClick('label173', 'label172');" onmouseover="ContentPreview('label173');" onmouseout="ContentUnpreview('label173');" title="click to collapse or expand..."> more... </a>
  <div id="label173" style="display:none">
  <table border="1">
@@ -1617,10 +1617,14 @@ Parameters
  <tr>
  <td>[lan2]</td>
  <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[lan]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>
-                <li> <span class="li-head">pvid</span> - FortiExtender LAN extension downlink PVID. <span class="li-normal">type: int</span>
+                <li> <span class="li-head">pvid</span> - FortiExtender LAN extension downlink PVID (1 - 4089). <span class="li-normal">type: int</span>
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
  <table border="1">
@@ -1671,10 +1675,41 @@ Parameters
  </table>
  </div>
  </li>
-                </ul>
-            <li> <span class="li-head">ipsec_tunnel</span> - IPsec tunnel name. <span class="li-normal">type: str</span>
+                <li> <span class="li-head">vids</span> - FortiExtender LAN extension downlink VIDs. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: lan_extension/downlinks:name/vids:vid</span>
  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>
  <div id="label181" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vids</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                    <ul class="ul-self">
+                    <li> <span class="li-head">vid</span> - Please enter VID numbers (1 - 4089) with space separated. Up to 50 VIDs are accepted. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
+ <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
+ <div id="label183" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>vid</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+                    </ul>
+                </ul>
+            <li> <span class="li-head">ipsec_tunnel</span> - IPsec tunnel name. <span class="li-normal">type: str</span>
+ <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
+ <div id="label185" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1688,8 +1723,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">link_loadbalance</span> - LAN extension link load balance strategy. <span class="li-normal">type: str</span> <span class="li-normal">choices: activebackup, loadbalance</span>
- <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
- <div id="label183" style="display:none">
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1709,8 +1744,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">traffic_split_services</span> - Config FortiExtender traffic split interface for LAN extension. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: lan_extension/traffic_split_services:name</span>
- <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
- <div id="label185" style="display:none">
+ <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
+ <div id="label189" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -1724,8 +1759,8 @@ Parameters
  </li>
                 <ul class="ul-self">
                 <li> <span class="li-head">address</span> - Address selection. Source firewall.address.name. <span class="li-normal">type: str</span>
- <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
- <div id="label187" style="display:none">
+ <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
+ <div id="label191" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1739,8 +1774,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">name</span> - FortiExtender LAN extension tunnel split entry name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
- <div id="label189" style="display:none">
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1754,8 +1789,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">service</span> - Service selection. Source firewall.service.custom.name. <span class="li-normal">type: str</span>
- <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
- <div id="label191" style="display:none">
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1768,9 +1803,9 @@ Parameters
  </table>
  </div>
  </li>
-                <li> <span class="li-head">vsdb</span> - Select vsdb [enable/disable]. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
- <div id="label193" style="display:none">
+                <li> <span class="li-head">vsdb</span> - Set video streaming traffic goes through local WAN [enable/disable]. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1792,8 +1827,8 @@ Parameters
                 </ul>
             </ul>
         <li> <span class="li-head">login_password</span> - Set the managed extender"s administrator password. <span class="li-normal">type: str</span>
- <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
- <div id="label195" style="display:none">
+ <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1807,8 +1842,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">login_password_change</span> - Change or reset the administrator password of a managed extender (yes, default, or no). <span class="li-normal">type: str</span> <span class="li-normal">choices: yes, default, no</span>
- <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
- <div id="label197" style="display:none">
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1830,9 +1865,9 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">model</span> - Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FXR51G, FXN51G, FXW51G, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FG, BS10FW, BS20GW, BS20GN, FVG51G</span>
- <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
- <div id="label199" style="display:none">
+        <li> <span class="li-head">model</span> - Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: FX201E, FX211E, FX200F, FXA11F, FXE11F, FXA21F, FXE21F, FXA22F, FXE22F, FX212F, FX311F, FX312F, FX511F, FXR51G, FXN51G, FXW51G, FVG21F, FVA21F, FVG22F, FVA22F, FX04DA, FG, BS10FW, BS20GW, BS20GN, FVG51G, FXE11G, FX211G</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1928,12 +1963,20 @@ Parameters
  <td>[FVG51G]</td>
  <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.2</code></td>
  </tr>
+ <tr>
+ <td>[FXE11G]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[FX211G]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>
         <li> <span class="li-head">name</span> - FortiExtender profile name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
- <div id="label201" style="display:none">
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1947,8 +1990,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wifi</span> - FortiExtender Wi-Fi configuration. <span class="li-normal">type: dict</span>
- <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
- <div id="label203" style="display:none">
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -1961,9 +2004,9 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">country</span> - Country in which this FEX will operate . <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DJ, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GA, GE, GM, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LR, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MN, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, NG, NO, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, SO, ZA, ES, LK, SR, SZ, SE, CH, TW, TZ, TH, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA</span>
- <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
- <div id="label205" style="display:none">
+            <li> <span class="li-head">country</span> - Country in which this FEX will operate . <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DJ, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GA, GE, GM, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LR, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MN, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, NG, NO, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, SO, ZA, ES, LK, SR, SZ, SE, CH, TW, TZ, TH, TL, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA</span>
+ <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
+ <div id="label209" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2490,6 +2533,10 @@ Parameters
  <td>[TH]</td>
  <td><code class="docutils literal notranslate">v7.4.4 -> 7.6.2</code></td>
  <tr>
+ <td>[TL]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
  <td>[TG]</td>
  <td><code class="docutils literal notranslate">v7.4.4 -> 7.6.2</code></td>
  <tr>
@@ -2565,8 +2612,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">radio_1</span> - Radio-1 config for Wi-Fi 2.4GHz <span class="li-normal">type: dict</span>
- <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
- <div id="label207" style="display:none">
+ <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
+ <div id="label211" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -2580,8 +2627,8 @@ Parameters
  </li>
                 <ul class="ul-self">
                 <li> <span class="li-head">band</span> - Wi-Fi band selection 2.4GHz / 5GHz. <span class="li-normal">type: str</span> <span class="li-normal">choices: 2.4GHz</span>
- <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
- <div id="label209" style="display:none">
+ <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
+ <div id="label213" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2598,8 +2645,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bandwidth</span> - Wi-Fi channel bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 20MHz, 40MHz, 80MHz</span>
- <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
- <div id="label211" style="display:none">
+ <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
+ <div id="label215" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2625,8 +2672,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">beacon_interval</span> - Wi-Fi beacon interval in miliseconds (100 - 3500). <span class="li-normal">type: int</span>
- <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
- <div id="label213" style="display:none">
+ <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
+ <div id="label217" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2640,8 +2687,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bss_color</span> - Wi-Fi 802.11AX BSS color value (0 - 63, 0 = disable). <span class="li-normal">type: int</span>
- <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
- <div id="label215" style="display:none">
+ <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
+ <div id="label219" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2655,8 +2702,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bss_color_mode</span> - Wi-Fi 802.11AX BSS color mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, static</span>
- <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
- <div id="label217" style="display:none">
+ <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
+ <div id="label221" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2676,8 +2723,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">channel</span> - Wi-Fi channels. <span class="li-normal">type: list</span> <span class="li-normal">choices: CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9, CH10, CH11</span>
- <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
- <div id="label219" style="display:none">
+ <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
+ <div id="label223" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2724,8 +2771,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">extension_channel</span> - Wi-Fi extension channel. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, higher, lower</span>
- <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
- <div id="label221" style="display:none">
+ <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
+ <div id="label225" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2748,8 +2795,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">guard_interval</span> - Wi-Fi guard interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 400ns, 800ns</span>
- <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
- <div id="label223" style="display:none">
+ <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
+ <div id="label227" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2772,8 +2819,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">lan_ext_vap</span> - Wi-Fi LAN-Extention VAP. Select only one VAP. Source extension-controller.extender-vap.name. <span class="li-normal">type: str</span>
- <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
- <div id="label225" style="display:none">
+ <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
+ <div id="label229" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2787,8 +2834,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">local_vaps</span> - Wi-Fi local VAP. Select up to three VAPs. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: wifi/radio_1/local_vaps:name</span>
- <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
- <div id="label227" style="display:none">
+ <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
+ <div id="label231" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -2802,8 +2849,8 @@ Parameters
  </li>
                     <ul class="ul-self">
                     <li> <span class="li-head">name</span> - Wi-Fi local VAP name. Source extension-controller.extender-vap.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
- <div id="label229" style="display:none">
+ <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
+ <div id="label233" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2818,8 +2865,8 @@ Parameters
  </li>
                     </ul>
                 <li> <span class="li-head">max_clients</span> - Maximum number of Wi-Fi radio clients (0 - 512, 0 = unlimited). <span class="li-normal">type: int</span>
- <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
- <div id="label231" style="display:none">
+ <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2833,8 +2880,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">mode</span> - Wi-Fi radio mode AP(LAN mode) / Client(WAN mode). <span class="li-normal">type: str</span> <span class="li-normal">choices: AP, Client</span>
- <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
- <div id="label233" style="display:none">
+ <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
+ <div id="label237" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2854,8 +2901,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">operating_standard</span> - Wi-Fi operating standard. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 11A-N-AC-AX, 11A-N-AC, 11A-N, 11A, 11N-AC-AX, 11AC-AX, 11AC, 11N-AC, 11B-G-N-AX, 11B-G-N, 11B-G, 11B, 11G-N-AX, 11N-AX, 11AX, 11G-N, 11N, 11G</span>
- <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
- <div id="label235" style="display:none">
+ <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
+ <div id="label239" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2926,8 +2973,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">power_level</span> - Wi-Fi power level in percent (0 - 100, 0 = auto). <span class="li-normal">type: int</span>
- <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
- <div id="label237" style="display:none">
+ <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
+ <div id="label241" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2941,8 +2988,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">set_80211d</span> - Enable/disable Wi-Fi 802.11d. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
- <div id="label239" style="display:none">
+ <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
+ <div id="label243" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2962,8 +3009,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">status</span> - Enable/disable Wi-Fi radio. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
- <div id="label241" style="display:none">
+ <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
+ <div id="label245" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2984,8 +3031,8 @@ Parameters
  </li>
                 </ul>
             <li> <span class="li-head">radio_2</span> - Radio-2 config for Wi-Fi 5GHz <span class="li-normal">type: dict</span>
- <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
- <div id="label243" style="display:none">
+ <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
+ <div id="label247" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -2999,8 +3046,8 @@ Parameters
  </li>
                 <ul class="ul-self">
                 <li> <span class="li-head">band</span> - Wi-Fi band selection 2.4GHz / 5GHz. <span class="li-normal">type: str</span> <span class="li-normal">choices: 5GHz</span>
- <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
- <div id="label245" style="display:none">
+ <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
+ <div id="label249" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3017,8 +3064,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bandwidth</span> - Wi-Fi channel bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 20MHz, 40MHz, 80MHz</span>
- <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
- <div id="label247" style="display:none">
+ <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
+ <div id="label251" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3044,8 +3091,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">beacon_interval</span> - Wi-Fi beacon interval in miliseconds (100 - 3500). <span class="li-normal">type: int</span>
- <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
- <div id="label249" style="display:none">
+ <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
+ <div id="label253" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3059,8 +3106,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bss_color</span> - Wi-Fi 802.11AX BSS color value (0 - 63, 0 = disable). <span class="li-normal">type: int</span>
- <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
- <div id="label251" style="display:none">
+ <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
+ <div id="label255" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3074,8 +3121,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">bss_color_mode</span> - Wi-Fi 802.11AX BSS color mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, static</span>
- <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
- <div id="label253" style="display:none">
+ <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
+ <div id="label257" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3095,8 +3142,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">channel</span> - Wi-Fi channels. <span class="li-normal">type: list</span> <span class="li-normal">choices: CH36, CH40, CH44, CH48, CH52, CH56, CH60, CH64, CH100, CH104, CH108, CH112, CH116, CH120, CH124, CH128, CH132, CH136, CH140, CH144, CH149, CH153, CH157, CH161, CH165</span>
- <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
- <div id="label255" style="display:none">
+ <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
+ <div id="label259" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3185,8 +3232,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">extension_channel</span> - Wi-Fi extension channel. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, higher, lower</span>
- <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
- <div id="label257" style="display:none">
+ <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
+ <div id="label261" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3209,8 +3256,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">guard_interval</span> - Wi-Fi guard interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 400ns, 800ns</span>
- <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
- <div id="label259" style="display:none">
+ <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
+ <div id="label263" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3233,8 +3280,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">lan_ext_vap</span> - Wi-Fi LAN-Extention VAP. Select only one VAP. Source extension-controller.extender-vap.name. <span class="li-normal">type: str</span>
- <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
- <div id="label261" style="display:none">
+ <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
+ <div id="label265" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3248,8 +3295,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">local_vaps</span> - Wi-Fi local VAP. Select up to three VAPs. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: wifi/radio_2/local_vaps:name</span>
- <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
- <div id="label263" style="display:none">
+ <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
+ <div id="label267" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -3263,8 +3310,8 @@ Parameters
  </li>
                     <ul class="ul-self">
                     <li> <span class="li-head">name</span> - Wi-Fi local VAP name. Source extension-controller.extender-vap.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
- <div id="label265" style="display:none">
+ <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
+ <div id="label269" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3279,8 +3326,8 @@ Parameters
  </li>
                     </ul>
                 <li> <span class="li-head">max_clients</span> - Maximum number of Wi-Fi radio clients (0 - 512, 0 = unlimited). <span class="li-normal">type: int</span>
- <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
- <div id="label267" style="display:none">
+ <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
+ <div id="label271" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3294,8 +3341,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">mode</span> - Wi-Fi radio mode AP(LAN mode) / Client(WAN mode). <span class="li-normal">type: str</span> <span class="li-normal">choices: AP, Client</span>
- <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
- <div id="label269" style="display:none">
+ <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
+ <div id="label273" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3315,8 +3362,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">operating_standard</span> - Wi-Fi operating standard. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 11A-N-AC-AX, 11A-N-AC, 11A-N, 11A, 11N-AC-AX, 11AC-AX, 11AC, 11N-AC, 11B-G-N-AX, 11B-G-N, 11B-G, 11B, 11G-N-AX, 11N-AX, 11AX, 11G-N, 11N, 11G</span>
- <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
- <div id="label271" style="display:none">
+ <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
+ <div id="label275" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3387,8 +3434,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">power_level</span> - Wi-Fi power level in percent (0 - 100, 0 = auto). <span class="li-normal">type: int</span>
- <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
- <div id="label273" style="display:none">
+ <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
+ <div id="label277" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3402,8 +3449,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">set_80211d</span> - Enable/disable Wi-Fi 802.11d. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
- <div id="label275" style="display:none">
+ <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
+ <div id="label279" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3423,8 +3470,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">status</span> - Enable/disable Wi-Fi radio. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
- <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
- <div id="label277" style="display:none">
+ <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
+ <div id="label281" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -3561,21 +3608,24 @@ Examples
                       -
                           name: "default_name_87"
                           port: "port1"
-                          pvid: "0"
+                          pvid: "1"
                           type: "port"
                           vap: "<your_own_value> (source extension-controller.extender-vap.name)"
+                          vids:
+                              -
+                                  vid: "<you_own_value>"
                   ipsec_tunnel: "<your_own_value>"
                   link_loadbalance: "activebackup"
                   traffic_split_services:
                       -
                           address: "<your_own_value> (source firewall.address.name)"
-                          name: "default_name_96"
+                          name: "default_name_98"
                           service: "<your_own_value> (source firewall.service.custom.name)"
                           vsdb: "disable"
               login_password: "<your_own_value>"
               login_password_change: "yes"
               model: "FX201E"
-              name: "default_name_102"
+              name: "default_name_104"
               wifi:
                   country: "--"
                   radio_1:
@@ -3590,7 +3640,7 @@ Examples
                       lan_ext_vap: "<your_own_value> (source extension-controller.extender-vap.name)"
                       local_vaps:
                           -
-                              name: "default_name_116 (source extension-controller.extender-vap.name)"
+                              name: "default_name_118 (source extension-controller.extender-vap.name)"
                       max_clients: "0"
                       mode: "AP"
                       operating_standard: "auto"
@@ -3609,7 +3659,7 @@ Examples
                       lan_ext_vap: "<your_own_value> (source extension-controller.extender-vap.name)"
                       local_vaps:
                           -
-                              name: "default_name_134 (source extension-controller.extender-vap.name)"
+                              name: "default_name_136 (source extension-controller.extender-vap.name)"
                       max_clients: "0"
                       mode: "AP"
                       operating_standard: "auto"

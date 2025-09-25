@@ -289,7 +289,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">host</span> - Address object for the host. Source firewall.address.name firewall.addrgrp.name firewall.proxy-address.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">host</span> - Address object for the host. Source firewall.address.name firewall.addrgrp.name firewall.proxy-address.name firewall.vipgrp.name firewall.vip.name. <span class="li-normal">type: str</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table border="1">
@@ -703,7 +703,7 @@ Examples
                       header_name: "<your_own_value>"
                       id: "15"
               header_name: "<your_own_value>"
-              host: "myhostname (source firewall.address.name firewall.addrgrp.name firewall.proxy-address.name)"
+              host: "myhostname (source firewall.address.name firewall.addrgrp.name firewall.proxy-address.name firewall.vipgrp.name firewall.vip.name)"
               host_regex: "myhostname"
               method: "get"
               name: "default_name_20"

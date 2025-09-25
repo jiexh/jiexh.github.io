@@ -902,9 +902,30 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">update_build_proxy</span> - Enable/disable proxy dictionary rebuild. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">subscribe_update_notification</span> - Enable/disable subscription to receive update notification from FortiGuard. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>subscribe_update_notification</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">update_build_proxy</span> - Enable/disable proxy dictionary rebuild. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
+ <div id="label99" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -924,8 +945,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_dldb</span> - Enable/disable DLP signature update. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
- <div id="label99" style="display:none">
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -945,8 +966,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_extdb</span> - Enable/disable external resource update. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
- <div id="label101" style="display:none">
+ <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
+ <div id="label103" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -966,8 +987,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_ffdb</span> - Enable/disable Internet Service Database update. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
- <div id="label103" style="display:none">
+ <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
+ <div id="label105" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -987,8 +1008,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_server_location</span> - Location from which to receive FortiGuard updates. <span class="li-normal">type: str</span> <span class="li-normal">choices: automatic, usa, eu, any</span>
- <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
- <div id="label105" style="display:none">
+ <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
+ <div id="label107" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1017,8 +1038,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_uwdb</span> - Enable/disable allowlist update. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
- <div id="label107" style="display:none">
+ <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
+ <div id="label109" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1038,8 +1059,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vdom</span> - FortiGuard Service virtual domain name. Source system.vdom.name. <span class="li-normal">type: str</span>
- <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
- <div id="label109" style="display:none">
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1053,8 +1074,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">videofilter_expiration</span> - Expiration date of the FortiGuard video filter contract. <span class="li-normal">type: int</span>
- <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
- <div id="label111" style="display:none">
+ <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1069,8 +1090,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">videofilter_license</span> - Interval of time between license checks for the FortiGuard video filter contract. <span class="li-normal">type: int</span>
- <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
- <div id="label113" style="display:none">
+ <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
+ <div id="label115" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1085,8 +1106,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vrf_select</span> - VRF ID used for connection to server. <span class="li-normal">type: int</span>
- <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
- <div id="label115" style="display:none">
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1100,8 +1121,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_cache</span> - Enable/disable FortiGuard web filter caching. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
- <div id="label117" style="display:none">
+ <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
+ <div id="label119" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1121,8 +1142,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_cache_ttl</span> - Time-to-live for web filter cache entries in seconds (300 - 86400). <span class="li-normal">type: int</span>
- <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
- <div id="label119" style="display:none">
+ <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
+ <div id="label121" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1136,8 +1157,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_expiration</span> - Expiration date of the FortiGuard web filter contract. <span class="li-normal">type: int</span>
- <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
- <div id="label121" style="display:none">
+ <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
+ <div id="label123" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1152,8 +1173,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_force_off</span> - Enable/disable turning off the FortiGuard web filtering service. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
- <div id="label123" style="display:none">
+ <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
+ <div id="label125" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1173,8 +1194,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_license</span> - Interval of time between license checks for the FortiGuard web filter contract. <span class="li-normal">type: int</span>
- <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
- <div id="label125" style="display:none">
+ <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
+ <div id="label127" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1189,8 +1210,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_timeout</span> - Web filter query time out (1 - 30 sec). <span class="li-normal">type: int</span>
- <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
- <div id="label127" style="display:none">
+ <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
+ <div id="label129" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1275,6 +1296,7 @@ Examples
               service_account_id: "<your_own_value>"
               source_ip: "84.230.14.43"
               source_ip6: "<your_own_value>"
+              subscribe_update_notification: "enable"
               update_build_proxy: "enable"
               update_dldb: "enable"
               update_extdb: "enable"

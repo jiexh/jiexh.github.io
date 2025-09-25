@@ -799,7 +799,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">domain_fronting</span> - Configure HTTP domain fronting . <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, block, monitor</span>
+            <li> <span class="li-head">domain_fronting</span> - Configure HTTP domain fronting . <span class="li-normal">type: str</span> <span class="li-normal">choices: allow, monitor, block, strict</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <table border="1">
@@ -815,11 +815,15 @@ Parameters
  <td>[allow]</td>
  <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
  <tr>
+ <td>[monitor]</td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
+ <tr>
  <td>[block]</td>
  <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
  <tr>
- <td>[monitor]</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
+ <td>[strict]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>

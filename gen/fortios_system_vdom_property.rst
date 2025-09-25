@@ -124,7 +124,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sslvpn</span> - Maximum guaranteed number of SSL-VPNs. <span class="li-normal">type: list</span> </li>
+        <li> <span class="li-head">sslvpn</span> - Maximum guaranteed number of Agentless VPNs. <span class="li-normal">type: list</span> </li>
         <li> <span class="li-head">user</span> - Maximum guaranteed number of local users. <span class="li-normal">type: list</span> </li>
         <li> <span class="li-head">user_group</span> - Maximum guaranteed number of user groups. <span class="li-normal">type: list</span> </li>
         </ul>

@@ -99,6 +99,27 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">secure_mode</span> - Enable/disable secure running mode for automation. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>secure_mode</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -125,6 +146,7 @@ Examples
           automation_setting:
               fabric_sync: "enable"
               max_concurrent_stitches: "512"
+              secure_mode: "enable"
 
 
 Return Values

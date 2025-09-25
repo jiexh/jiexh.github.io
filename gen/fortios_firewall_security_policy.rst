@@ -1904,10 +1904,25 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">url_category</span> - URL categories or groups. <span class="li-normal">type: list</span> </li>
-        <li> <span class="li-head">users</span> - Names of individual users that can authenticate with this policy. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: users:name</span>
+        <li> <span class="li-head">telemetry_profile</span> - Name of an existing telemetry profile. Source telemetry-controller.profile.name. <span class="li-normal">type: str</span>
  <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
  <div id="label225" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>telemetry_profile</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">url_category</span> - URL categories or groups. <span class="li-normal">type: list</span> </li>
+        <li> <span class="li-head">users</span> - Names of individual users that can authenticate with this policy. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: users:name</span>
+ <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
+ <div id="label227" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -1921,8 +1936,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - User name. Source user.local.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
- <div id="label227" style="display:none">
+ <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
+ <div id="label229" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1937,8 +1952,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">utm_status</span> - Enable security profiles. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
- <div id="label229" style="display:none">
+ <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
+ <div id="label231" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1958,8 +1973,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">uuid</span> - Universally Unique Identifier (UUID; automatically assigned but can be manually reset). <span class="li-normal">type: str</span>
- <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
- <div id="label231" style="display:none">
+ <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
+ <div id="label233" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1973,8 +1988,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">uuid_idx</span> - uuid-idx <span class="li-normal">type: int</span>
- <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
- <div id="label233" style="display:none">
+ <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1988,8 +2003,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">videofilter_profile</span> - Name of an existing VideoFilter profile. Source videofilter.profile.name. <span class="li-normal">type: str</span>
- <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
- <div id="label235" style="display:none">
+ <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
+ <div id="label237" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2003,8 +2018,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">virtual_patch_profile</span> - Name of an existing virtual-patch profile. Source virtual-patch.profile.name. <span class="li-normal">type: str</span>
- <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
- <div id="label237" style="display:none">
+ <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
+ <div id="label239" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2018,8 +2033,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">voip_profile</span> - Name of an existing VoIP (voipd) profile. Source voip.profile.name. <span class="li-normal">type: str</span>
- <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
- <div id="label239" style="display:none">
+ <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
+ <div id="label241" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2033,8 +2048,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_profile</span> - Name of an existing Web filter profile. Source webfilter.profile.name. <span class="li-normal">type: str</span>
- <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
- <div id="label241" style="display:none">
+ <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
+ <div id="label243" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -2220,10 +2235,11 @@ Examples
               ssh_filter_profile: "<your_own_value> (source ssh-filter.profile.name)"
               ssl_ssh_profile: "<your_own_value> (source firewall.ssl-ssh-profile.name)"
               status: "enable"
+              telemetry_profile: "<your_own_value> (source telemetry-controller.profile.name)"
               url_category: "<your_own_value>"
               users:
                   -
-                      name: "default_name_116 (source user.local.name)"
+                      name: "default_name_117 (source user.local.name)"
               utm_status: "enable"
               uuid: "<your_own_value>"
               uuid_idx: "2147483647"

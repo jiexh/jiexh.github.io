@@ -668,7 +668,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sso_attribute_value</span> - Name of the RADIUS user group that this local user group represents. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">sso_attribute_value</span> - RADIUS attribute value. <span class="li-normal">type: str</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <table border="1">

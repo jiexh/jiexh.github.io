@@ -116,7 +116,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">algorithm</span> - Frame distribution algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: L2, L3, L4, Source-MAC</span>
+        <li> <span class="li-head">algorithm</span> - Frame distribution algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: L2, L3, L4, NPU-GRE, Source-MAC</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">
@@ -137,6 +137,10 @@ Parameters
  <tr>
  <td>[L4]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[NPU-GRE]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  <tr>
  <td>[Source-MAC]</td>
  <td><code class="docutils literal notranslate">v7.2.1 -> 7.6.2</code></td>
@@ -1345,14 +1349,14 @@ Parameters
  </tr>
  <tr>
  <td>drop_overlapped_fragment</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2985,7 +2989,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ip6_allowaccess</span> - Allow management access to the interface. <span class="li-normal">type: list</span> <span class="li-normal">choices: ping, https, ssh, snmp, http, telnet, fgfm, fabric, capwap</span>
+            <li> <span class="li-head">ip6_allowaccess</span> - Allow management access to the interface. <span class="li-normal">type: list</span> <span class="li-normal">choices: ping, https, ssh, snmp, http, telnet, fgfm, fabric, scim, capwap</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
  <table border="1">
@@ -3021,6 +3025,10 @@ Parameters
  <tr>
  <td>[fabric]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[scim]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
  </tr>
  <tr>
  <td>[capwap]</td>
@@ -4449,7 +4457,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">managed_subnetwork_size</span> - Number of IP addresses to be allocated by FortiIPAM and used by this FortiGate unit"s DHCP server settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536</span>
+        <li> <span class="li-head">managed_subnetwork_size</span> - Number of IP addresses to be allocated by FortiIPAM and used by this FortiGate unit"s DHCP server settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216</span>
  <a id='label470' href="javascript:ContentClick('label471', 'label470');" onmouseover="ContentPreview('label471');" onmouseout="ContentUnpreview('label471');" title="click to collapse or expand..."> more... </a>
  <div id="label471" style="display:none">
  <table border="1">
@@ -4460,6 +4468,18 @@ Parameters
  <tr>
  <td>managed_subnetwork_size</td>
  <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[4]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[8]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[16]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
  </tr>
  <tr>
  <td>[32]</td>
@@ -4500,6 +4520,38 @@ Parameters
  <tr>
  <td>[65536]</td>
  <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[131072]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[262144]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[524288]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[1048576]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[2097152]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[4194304]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[8388608]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[16777216]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>
@@ -6080,7 +6132,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">speed</span> - Interface speed. The default setting and the options available depend on the interface hardware. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 10full, 10half, 100full, 100half, 1000full, 1000auto, 10000full, 10000auto, 40000full, 40000auto, 100auto, 2500auto, 5000auto, 25000full, 25000auto, 50000full, 50000auto, 100Gfull, 100Gauto, 200Gfull, 200Gauto, 400Gfull, 400Gauto, 1000half</span>
+        <li> <span class="li-head">speed</span> - Interface speed. The default setting and the options available depend on the interface hardware. <span class="li-normal">type: str</span> <span class="li-normal">choices: auto, 10full, 10half, 100full, 100half, 100auto, 1000full, 1000auto, 10000full, 10000auto, 40000full, 40000auto, 2500auto, 5000auto, 25000full, 25000auto, 50000full, 50000auto, 100Gfull, 100Gauto, 200Gfull, 200Gauto, 400Gfull, 400Gauto, 1000half</span>
  <a id='label634' href="javascript:ContentClick('label635', 'label634');" onmouseover="ContentPreview('label635');" onmouseout="ContentUnpreview('label635');" title="click to collapse or expand..."> more... </a>
  <div id="label635" style="display:none">
  <table border="1">
@@ -6108,6 +6160,11 @@ Parameters
  <td>[100half]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
  <tr>
+ <td>[100auto]</td>
+ <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
+ <tr>
  <td>[1000full]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
  <tr>
@@ -6125,10 +6182,6 @@ Parameters
  <tr>
  <td>[40000auto]</td>
  <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.2</code></td>
- </tr>
- <tr>
- <td>[100auto]</td>
- <td><code class="docutils literal notranslate">v7.4.2 -> v7.4.2</code></td>
  </tr>
  <tr>
  <td>[2500auto]</td>
@@ -7051,9 +7104,30 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">trunk</span> - Enable/disable VLAN trunk. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">telemetry_discover</span> - Enable/disable automatic registration of unknown FortiTelemetry agents. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label724' href="javascript:ContentClick('label725', 'label724');" onmouseover="ContentPreview('label725');" onmouseout="ContentUnpreview('label725');" title="click to collapse or expand..."> more... </a>
  <div id="label725" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>telemetry_discover</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">trunk</span> - Enable/disable VLAN trunk. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label726' href="javascript:ContentClick('label727', 'label726');" onmouseover="ContentPreview('label727');" onmouseout="ContentUnpreview('label727');" title="click to collapse or expand..."> more... </a>
+ <div id="label727" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7073,8 +7147,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip_1</span> - Trusted host for dedicated management traffic (0.0.0.0/24 for all hosts). <span class="li-normal">type: str</span>
- <a id='label726' href="javascript:ContentClick('label727', 'label726');" onmouseover="ContentPreview('label727');" onmouseout="ContentUnpreview('label727');" title="click to collapse or expand..."> more... </a>
- <div id="label727" style="display:none">
+ <a id='label728' href="javascript:ContentClick('label729', 'label728');" onmouseover="ContentPreview('label729');" onmouseout="ContentUnpreview('label729');" title="click to collapse or expand..."> more... </a>
+ <div id="label729" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7088,8 +7162,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip_2</span> - Trusted host for dedicated management traffic (0.0.0.0/24 for all hosts). <span class="li-normal">type: str</span>
- <a id='label728' href="javascript:ContentClick('label729', 'label728');" onmouseover="ContentPreview('label729');" onmouseout="ContentUnpreview('label729');" title="click to collapse or expand..."> more... </a>
- <div id="label729" style="display:none">
+ <a id='label730' href="javascript:ContentClick('label731', 'label730');" onmouseover="ContentPreview('label731');" onmouseout="ContentUnpreview('label731');" title="click to collapse or expand..."> more... </a>
+ <div id="label731" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7103,8 +7177,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip_3</span> - Trusted host for dedicated management traffic (0.0.0.0/24 for all hosts). <span class="li-normal">type: str</span>
- <a id='label730' href="javascript:ContentClick('label731', 'label730');" onmouseover="ContentPreview('label731');" onmouseout="ContentUnpreview('label731');" title="click to collapse or expand..."> more... </a>
- <div id="label731" style="display:none">
+ <a id='label732' href="javascript:ContentClick('label733', 'label732');" onmouseover="ContentPreview('label733');" onmouseout="ContentUnpreview('label733');" title="click to collapse or expand..."> more... </a>
+ <div id="label733" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7118,8 +7192,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip6_1</span> - Trusted IPv6 host for dedicated management traffic (::/0 for all hosts). <span class="li-normal">type: str</span>
- <a id='label732' href="javascript:ContentClick('label733', 'label732');" onmouseover="ContentPreview('label733');" onmouseout="ContentUnpreview('label733');" title="click to collapse or expand..."> more... </a>
- <div id="label733" style="display:none">
+ <a id='label734' href="javascript:ContentClick('label735', 'label734');" onmouseover="ContentPreview('label735');" onmouseout="ContentUnpreview('label735');" title="click to collapse or expand..."> more... </a>
+ <div id="label735" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7133,8 +7207,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip6_2</span> - Trusted IPv6 host for dedicated management traffic (::/0 for all hosts). <span class="li-normal">type: str</span>
- <a id='label734' href="javascript:ContentClick('label735', 'label734');" onmouseover="ContentPreview('label735');" onmouseout="ContentUnpreview('label735');" title="click to collapse or expand..."> more... </a>
- <div id="label735" style="display:none">
+ <a id='label736' href="javascript:ContentClick('label737', 'label736');" onmouseover="ContentPreview('label737');" onmouseout="ContentUnpreview('label737');" title="click to collapse or expand..."> more... </a>
+ <div id="label737" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7148,8 +7222,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">trust_ip6_3</span> - Trusted IPv6 host for dedicated management traffic (::/0 for all hosts). <span class="li-normal">type: str</span>
- <a id='label736' href="javascript:ContentClick('label737', 'label736');" onmouseover="ContentPreview('label737');" onmouseout="ContentUnpreview('label737');" title="click to collapse or expand..."> more... </a>
- <div id="label737" style="display:none">
+ <a id='label738' href="javascript:ContentClick('label739', 'label738');" onmouseover="ContentPreview('label739');" onmouseout="ContentUnpreview('label739');" title="click to collapse or expand..."> more... </a>
+ <div id="label739" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7162,9 +7236,9 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">type</span> - Interface type. <span class="li-normal">type: str</span> <span class="li-normal">choices: physical, vlan, aggregate, redundant, tunnel, vdom-link, loopback, switch, vap-switch, wl-mesh, fext-wan, vxlan, geneve, hdlc, switch-vlan, emac-vlan, ssl, lan-extension, hard-switch</span>
- <a id='label738' href="javascript:ContentClick('label739', 'label738');" onmouseover="ContentPreview('label739');" onmouseout="ContentUnpreview('label739');" title="click to collapse or expand..."> more... </a>
- <div id="label739" style="display:none">
+        <li> <span class="li-head">type</span> - Interface type. <span class="li-normal">type: str</span> <span class="li-normal">choices: physical, vlan, aggregate, redundant, tunnel, vdom-link, loopback, switch, vap-switch, wl-mesh, fext-wan, vxlan, geneve, switch-vlan, emac-vlan, lan-extension, hdlc, ssl, hard-switch</span>
+ <a id='label740' href="javascript:ContentClick('label741', 'label740');" onmouseover="ContentPreview('label741');" onmouseout="ContentUnpreview('label741');" title="click to collapse or expand..."> more... </a>
+ <div id="label741" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7215,21 +7289,22 @@ Parameters
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2</code></td>
  </tr>
  <tr>
- <td>[hdlc]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
- <tr>
  <td>[switch-vlan]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
  <tr>
  <td>[emac-vlan]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
  <tr>
- <td>[ssl]</td>
- <td><code class="docutils literal notranslate">v7.0.0 -> 7.6.2</code></td>
- </tr>
- <tr>
  <td>[lan-extension]</td>
  <td><code class="docutils literal notranslate">v7.0.2 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[hdlc]</td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
+ </tr>
+ <tr>
+ <td>[ssl]</td>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.6.3</code></td>
  </tr>
  <tr>
  <td>[hard-switch]</td>
@@ -7242,8 +7317,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">username</span> - Username of the PPPoE account, provided by your ISP. <span class="li-normal">type: str</span>
- <a id='label740' href="javascript:ContentClick('label741', 'label740');" onmouseover="ContentPreview('label741');" onmouseout="ContentUnpreview('label741');" title="click to collapse or expand..."> more... </a>
- <div id="label741" style="display:none">
+ <a id='label742' href="javascript:ContentClick('label743', 'label742');" onmouseover="ContentPreview('label743');" onmouseout="ContentUnpreview('label743');" title="click to collapse or expand..."> more... </a>
+ <div id="label743" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7257,8 +7332,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vdom</span> - Interface is in this virtual domain (VDOM). Source system.vdom.name. <span class="li-normal">type: str</span>
- <a id='label742' href="javascript:ContentClick('label743', 'label742');" onmouseover="ContentPreview('label743');" onmouseout="ContentUnpreview('label743');" title="click to collapse or expand..."> more... </a>
- <div id="label743" style="display:none">
+ <a id='label744' href="javascript:ContentClick('label745', 'label744');" onmouseover="ContentPreview('label745');" onmouseout="ContentUnpreview('label745');" title="click to collapse or expand..."> more... </a>
+ <div id="label745" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7272,8 +7347,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vindex</span> - Switch control interface VLAN ID. <span class="li-normal">type: int</span>
- <a id='label744' href="javascript:ContentClick('label745', 'label744');" onmouseover="ContentPreview('label745');" onmouseout="ContentUnpreview('label745');" title="click to collapse or expand..."> more... </a>
- <div id="label745" style="display:none">
+ <a id='label746' href="javascript:ContentClick('label747', 'label746');" onmouseover="ContentPreview('label747');" onmouseout="ContentUnpreview('label747');" title="click to collapse or expand..."> more... </a>
+ <div id="label747" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7288,8 +7363,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">virtual_mac</span> - Change the interface"s virtual MAC address. <span class="li-normal">type: str</span>
- <a id='label746' href="javascript:ContentClick('label747', 'label746');" onmouseover="ContentPreview('label747');" onmouseout="ContentUnpreview('label747');" title="click to collapse or expand..."> more... </a>
- <div id="label747" style="display:none">
+ <a id='label748' href="javascript:ContentClick('label749', 'label748');" onmouseover="ContentPreview('label749');" onmouseout="ContentUnpreview('label749');" title="click to collapse or expand..."> more... </a>
+ <div id="label749" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7303,8 +7378,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_protocol</span> - Ethernet protocol of VLAN. <span class="li-normal">type: str</span> <span class="li-normal">choices: 8021q, 8021ad</span>
- <a id='label748' href="javascript:ContentClick('label749', 'label748');" onmouseover="ContentPreview('label749');" onmouseout="ContentUnpreview('label749');" title="click to collapse or expand..."> more... </a>
- <div id="label749" style="display:none">
+ <a id='label750' href="javascript:ContentClick('label751', 'label750');" onmouseover="ContentPreview('label751');" onmouseout="ContentUnpreview('label751');" title="click to collapse or expand..."> more... </a>
+ <div id="label751" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7324,8 +7399,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlanforward</span> - Enable/disable traffic forwarding between VLANs on this interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label750' href="javascript:ContentClick('label751', 'label750');" onmouseover="ContentPreview('label751');" onmouseout="ContentUnpreview('label751');" title="click to collapse or expand..."> more... </a>
- <div id="label751" style="display:none">
+ <a id='label752' href="javascript:ContentClick('label753', 'label752');" onmouseover="ContentPreview('label753');" onmouseout="ContentUnpreview('label753');" title="click to collapse or expand..."> more... </a>
+ <div id="label753" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7345,8 +7420,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlanid</span> - VLAN ID (1 - 4094). <span class="li-normal">type: int</span>
- <a id='label752' href="javascript:ContentClick('label753', 'label752');" onmouseover="ContentPreview('label753');" onmouseout="ContentUnpreview('label753');" title="click to collapse or expand..."> more... </a>
- <div id="label753" style="display:none">
+ <a id='label754' href="javascript:ContentClick('label755', 'label754');" onmouseover="ContentPreview('label755');" onmouseout="ContentUnpreview('label755');" title="click to collapse or expand..."> more... </a>
+ <div id="label755" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7360,8 +7435,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vrf</span> - Virtual Routing Forwarding ID. <span class="li-normal">type: int</span>
- <a id='label754' href="javascript:ContentClick('label755', 'label754');" onmouseover="ContentPreview('label755');" onmouseout="ContentUnpreview('label755');" title="click to collapse or expand..."> more... </a>
- <div id="label755" style="display:none">
+ <a id='label756' href="javascript:ContentClick('label757', 'label756');" onmouseover="ContentPreview('label757');" onmouseout="ContentUnpreview('label757');" title="click to collapse or expand..."> more... </a>
+ <div id="label757" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7375,8 +7450,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vrrp</span> - VRRP configuration. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: vrrp:vrid</span>
- <a id='label756' href="javascript:ContentClick('label757', 'label756');" onmouseover="ContentPreview('label757');" onmouseout="ContentUnpreview('label757');" title="click to collapse or expand..."> more... </a>
- <div id="label757" style="display:none">
+ <a id='label758' href="javascript:ContentClick('label759', 'label758');" onmouseover="ContentPreview('label759');" onmouseout="ContentUnpreview('label759');" title="click to collapse or expand..."> more... </a>
+ <div id="label759" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -7390,8 +7465,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">accept_mode</span> - Enable/disable accept mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label758' href="javascript:ContentClick('label759', 'label758');" onmouseover="ContentPreview('label759');" onmouseout="ContentUnpreview('label759');" title="click to collapse or expand..."> more... </a>
- <div id="label759" style="display:none">
+ <a id='label760' href="javascript:ContentClick('label761', 'label760');" onmouseover="ContentPreview('label761');" onmouseout="ContentUnpreview('label761');" title="click to collapse or expand..."> more... </a>
+ <div id="label761" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7411,8 +7486,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">adv_interval</span> - Advertisement interval (250 - 255000 milliseconds). <span class="li-normal">type: int</span>
- <a id='label760' href="javascript:ContentClick('label761', 'label760');" onmouseover="ContentPreview('label761');" onmouseout="ContentUnpreview('label761');" title="click to collapse or expand..."> more... </a>
- <div id="label761" style="display:none">
+ <a id='label762' href="javascript:ContentClick('label763', 'label762');" onmouseover="ContentPreview('label763');" onmouseout="ContentUnpreview('label763');" title="click to collapse or expand..."> more... </a>
+ <div id="label763" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7426,8 +7501,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">ignore_default_route</span> - Enable/disable ignoring of default route when checking destination. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label762' href="javascript:ContentClick('label763', 'label762');" onmouseover="ContentPreview('label763');" onmouseout="ContentUnpreview('label763');" title="click to collapse or expand..."> more... </a>
- <div id="label763" style="display:none">
+ <a id='label764' href="javascript:ContentClick('label765', 'label764');" onmouseover="ContentPreview('label765');" onmouseout="ContentUnpreview('label765');" title="click to collapse or expand..."> more... </a>
+ <div id="label765" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7447,8 +7522,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">preempt</span> - Enable/disable preempt mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label764' href="javascript:ContentClick('label765', 'label764');" onmouseover="ContentPreview('label765');" onmouseout="ContentUnpreview('label765');" title="click to collapse or expand..."> more... </a>
- <div id="label765" style="display:none">
+ <a id='label766' href="javascript:ContentClick('label767', 'label766');" onmouseover="ContentPreview('label767');" onmouseout="ContentUnpreview('label767');" title="click to collapse or expand..."> more... </a>
+ <div id="label767" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7468,8 +7543,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">priority</span> - Priority of the virtual router (1 - 255). <span class="li-normal">type: int</span>
- <a id='label766' href="javascript:ContentClick('label767', 'label766');" onmouseover="ContentPreview('label767');" onmouseout="ContentUnpreview('label767');" title="click to collapse or expand..."> more... </a>
- <div id="label767" style="display:none">
+ <a id='label768' href="javascript:ContentClick('label769', 'label768');" onmouseover="ContentPreview('label769');" onmouseout="ContentUnpreview('label769');" title="click to collapse or expand..."> more... </a>
+ <div id="label769" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7483,8 +7558,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">proxy_arp</span> - VRRP Proxy ARP configuration. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: vrrp:vrid/proxy_arp:id</span>
- <a id='label768' href="javascript:ContentClick('label769', 'label768');" onmouseover="ContentPreview('label769');" onmouseout="ContentUnpreview('label769');" title="click to collapse or expand..."> more... </a>
- <div id="label769" style="display:none">
+ <a id='label770' href="javascript:ContentClick('label771', 'label770');" onmouseover="ContentPreview('label771');" onmouseout="ContentUnpreview('label771');" title="click to collapse or expand..."> more... </a>
+ <div id="label771" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -7498,8 +7573,8 @@ Parameters
  </li>
                 <ul class="ul-self">
                 <li> <span class="li-head">id</span> - ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
- <a id='label770' href="javascript:ContentClick('label771', 'label770');" onmouseover="ContentPreview('label771');" onmouseout="ContentUnpreview('label771');" title="click to collapse or expand..."> more... </a>
- <div id="label771" style="display:none">
+ <a id='label772' href="javascript:ContentClick('label773', 'label772');" onmouseover="ContentPreview('label773');" onmouseout="ContentUnpreview('label773');" title="click to collapse or expand..."> more... </a>
+ <div id="label773" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7513,8 +7588,8 @@ Parameters
  </div>
  </li>
                 <li> <span class="li-head">ip</span> - Set IP addresses of proxy ARP. <span class="li-normal">type: str</span>
- <a id='label772' href="javascript:ContentClick('label773', 'label772');" onmouseover="ContentPreview('label773');" onmouseout="ContentUnpreview('label773');" title="click to collapse or expand..."> more... </a>
- <div id="label773" style="display:none">
+ <a id='label774' href="javascript:ContentClick('label775', 'label774');" onmouseover="ContentPreview('label775');" onmouseout="ContentUnpreview('label775');" title="click to collapse or expand..."> more... </a>
+ <div id="label775" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7529,8 +7604,8 @@ Parameters
  </li>
                 </ul>
             <li> <span class="li-head">start_time</span> - Startup time (1 - 255 seconds). <span class="li-normal">type: int</span>
- <a id='label774' href="javascript:ContentClick('label775', 'label774');" onmouseover="ContentPreview('label775');" onmouseout="ContentUnpreview('label775');" title="click to collapse or expand..."> more... </a>
- <div id="label775" style="display:none">
+ <a id='label776' href="javascript:ContentClick('label777', 'label776');" onmouseover="ContentPreview('label777');" onmouseout="ContentUnpreview('label777');" title="click to collapse or expand..."> more... </a>
+ <div id="label777" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7544,8 +7619,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">status</span> - Enable/disable this VRRP configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label776' href="javascript:ContentClick('label777', 'label776');" onmouseover="ContentPreview('label777');" onmouseout="ContentUnpreview('label777');" title="click to collapse or expand..."> more... </a>
- <div id="label777" style="display:none">
+ <a id='label778' href="javascript:ContentClick('label779', 'label778');" onmouseover="ContentPreview('label779');" onmouseout="ContentUnpreview('label779');" title="click to collapse or expand..."> more... </a>
+ <div id="label779" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7565,8 +7640,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">version</span> - VRRP version. <span class="li-normal">type: str</span> <span class="li-normal">choices: 2, 3</span>
- <a id='label778' href="javascript:ContentClick('label779', 'label778');" onmouseover="ContentPreview('label779');" onmouseout="ContentUnpreview('label779');" title="click to collapse or expand..."> more... </a>
- <div id="label779" style="display:none">
+ <a id='label780' href="javascript:ContentClick('label781', 'label780');" onmouseover="ContentPreview('label781');" onmouseout="ContentUnpreview('label781');" title="click to collapse or expand..."> more... </a>
+ <div id="label781" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7587,8 +7662,8 @@ Parameters
  </li>
             <li> <span class="li-head">vrdst</span> - Monitor the route to this destination. <span class="li-normal">type: list</span> </li>
             <li> <span class="li-head">vrdst_priority</span> - Priority of the virtual router when the virtual router destination becomes unreachable (0 - 254). <span class="li-normal">type: int</span>
- <a id='label780' href="javascript:ContentClick('label781', 'label780');" onmouseover="ContentPreview('label781');" onmouseout="ContentUnpreview('label781');" title="click to collapse or expand..."> more... </a>
- <div id="label781" style="display:none">
+ <a id='label782' href="javascript:ContentClick('label783', 'label782');" onmouseover="ContentPreview('label783');" onmouseout="ContentUnpreview('label783');" title="click to collapse or expand..."> more... </a>
+ <div id="label783" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7602,8 +7677,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">vrgrp</span> - VRRP group ID (1 - 65535). <span class="li-normal">type: int</span>
- <a id='label782' href="javascript:ContentClick('label783', 'label782');" onmouseover="ContentPreview('label783');" onmouseout="ContentUnpreview('label783');" title="click to collapse or expand..."> more... </a>
- <div id="label783" style="display:none">
+ <a id='label784' href="javascript:ContentClick('label785', 'label784');" onmouseover="ContentPreview('label785');" onmouseout="ContentUnpreview('label785');" title="click to collapse or expand..."> more... </a>
+ <div id="label785" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7617,8 +7692,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">vrid</span> - Virtual router identifier (1 - 255). see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
- <a id='label784' href="javascript:ContentClick('label785', 'label784');" onmouseover="ContentPreview('label785');" onmouseout="ContentUnpreview('label785');" title="click to collapse or expand..."> more... </a>
- <div id="label785" style="display:none">
+ <a id='label786' href="javascript:ContentClick('label787', 'label786');" onmouseover="ContentPreview('label787');" onmouseout="ContentUnpreview('label787');" title="click to collapse or expand..."> more... </a>
+ <div id="label787" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7632,8 +7707,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">vrip</span> - IP address of the virtual router. <span class="li-normal">type: str</span>
- <a id='label786' href="javascript:ContentClick('label787', 'label786');" onmouseover="ContentPreview('label787');" onmouseout="ContentUnpreview('label787');" title="click to collapse or expand..."> more... </a>
- <div id="label787" style="display:none">
+ <a id='label788' href="javascript:ContentClick('label789', 'label788');" onmouseover="ContentPreview('label789');" onmouseout="ContentUnpreview('label789');" title="click to collapse or expand..."> more... </a>
+ <div id="label789" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7648,8 +7723,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">vrrp_virtual_mac</span> - Enable/disable use of virtual MAC for VRRP. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label788' href="javascript:ContentClick('label789', 'label788');" onmouseover="ContentPreview('label789');" onmouseout="ContentUnpreview('label789');" title="click to collapse or expand..."> more... </a>
- <div id="label789" style="display:none">
+ <a id='label790' href="javascript:ContentClick('label791', 'label790');" onmouseover="ContentPreview('label791');" onmouseout="ContentUnpreview('label791');" title="click to collapse or expand..."> more... </a>
+ <div id="label791" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7669,8 +7744,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wccp</span> - Enable/disable WCCP on this interface. Used for encapsulated WCCP communication between WCCP clients and servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label790' href="javascript:ContentClick('label791', 'label790');" onmouseover="ContentPreview('label791');" onmouseout="ContentUnpreview('label791');" title="click to collapse or expand..."> more... </a>
- <div id="label791" style="display:none">
+ <a id='label792' href="javascript:ContentClick('label793', 'label792');" onmouseover="ContentPreview('label793');" onmouseout="ContentUnpreview('label793');" title="click to collapse or expand..."> more... </a>
+ <div id="label793" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7690,8 +7765,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">weight</span> - Default weight for static routes (if route has no weight configured). <span class="li-normal">type: int</span>
- <a id='label792' href="javascript:ContentClick('label793', 'label792');" onmouseover="ContentPreview('label793');" onmouseout="ContentUnpreview('label793');" title="click to collapse or expand..."> more... </a>
- <div id="label793" style="display:none">
+ <a id='label794' href="javascript:ContentClick('label795', 'label794');" onmouseover="ContentPreview('label795');" onmouseout="ContentUnpreview('label795');" title="click to collapse or expand..."> more... </a>
+ <div id="label795" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7705,8 +7780,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wins_ip</span> - WINS server IP. <span class="li-normal">type: str</span>
- <a id='label794' href="javascript:ContentClick('label795', 'label794');" onmouseover="ContentPreview('label795');" onmouseout="ContentUnpreview('label795');" title="click to collapse or expand..."> more... </a>
- <div id="label795" style="display:none">
+ <a id='label796' href="javascript:ContentClick('label797', 'label796');" onmouseover="ContentPreview('label797');" onmouseout="ContentUnpreview('label797');" title="click to collapse or expand..."> more... </a>
+ <div id="label797" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -7801,7 +7876,7 @@ Examples
               dhcp_relay_service: "disable"
               dhcp_relay_source_ip: "<your_own_value>"
               dhcp_relay_type: "regular"
-              dhcp_relay_vrf_select: "4294967295"
+              dhcp_relay_vrf_select: "-1"
               dhcp_renew_time: "0"
               dhcp_smart_relay: "disable"
               dhcp_snooping_server_list:
@@ -8000,7 +8075,7 @@ Examples
               managed_device:
                   -
                       name: "default_name_243"
-              managed_subnetwork_size: "32"
+              managed_subnetwork_size: "4"
               management_ip: "<your_own_value>"
               measured_downstream_bandwidth: "0"
               measured_upstream_bandwidth: "0"
@@ -8133,6 +8208,7 @@ Examples
                           -
                               name: "default_name_370 (source system.object-tagging.tags.name)"
               tcp_mss: "0"
+              telemetry_discover: "enable"
               trunk: "enable"
               trust_ip_1: "<your_own_value>"
               trust_ip_2: "<your_own_value>"
@@ -8158,7 +8234,7 @@ Examples
                       priority: "100"
                       proxy_arp:
                           -
-                              id: "395"
+                              id: "396"
                               ip: "<your_own_value>"
                       start_time: "3"
                       status: "enable"

@@ -127,7 +127,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">caname</span> - CA certificate used by SSL Inspection. Source vpn.certificate.local.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">caname</span> - CA certificate used by SSL Inspection. Source vpn.certificate.local.name vpn.certificate.hsm-local.name. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">
@@ -4131,7 +4131,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">untrusted_caname</span> - Untrusted CA certificate used by SSL Inspection. Source vpn.certificate.local.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">untrusted_caname</span> - Untrusted CA certificate used by SSL Inspection. Source vpn.certificate.local.name vpn.certificate.hsm-local.name. <span class="li-normal">type: str</span>
  <a id='label370' href="javascript:ContentClick('label371', 'label370');" onmouseover="ContentPreview('label371');" onmouseout="ContentUnpreview('label371');" title="click to collapse or expand..."> more... </a>
  <div id="label371" style="display:none">
  <table border="1">
@@ -4217,7 +4217,7 @@ Examples
               allowlist: "enable"
               block_blacklisted_certificates: "disable"
               block_blocklisted_certificates: "disable"
-              caname: "<your_own_value> (source vpn.certificate.local.name)"
+              caname: "<your_own_value> (source vpn.certificate.local.name vpn.certificate.hsm-local.name)"
               comment: "Optional comments."
               dot:
                   cert_validation_failure: "allow"
@@ -4408,7 +4408,7 @@ Examples
                       ssl_other_client_certificate: "bypass"
               ssl_server_cert_log: "disable"
               supported_alpn: "http1-1"
-              untrusted_caname: "<your_own_value> (source vpn.certificate.local.name)"
+              untrusted_caname: "<your_own_value> (source vpn.certificate.local.name vpn.certificate.hsm-local.name)"
               use_ssl_server: "disable"
               whitelist: "enable"
 

@@ -329,7 +329,7 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">name</span> - Managed device ID. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+            <li> <span class="li-head">name</span> - FortiSwitch Serial-number. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table border="1">
@@ -366,9 +366,24 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">firmware_provision_on_authorization</span> - Enable/disable automatic provisioning of latest firmware on authorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">firewall_auth_user_hold_period</span> - Time period in minutes to hold firewall authenticated MAC users (5 - 1440). <span class="li-normal">type: int</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>firewall_auth_user_hold_period</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">firmware_provision_on_authorization</span> - Enable/disable automatic provisioning of latest firmware on authorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -388,8 +403,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">https_image_push</span> - Enable/disable image push to FortiSwitch using HTTPS. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -409,8 +424,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">log_mac_limit_violations</span> - Enable/disable logs for Learning Limit Violations. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -430,8 +445,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">mac_aging_interval</span> - Time after which an inactive MAC is aged out (10 - 1000000 sec). <span class="li-normal">type: int</span>
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -445,8 +460,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">mac_event_logging</span> - Enable/disable MAC address event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -466,8 +481,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">mac_retention_period</span> - Time in hours after which an inactive MAC is removed from client DB (0 = aged out based on mac-aging-interval). <span class="li-normal">type: int</span>
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -481,8 +496,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">mac_violation_timer</span> - Set timeout for Learning Limit Violations (0 = disabled). <span class="li-normal">type: int</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -496,8 +511,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">quarantine_mode</span> - Quarantine mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: by-vlan, by-redirect</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -517,8 +532,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sn_dns_resolution</span> - Enable/disable DNS resolution of the FortiSwitch unit"s IP address with switch name. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -538,8 +553,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">switch_on_deauth</span> - No-operation/Factory-reset the managed FortiSwitch on deauthorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: no-op, factory-reset</span>
- <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -559,8 +574,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">update_user_device</span> - Control which sources update the device user list. <span class="li-normal">type: list</span> <span class="li-normal">choices: mac-cache, lldp, dhcp-snooping, l2-db, l3-db</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -590,8 +605,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_all_mode</span> - VLAN configuration mode, user-defined-vlans or all-possible-vlans. <span class="li-normal">type: str</span> <span class="li-normal">choices: all, defined</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -611,8 +626,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_identity</span> - Identity of the VLAN. Commonly used for RADIUS Tunnel-Private-Group-Id. <span class="li-normal">type: str</span> <span class="li-normal">choices: description, name</span>
- <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -632,8 +647,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vlan_optimization</span> - FortiLink VLAN optimization. <span class="li-normal">type: str</span> <span class="li-normal">choices: prune, configured, none, enable, disable</span>
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -708,6 +723,7 @@ Examples
                   -
                       name: "default_name_17"
               fips_enforce: "disable"
+              firewall_auth_user_hold_period: "5"
               firmware_provision_on_authorization: "enable"
               https_image_push: "enable"
               log_mac_limit_violations: "enable"

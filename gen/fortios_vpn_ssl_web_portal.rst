@@ -64,7 +64,7 @@ Parameters
  </div>
  </li>
         <ul class="ul-self">
-        <li> <span class="li-head">allow_user_access</span> - Allow user access to SSL-VPN applications. <span class="li-normal">type: list</span> <span class="li-normal">choices: web, ftp, smb, sftp, telnet, ssh, vnc, rdp, ping, citrix, portforward</span>
+        <li> <span class="li-head">allow_user_access</span> - Allow user access to Agentless VPN applications. <span class="li-normal">type: list</span> <span class="li-normal">choices: web, ftp, smb, sftp, telnet, ssh, vnc, rdp, ping, citrix, portforward</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
@@ -125,14 +125,14 @@ Parameters
  </tr>
  <tr>
  <td>auto_connect</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1087,14 +1087,14 @@ Parameters
  </tr>
  <tr>
  <td>client_src_range</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1144,14 +1144,14 @@ Parameters
  </tr>
  <tr>
  <td>customize_forticlient_download_url</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  </table>
  </div>
  </li>
@@ -1235,7 +1235,7 @@ Parameters
  <tr>
  <td>dhcp_ip_overlap</td>
  <td><code class="docutils literal notranslate">v7.0.6 -> v7.0.12 </code></td>
- <td><code class="docutils literal notranslate">v7.2.1 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.1 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[use-new]</td>
@@ -1256,7 +1256,7 @@ Parameters
  </tr>
  <tr>
  <td>dhcp_ra_giaddr</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1271,14 +1271,14 @@ Parameters
  </tr>
  <tr>
  <td>dhcp_reservation</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v7.6.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.6.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1292,7 +1292,7 @@ Parameters
  </tr>
  <tr>
  <td>dhcp6_ra_linkaddr</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1391,7 +1391,7 @@ Parameters
  </tr>
  <tr>
  <td>dns_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1406,7 +1406,7 @@ Parameters
  </tr>
  <tr>
  <td>dns_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1436,18 +1436,18 @@ Parameters
  </tr>
  <tr>
  <td>exclusive_routing</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
-        <li> <span class="li-head">focus_bookmark</span> - Enable to prioritize the placement of the bookmark section over the quick-connection section in the SSL-VPN application. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">focus_bookmark</span> - Enable to prioritize the placement of the bookmark section over the quick-connection section in the Agentless VPN application. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
  <table border="1">
@@ -1478,14 +1478,14 @@ Parameters
  </tr>
  <tr>
  <td>forticlient_download</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  </table>
  </div>
  </li>
@@ -1499,14 +1499,14 @@ Parameters
  </tr>
  <tr>
  <td>forticlient_download_method</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  <tr>
  <td>[direct]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[ssl-vpn]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  </table>
  </div>
  </li>
@@ -1556,23 +1556,23 @@ Parameters
  </tr>
  <tr>
  <td>host_check</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[none]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[av]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[fw]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[av-fw]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[custom]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1586,7 +1586,7 @@ Parameters
  </tr>
  <tr>
  <td>host_check_interval</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1600,7 +1600,7 @@ Parameters
  </tr>
  <tr>
  <td>host_check_policy</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1616,7 +1616,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1632,22 +1632,22 @@ Parameters
  </tr>
  <tr>
  <td>ip_mode</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[range]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[user-group]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[dhcp]</td>
  <td><code class="docutils literal notranslate">v7.0.6 -> v7.0.12</code></td>
- <td><code class="docutils literal notranslate">v7.2.1 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.2.1 -> v7.6.2</code></td>
  </tr>
  <tr>
  <td>[no-ip]</td>
- <td><code class="docutils literal notranslate">v7.2.4 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.2.4 -> v7.6.2</code></td>
  </tr>
  </table>
  </div>
@@ -1661,7 +1661,7 @@ Parameters
  </tr>
  <tr>
  <td>ip_pools</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1677,7 +1677,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1693,7 +1693,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_dns_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1708,7 +1708,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_dns_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1723,14 +1723,14 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_exclusive_routing</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1743,7 +1743,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_pools</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1759,7 +1759,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1775,14 +1775,14 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_service_restriction</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1796,14 +1796,14 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_split_tunneling</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1816,7 +1816,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_split_tunneling_routing_address</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1832,7 +1832,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1848,14 +1848,14 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_split_tunneling_routing_negate</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1869,14 +1869,14 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_tunnel_mode</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -1890,7 +1890,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_wins_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1905,7 +1905,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_wins_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -1920,14 +1920,14 @@ Parameters
  </tr>
  <tr>
  <td>keep_alive</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2098,7 +2098,7 @@ Parameters
  </div>
  </li>
             </ul>
-        <li> <span class="li-head">landing_page_mode</span> - Enable/disable SSL-VPN landing page mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">landing_page_mode</span> - Enable/disable Agentless VPN landing page mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
  <table border="1">
@@ -2119,7 +2119,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">limit_user_logins</span> - Enable to limit each user to one SSL-VPN session at a time. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">limit_user_logins</span> - Enable to limit each user to one Agentless VPN session at a time. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
  <table border="1">
@@ -2150,14 +2150,14 @@ Parameters
  </tr>
  <tr>
  <td>mac_addr_action</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[allow]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[deny]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2171,14 +2171,14 @@ Parameters
  </tr>
  <tr>
  <td>mac_addr_check</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2191,7 +2191,7 @@ Parameters
  </tr>
  <tr>
  <td>mac_addr_check_rule</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2206,7 +2206,7 @@ Parameters
  </tr>
  <tr>
  <td>mac_addr_list</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2222,7 +2222,7 @@ Parameters
  </tr>
  <tr>
  <td>addr</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2238,7 +2238,7 @@ Parameters
  </tr>
  <tr>
  <td>mac_addr_mask</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2253,7 +2253,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2269,7 +2269,7 @@ Parameters
  </tr>
  <tr>
  <td>macos_forticlient_download_url</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  </table>
  </div>
@@ -2299,14 +2299,14 @@ Parameters
  </tr>
  <tr>
  <td>os_check</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2467,14 +2467,14 @@ Parameters
  </tr>
  <tr>
  <td>save_password</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2488,14 +2488,14 @@ Parameters
  </tr>
  <tr>
  <td>service_restriction</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2509,14 +2509,14 @@ Parameters
  </tr>
  <tr>
  <td>skip_check_for_browser</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.2.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2551,14 +2551,14 @@ Parameters
  </tr>
  <tr>
  <td>skip_check_for_unsupported_os</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2661,7 +2661,7 @@ Parameters
  </tr>
  <tr>
  <td>split_dns</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2677,7 +2677,7 @@ Parameters
  </tr>
  <tr>
  <td>dns_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2692,7 +2692,7 @@ Parameters
  </tr>
  <tr>
  <td>dns_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2707,7 +2707,7 @@ Parameters
  </tr>
  <tr>
  <td>domains</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2722,7 +2722,7 @@ Parameters
  </tr>
  <tr>
  <td>id</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2737,7 +2737,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_dns_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2752,7 +2752,7 @@ Parameters
  </tr>
  <tr>
  <td>ipv6_dns_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2768,14 +2768,14 @@ Parameters
  </tr>
  <tr>
  <td>split_tunneling</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2788,7 +2788,7 @@ Parameters
  </tr>
  <tr>
  <td>split_tunneling_routing_address</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2804,7 +2804,7 @@ Parameters
  </tr>
  <tr>
  <td>name</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -2820,14 +2820,14 @@ Parameters
  </tr>
  <tr>
  <td>split_tunneling_routing_negate</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.4.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.4.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -2927,14 +2927,14 @@ Parameters
  </tr>
  <tr>
  <td>tunnel_mode</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  <tr>
  <td>[enable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  <tr>
  <td>[disable]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2</code></td>
  </table>
  </div>
  </li>
@@ -3002,7 +3002,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">web_mode</span> - Enable/disable SSL-VPN web mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">web_mode</span> - Enable/disable Agentless VPN web mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
  <div id="label283" style="display:none">
  <table border="1">
@@ -3033,7 +3033,7 @@ Parameters
  </tr>
  <tr>
  <td>windows_forticlient_download_url</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  </table>
  </div>
@@ -3048,7 +3048,7 @@ Parameters
  </tr>
  <tr>
  <td>wins_server1</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -3063,7 +3063,7 @@ Parameters
  </tr>
  <tr>
  <td>wins_server2</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>

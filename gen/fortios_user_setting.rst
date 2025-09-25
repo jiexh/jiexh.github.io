@@ -497,9 +497,61 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">default_user_password_policy</span> - Default password policy to apply to all local users unless otherwise specified, as defined in config user password-policy. Source user .password-policy.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">cors</span> - Enable/disable allowed origins white list for CORS. <span class="li-normal">type: str</span> <span class="li-normal">choices: disable, enable</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>cors</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">cors_allowed_origins</span> - Allowed origins white list for CORS. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: cors_allowed_origins:name</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>cors_allowed_origins</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">name</span> - Allowed origin for CORS. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
+        <li> <span class="li-head">default_user_password_policy</span> - Default password policy to apply to all local users unless otherwise specified, as defined in config user password-policy. Source user .password-policy.name. <span class="li-normal">type: str</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -513,8 +565,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">per_policy_disclaimer</span> - Enable/disable per policy disclaimer. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -534,8 +586,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">radius_ses_timeout_act</span> - Set the RADIUS session timeout to a hard timeout or to ignore RADIUS server session timeouts. <span class="li-normal">type: str</span> <span class="li-normal">choices: hard-timeout, ignore-timeout</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -601,6 +653,10 @@ Examples
               auth_timeout: "5"
               auth_timeout_type: "idle-timeout"
               auth_type: "http"
+              cors: "disable"
+              cors_allowed_origins:
+                  -
+                      name: "default_name_27"
               default_user_password_policy: "<your_own_value> (source user.password-policy.name)"
               per_policy_disclaimer: "enable"
               radius_ses_timeout_act: "hard-timeout"

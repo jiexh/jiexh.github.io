@@ -114,9 +114,24 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">kxp_queue_threshold</span> - Maximum length of the CP KXP queue. When the queue becomes full, the proxy switches cipher functions to the main CPU (0 - 512). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">cert_manager_cache_timeout</span> - Time limit for certificate manager to keep FortiGate re-signed server certificate (24 - 720 hours). <span class="li-normal">type: int</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>cert_manager_cache_timeout</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">kxp_queue_threshold</span> - Maximum length of the CP KXP queue. When the queue becomes full, the proxy switches cipher functions to the main CPU (0 - 512). <span class="li-normal">type: int</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -130,8 +145,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">no_matching_cipher_action</span> - Bypass or drop the connection when no matching cipher is found. <span class="li-normal">type: str</span> <span class="li-normal">choices: bypass, drop</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -151,8 +166,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">proxy_connect_timeout</span> - Time limit to make an internal connection to the appropriate proxy process (1 - 60 sec). <span class="li-normal">type: int</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -165,9 +180,30 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">resigned_short_lived_certificate</span> - Enable/disable short-lived certificate. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>resigned_short_lived_certificate</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
         <li> <span class="li-head">session_cache_capacity</span> - Capacity of the SSL session cache (--Obsolete--) (1 - 1000). <span class="li-normal">type: int</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -181,8 +217,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">session_cache_timeout</span> - Time limit to keep SSL session state (1 - 60 min). <span class="li-normal">type: int</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -196,8 +232,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssl_dh_bits</span> - Bit-size of Diffie-Hellman (DH) prime used in DHE-RSA negotiation . <span class="li-normal">type: str</span> <span class="li-normal">choices: 768, 1024, 1536, 2048</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -223,8 +259,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssl_queue_threshold</span> - Maximum length of the CP SSL queue. When the queue becomes full, the proxy switches cipher functions to the main CPU (0 - 512). <span class="li-normal">type: int</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -238,8 +274,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ssl_send_empty_frags</span> - Enable/disable sending empty fragments to avoid attack on CBC IV (for SSL 3.0 and TLS 1.0 only). <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -285,9 +321,11 @@ Examples
               abbreviate_handshake: "enable"
               cert_cache_capacity: "200"
               cert_cache_timeout: "10"
+              cert_manager_cache_timeout: "72"
               kxp_queue_threshold: "16"
               no_matching_cipher_action: "bypass"
               proxy_connect_timeout: "30"
+              resigned_short_lived_certificate: "enable"
               session_cache_capacity: "500"
               session_cache_timeout: "20"
               ssl_dh_bits: "768"

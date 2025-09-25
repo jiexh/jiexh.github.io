@@ -228,9 +228,40 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">input_device</span> - Incoming interface name. Source system.interface.name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: input_device:name</span>
+        <li> <span class="li-head">groups</span> - List of user groups. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: groups:name</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>groups</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">name</span> - Group name. Source user.group.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
+        <li> <span class="li-head">input_device</span> - Incoming interface name. Source system.interface.name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: input_device:name</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -244,8 +275,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Interface name. Source system.interface.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
- <div id="label25" style="display:none">
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -260,8 +291,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">input_device_negate</span> - Enable/disable negation of input device match. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
- <div id="label27" style="display:none">
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -281,8 +312,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">internet_service_custom</span> - Custom Destination Internet Service name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: internet_service_custom:name</span>
- <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
- <div id="label29" style="display:none">
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -296,8 +327,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Custom Destination Internet Service name. Source firewall.internet-service-custom.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
- <div id="label31" style="display:none">
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -311,9 +342,40 @@ Parameters
  </div>
  </li>
             </ul>
+        <li> <span class="li-head">internet_service_fortiguard</span> - FortiGuard Destination Internet Service name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: internet_service_fortiguard:name</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>internet_service_fortiguard</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">name</span> - FortiGuard Destination Internet Service name. Source firewall.internet-service-fortiguard.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
         <li> <span class="li-head">internet_service_id</span> - Destination Internet Service ID. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: internet_service_id:id</span>
- <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
- <div id="label33" style="display:none">
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -327,8 +389,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">id</span> - Destination Internet Service ID. see <a href='#notes'>Notes</a>. Source firewall.internet-service.id. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
- <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -343,8 +405,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">output_device</span> - Outgoing interface name. Source system.interface.name system.interface.name. <span class="li-normal">type: str</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -358,8 +420,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">protocol</span> - Protocol number (0 - 255). <span class="li-normal">type: int</span>
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -373,8 +435,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">seq_num</span> - Sequence number(1-65535). see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -388,8 +450,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">src</span> - Source IPv6 prefix. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: src:addr6</span>
- <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -403,8 +465,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">addr6</span> - IPv6 address prefix. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -419,8 +481,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">src_negate</span> - Enable/disable negating source address match. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -440,8 +502,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">srcaddr</span> - Source address name. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: srcaddr:name</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -455,8 +517,8 @@ Parameters
  </li>
             <ul class="ul-self">
             <li> <span class="li-head">name</span> - Address/group name. Source firewall.address6.name firewall.addrgrp6.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -471,8 +533,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">start_port</span> - Start destination port number (1 - 65535). <span class="li-normal">type: int</span>
- <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -486,8 +548,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">start_source_port</span> - Start source port number (1 - 65535). <span class="li-normal">type: int</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -501,8 +563,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">status</span> - Enable/disable this policy route. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -522,8 +584,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tos</span> - Type of service bit pattern. <span class="li-normal">type: str</span>
- <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -537,8 +599,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">tos_mask</span> - Type of service evaluated bits. <span class="li-normal">type: str</span>
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -551,6 +613,37 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">users</span> - List of users. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: users:name</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td><td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>users</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <ul class="ul-self">
+            <li> <span class="li-head">name</span> - User name. Source user.local.name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>name</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            </ul>
         </ul>
     </ul>
 
@@ -591,16 +684,22 @@ Examples
               end_port: "65535"
               end_source_port: "65535"
               gateway: "<your_own_value>"
+              groups:
+                  -
+                      name: "default_name_14 (source user.group.name)"
               input_device:
                   -
-                      name: "default_name_14 (source system.interface.name)"
+                      name: "default_name_16 (source system.interface.name)"
               input_device_negate: "enable"
               internet_service_custom:
                   -
-                      name: "default_name_17 (source firewall.internet-service-custom.name)"
+                      name: "default_name_19 (source firewall.internet-service-custom.name)"
+              internet_service_fortiguard:
+                  -
+                      name: "default_name_21 (source firewall.internet-service-fortiguard.name)"
               internet_service_id:
                   -
-                      id: "19 (source firewall.internet-service.id)"
+                      id: "23 (source firewall.internet-service.id)"
               output_device: "<your_own_value> (source system.interface.name system.interface.name)"
               protocol: "0"
               seq_num: "<you_own_value>"
@@ -610,12 +709,15 @@ Examples
               src_negate: "enable"
               srcaddr:
                   -
-                      name: "default_name_27 (source firewall.address6.name firewall.addrgrp6.name)"
+                      name: "default_name_31 (source firewall.address6.name firewall.addrgrp6.name)"
               start_port: "1"
               start_source_port: "1"
               status: "enable"
               tos: "<your_own_value>"
               tos_mask: "<your_own_value>"
+              users:
+                  -
+                      name: "default_name_38 (source user.local.name)"
 
 
 Return Values

@@ -1327,9 +1327,33 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">videofilter</span> - Video filter profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
+            <li> <span class="li-head">telemetry</span> - Telemetry profile and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>telemetry</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[none]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[read]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[read-write]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">videofilter</span> - Video filter profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
+ <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
+ <div id="label117" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1352,8 +1376,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">virtual_patch</span> - Virtual patch profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
- <div id="label117" style="display:none">
+ <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
+ <div id="label119" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1376,8 +1400,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">voip</span> - VoIP profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
- <div id="label119" style="display:none">
+ <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
+ <div id="label121" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1400,8 +1424,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">waf</span> - Web Application Firewall profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
- <div id="label121" style="display:none">
+ <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
+ <div id="label123" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1424,8 +1448,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">webfilter</span> - Web Filter profiles and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
- <div id="label123" style="display:none">
+ <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
+ <div id="label125" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1449,8 +1473,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">vpngrp</span> - Administrator access to IPsec, SSL, PPTP, and L2TP VPN. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
- <div id="label125" style="display:none">
+ <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
+ <div id="label127" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1473,8 +1497,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wanoptgrp</span> - Administrator access to WAN Opt & Cache. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
- <div id="label127" style="display:none">
+ <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
+ <div id="label129" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1501,8 +1525,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wifi</span> - Administrator access to the WiFi controller and Switch controller. <span class="li-normal">type: str</span> <span class="li-normal">choices: none, read, read-write</span>
- <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
- <div id="label129" style="display:none">
+ <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -1606,6 +1630,7 @@ Examples
                   ips: "none"
                   mmsgtp: "none"
                   spamfilter: "none"
+                  telemetry: "none"
                   videofilter: "none"
                   virtual_patch: "none"
                   voip: "none"

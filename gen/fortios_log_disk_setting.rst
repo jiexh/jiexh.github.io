@@ -573,7 +573,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">uploadtype</span> - Types of log files to upload. Separate multiple entries with a space. <span class="li-normal">type: list</span> <span class="li-normal">choices: traffic, event, virus, webfilter, IPS, emailfilter, dlp-archive, anomaly, voip, dlp, app-ctrl, waf, gtp, dns, ssh, ssl, file-filter, icap, virtual-patch, ztna, cifs, spamfilter, netscan</span>
+        <li> <span class="li-head">uploadtype</span> - Types of log files to upload. Separate multiple entries with a space. <span class="li-normal">type: list</span> <span class="li-normal">choices: traffic, event, virus, webfilter, IPS, emailfilter, dlp-archive, anomaly, voip, dlp, app-ctrl, waf, gtp, dns, ssh, ssl, file-filter, icap, virtual-patch, debug, ztna, cifs, spamfilter, netscan</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <table border="1">
@@ -647,6 +647,10 @@ Parameters
  <tr>
  <td>[virtual-patch]</td>
  <td><code class="docutils literal notranslate">v7.4.1 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[debug]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
  </tr>
  <tr>
  <td>[ztna]</td>

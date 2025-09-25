@@ -148,7 +148,7 @@ Parameters
  </tr>
  <tr>
  <td>min_change_characters</td>
- <td><code class="docutils literal notranslate">v7.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.0.0 -> v7.6.2 </code></td>
  </tr>
  </table>
  </div>
@@ -228,7 +228,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">reuse_password</span> - Enable/disable reuse of password. If both reuse-password and min-change-characters are enabled, min-change-characters overrides. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">reuse_password</span> - Enable/disable reuse of password. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <table border="1">

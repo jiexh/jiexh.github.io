@@ -336,9 +336,30 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">user</span> - Enable/disable user authentication event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">telemetry</span> - Enable/disable telemetry event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>telemetry</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">user</span> - Enable/disable user authentication event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -358,8 +379,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vpn</span> - Enable/disable VPN event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
- <div id="label31" style="display:none">
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -379,8 +400,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wan_opt</span> - Enable/disable WAN optimization event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
- <div id="label33" style="display:none">
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -400,8 +421,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webproxy</span> - Enable/disable web proxy event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -421,8 +442,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wireless_activity</span> - Enable/disable wireless event logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -478,6 +499,7 @@ Examples
               security_rating: "enable"
               switch_controller: "enable"
               system: "enable"
+              telemetry: "enable"
               user: "enable"
               vpn: "enable"
               wan_opt: "enable"

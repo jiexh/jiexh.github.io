@@ -130,7 +130,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">digest_method</span> - Digest method algorithm . <span class="li-normal">type: str</span> <span class="li-normal">choices: sha1, sha256</span>
+        <li> <span class="li-head">digest_method</span> - Digest method algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: sha1, sha256</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table border="1">
@@ -388,9 +388,54 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">single_logout_url</span> - SP single logout URL. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">scim_group_attr_type</span> - Group attribute type used to match SCIM groups . <span class="li-normal">type: str</span> <span class="li-normal">choices: display-name, external-id</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>scim_group_attr_type</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[display-name]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[external-id]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">scim_user_attr_type</span> - User attribute type used to match SCIM users . <span class="li-normal">type: str</span> <span class="li-normal">choices: user-name, display-name, external-id</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>scim_user_attr_type</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[user-name]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[display-name]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[external-id]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">single_logout_url</span> - SP single logout URL. <span class="li-normal">type: str</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -404,8 +449,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">single_sign_on_url</span> - SP single sign-on URL. <span class="li-normal">type: str</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -419,8 +464,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">user_claim_type</span> - User name claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name</span>
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -494,8 +539,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">user_name</span> - User name in assertion statement. <span class="li-normal">type: str</span>
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -550,6 +595,8 @@ Examples
               name: "default_name_16"
               reauth: "enable"
               scim_client: "<your_own_value> (source user.scim.name)"
+              scim_group_attr_type: "display-name"
+              scim_user_attr_type: "user-name"
               single_logout_url: "<your_own_value>"
               single_sign_on_url: "<your_own_value>"
               user_claim_type: "email"

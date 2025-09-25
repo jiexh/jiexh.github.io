@@ -109,7 +109,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">capabilities</span> - List of EMS capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, client-avatars, single-vdom-connector, fgt-sysinfo-api, ztna-server-info</span>
+        <li> <span class="li-head">capabilities</span> - List of EMS capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, client-avatars, single-vdom-connector, fgt-sysinfo-api, ztna-server-info, used-tags</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table border="1">
@@ -161,6 +161,10 @@ Parameters
  <tr>
  <td>[ztna-server-info]</td>
  <td><code class="docutils literal notranslate">v7.4.4 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[used-tags]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
  </tr>
  </table>
  </div>

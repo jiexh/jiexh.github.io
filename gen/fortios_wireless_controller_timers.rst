@@ -280,7 +280,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">drma_interval</span> - Dynamic radio mode assignment (DRMA) schedule interval in minutes (10 - 1440). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">drma_interval</span> - Dynamic radio mode assignment (DRMA) schedule interval in minutes (1 - 1440). <span class="li-normal">type: int</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table border="1">
@@ -310,7 +310,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">fake_ap_log</span> - Time between recording logs about fake APs if periodic fake AP logging is configured (0 - 1440 min). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">fake_ap_log</span> - Time between recording logs about fake APs if periodic fake AP logging is configured (1 - 1440 min). <span class="li-normal">type: int</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <table border="1">
@@ -460,9 +460,39 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sta_stats_interval</span> - Time between running client (station) reports (1 - 255 sec). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">sta_offline_cleanup</span> - Time period in seconds to keep station offline data after it is gone . <span class="li-normal">type: int</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>sta_offline_cleanup</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">sta_offline_ip2mac_cleanup</span> - Time period in seconds to keep station offline Ip2mac data after it is gone . <span class="li-normal">type: int</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>sta_offline_ip2mac_cleanup</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">sta_stats_interval</span> - Time between running client (station) reports (1 - 255 sec). <span class="li-normal">type: int</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -476,8 +506,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vap_stats_interval</span> - Time between running Virtual Access Point (VAP) reports (1 - 255 sec). <span class="li-normal">type: int</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -491,8 +521,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">wids_entry_cleanup</span> - Time period in minutes to keep wids entry after it is gone . <span class="li-normal">type: int</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -555,6 +585,8 @@ Examples
               sta_cap_cleanup: "0"
               sta_capability_interval: "30"
               sta_locate_timer: "1800"
+              sta_offline_cleanup: "300"
+              sta_offline_ip2mac_cleanup: "300"
               sta_stats_interval: "10"
               vap_stats_interval: "15"
               wids_entry_cleanup: "0"

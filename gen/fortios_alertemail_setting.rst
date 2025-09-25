@@ -654,7 +654,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">sslvpn_authentication_errors_logs</span> - Enable/disable SSL-VPN authentication error logs in alert email. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">sslvpn_authentication_errors_logs</span> - Enable/disable Agentless VPN authentication error logs in alert email. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <table border="1">

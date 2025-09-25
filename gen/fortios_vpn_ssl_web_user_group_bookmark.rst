@@ -4,8 +4,8 @@
 
 .. fortios_vpn_ssl_web_user_group_bookmark:
 
-fortios_vpn_ssl_web_user_group_bookmark -- Configure SSL-VPN user group bookmark in Fortinet's FortiOS and FortiGate.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fortios_vpn_ssl_web_user_group_bookmark -- Configure Agentless VPN user group bookmark in Fortinet's FortiOS and FortiGate.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 2.0.0
 
@@ -49,7 +49,7 @@ Parameters
     <li> <span class="li-head">member_path</span> - Member attribute path to operate on. <span class="li-normal">type: str</span> </li>
     <li> <span class="li-head">member_state</span> - Add or delete a member under specified attribute path. <span class="li-normal">type: str</span> <span class="li-normal">choices: present, absent</span> </li>
     <li> <span class="li-head">state</span> - Indicates whether to create or remove the object. <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal">choices: present, absent</span> </li>
-    <li> <span class="li-head">vpn_ssl_web_user_group_bookmark</span> - Configure SSL-VPN user group bookmark. <span class="li-normal">type: dict</span>
+    <li> <span class="li-head">vpn_ssl_web_user_group_bookmark</span> - Configure Agentless VPN user group bookmark. <span class="li-normal">type: dict</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table border="1">
@@ -1009,7 +1009,7 @@ Examples
 
 .. code-block:: yaml+jinja
     
-    - name: Configure SSL-VPN user group bookmark.
+    - name: Configure Agentless VPN user group bookmark.
       fortinet.fortios.fortios_vpn_ssl_web_user_group_bookmark:
           vdom: "{{ vdom }}"
           state: "present"

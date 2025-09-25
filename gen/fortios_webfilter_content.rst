@@ -125,35 +125,35 @@ Parameters
  </tr>
  <tr>
  <td>lang</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3 </code></td>
  </tr>
  <tr>
  <td>[western]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[simch]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[trach]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[japanese]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[korean]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[french]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[thai]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[spanish]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  <tr>
  <td>[cyrillic]</td>
- <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v6.0.0 -> v7.6.3</code></td>
  </table>
  </div>
  </li>

@@ -64,7 +64,7 @@ Parameters
  </div>
  </li>
         <ul class="ul-self">
-        <li> <span class="li-head">login_page</span> - Replacement HTML for SSL-VPN login page. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">login_page</span> - Replacement HTML for Agentless VPN login page. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
@@ -140,7 +140,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">url_path</span> - URL path to access SSL-VPN login page. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
+        <li> <span class="li-head">url_path</span> - URL path to access Agentless VPN login page. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table border="1">
@@ -170,7 +170,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">virtual_host_only</span> - Enable/disable enforcement of virtual host method for SSL-VPN client access. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">virtual_host_only</span> - Enable/disable enforcement of virtual host method for Agentless VPN client access. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table border="1">

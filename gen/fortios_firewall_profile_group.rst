@@ -364,9 +364,24 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">videofilter_profile</span> - Name of an existing VideoFilter profile. Source videofilter.profile.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">telemetry_profile</span> - Name of an existing telemetry profile. Source telemetry-controller.profile.name. <span class="li-normal">type: str</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>telemetry_profile</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">videofilter_profile</span> - Name of an existing VideoFilter profile. Source videofilter.profile.name. <span class="li-normal">type: str</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -380,8 +395,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">virtual_patch_profile</span> - Name of an existing virtual-patch profile. Source virtual-patch.profile.name. <span class="li-normal">type: str</span>
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -395,8 +410,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">voip_profile</span> - Name of an existing VoIP (voipd) profile. Source voip.profile.name. <span class="li-normal">type: str</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -410,8 +425,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">waf_profile</span> - Name of an existing Web application firewall profile. Source waf.profile.name. <span class="li-normal">type: str</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -425,8 +440,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">webfilter_profile</span> - Name of an existing Web filter profile. Source webfilter.profile.name. <span class="li-normal">type: str</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -485,6 +500,7 @@ Examples
               spamfilter_profile: "<your_own_value> (source spamfilter.profile.name)"
               ssh_filter_profile: "<your_own_value> (source ssh-filter.profile.name)"
               ssl_ssh_profile: "<your_own_value> (source firewall.ssl-ssh-profile.name)"
+              telemetry_profile: "<your_own_value> (source telemetry-controller.profile.name)"
               videofilter_profile: "<your_own_value> (source videofilter.profile.name)"
               virtual_patch_profile: "<your_own_value> (source virtual-patch.profile.name)"
               voip_profile: "<your_own_value> (source voip.profile.name)"

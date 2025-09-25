@@ -85,7 +85,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: default, ztna-ems-tag, ztna-geo-tag</span>
+        <li> <span class="li-head">category</span> - Address group category. <span class="li-normal">type: str</span> <span class="li-normal">choices: default, ztna-ems-tag, ztna-geo-tag, telemetry</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
@@ -106,6 +106,10 @@ Parameters
  <tr>
  <td>[ztna-geo-tag]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[telemetry]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>

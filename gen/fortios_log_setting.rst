@@ -151,7 +151,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">expolicy_implicit_log</span> - Enable/disable explicit proxy firewall implicit policy logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+        <li> <span class="li-head">expolicy_implicit_log</span> - Enable/disable proxy firewall implicit policy logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table border="1">
@@ -677,6 +677,27 @@ Parameters
  </table>
  </div>
  </li>
+        <li> <span class="li-head">zone_name</span> - Enable/disable zone name logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>zone_name</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
         </ul>
     </ul>
 
@@ -732,6 +753,7 @@ Examples
               rest_api_set: "enable"
               syslog_override: "enable"
               user_anonymize: "enable"
+              zone_name: "enable"
 
 
 Return Values

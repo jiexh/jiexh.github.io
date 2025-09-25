@@ -359,7 +359,7 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">content</span> - HTTP header content. <span class="li-normal">type: str</span>
+            <li> <span class="li-head">content</span> - HTTP header content (max length: 3999 characters). <span class="li-normal">type: str</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table border="1">

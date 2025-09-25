@@ -327,9 +327,24 @@ Parameters
  </table>
  </div>
  </li>
-            <li> <span class="li-head">ipsec_phase1</span> - IPsec interface. Source vpn.ipsec.phase1-interface.name. <span class="li-normal">type: str</span>
+            <li> <span class="li-head">ipsec_network_id</span> - VPN gateway network ID. <span class="li-normal">type: int</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>ipsec_network_id</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+            <li> <span class="li-head">ipsec_phase1</span> - IPsec interface. Source vpn.ipsec.phase1-interface.name. <span class="li-normal">type: str</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -343,8 +358,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">name</span> - Overlay name. <span class="li-normal">type: str</span> <span class="li-required">required: true</span>
- <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
- <div id="label39" style="display:none">
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -358,8 +373,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">overlay_policy</span> - The overlay policy to allow ADVPN thru traffic. Source firewall.policy.policyid. <span class="li-normal">type: int</span>
- <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
- <div id="label41" style="display:none">
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -373,8 +388,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">overlay_tunnel_block</span> - IPv4 address and subnet mask for the overlay tunnel , syntax: X.X.X.X/24. <span class="li-normal">type: str</span>
- <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
- <div id="label43" style="display:none">
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -388,8 +403,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">remote_gw</span> - IP address of the hub gateway (Set by hub). <span class="li-normal">type: str</span>
- <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
- <div id="label45" style="display:none">
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -403,8 +418,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">route_policy</span> - Underlying router policy. Source router.policy.seq-num. <span class="li-normal">type: int</span>
- <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
- <div id="label47" style="display:none">
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -418,8 +433,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">sdwan_member</span> - Reference to SD-WAN member entry. Source system.sdwan.members.seq-num. <span class="li-normal">type: int</span>
- <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
- <div id="label49" style="display:none">
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -434,8 +449,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">policy_rule</span> - Policy creation rule. <span class="li-normal">type: str</span> <span class="li-normal">choices: health-check, manual, auto</span>
- <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
- <div id="label51" style="display:none">
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -458,8 +473,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">psksecret</span> - Pre-shared secret for ADVPN. <span class="li-normal">type: str</span>
- <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
- <div id="label53" style="display:none">
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -473,8 +488,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sdwan_zone</span> - Reference to created SD-WAN zone. Source system.sdwan.zone.name. <span class="li-normal">type: str</span>
- <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
- <div id="label55" style="display:none">
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -488,8 +503,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">status</span> - Enable/disable Fabric VPN. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
- <div id="label57" style="display:none">
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -509,8 +524,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sync_mode</span> - Setting synchronised by fabric or manual. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
- <div id="label59" style="display:none">
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -530,8 +545,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">vpn_role</span> - Fabric VPN role. <span class="li-normal">type: str</span> <span class="li-normal">choices: hub, spoke</span>
- <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
- <div id="label61" style="display:none">
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -595,8 +610,9 @@ Examples
                       bgp_neighbor_range: "0"
                       bgp_network: "0"
                       interface: "<your_own_value> (source system.interface.name)"
+                      ipsec_network_id: "0"
                       ipsec_phase1: "<your_own_value> (source vpn.ipsec.phase1-interface.name)"
-                      name: "default_name_23"
+                      name: "default_name_24"
                       overlay_policy: "0"
                       overlay_tunnel_block: "<your_own_value>"
                       remote_gw: "<your_own_value>"

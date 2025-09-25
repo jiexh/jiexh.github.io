@@ -335,7 +335,7 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">auth_proto</span> - Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: md5, sha</span>
+            <li> <span class="li-head">auth_proto</span> - Authentication protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: md5, sha, sha224, sha256, sha384, sha512</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <table border="1">
@@ -353,6 +353,22 @@ Parameters
  <tr>
  <td>[sha]</td>
  <td><code class="docutils literal notranslate">v6.2.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[sha224]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[sha256]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[sha384]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
+ <td>[sha512]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>

@@ -84,9 +84,24 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">rate</span> - Rate in packets per second at which storm control drops excess traffic(0-10000000). <span class="li-normal">type: int</span>
+        <li> <span class="li-head">burst_size_level</span> - Increase level to handle bursty traffic (0 - 4). <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>burst_size_level</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">rate</span> - Rate in packets per second at which storm control drops excess traffic(0-10000000). <span class="li-normal">type: int</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -100,8 +115,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">unknown_multicast</span> - Enable/disable storm control to drop unknown multicast traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -121,8 +136,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">unknown_unicast</span> - Enable/disable storm control to drop unknown unicast traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -166,6 +181,7 @@ Examples
           vdom: "{{ vdom }}"
           switch_controller_storm_control:
               broadcast: "enable"
+              burst_size_level: "0"
               rate: "500"
               unknown_multicast: "enable"
               unknown_unicast: "enable"

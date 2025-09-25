@@ -78,7 +78,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">country</span> - Country or region in which the FortiGate is located. The country determines the 802.11 bands and channels that are available. <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DJ, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GA, GE, GM, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LR, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MN, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, NG, NO, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, SO, ZA, ES, LK, SR, SZ, SE, CH, TW, TZ, TH, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA, IR, KP, SD, SY, ZB</span>
+        <li> <span class="li-head">country</span> - Country or region in which the FortiGate is located. The country determines the 802.11 bands and channels that are available. <span class="li-normal">type: str</span> <span class="li-normal">choices: --, AF, AL, DZ, AS, AO, AR, AM, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BA, BW, BR, BN, BG, BF, KH, CM, KY, CF, TD, CL, CN, CX, CO, CG, CD, CR, HR, CY, CZ, DK, DJ, DM, DO, EC, EG, SV, ET, EE, GF, PF, FO, FJ, FI, FR, GA, GE, GM, DE, GH, GI, GR, GL, GD, GP, GU, GT, GY, HT, HN, HK, HU, IS, IN, ID, IQ, IE, IM, IL, IT, CI, JM, JO, KZ, KE, KR, KW, LA, LV, LB, LS, LR, LY, LI, LT, LU, MO, MK, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MN, MA, MZ, MM, NA, NP, NL, AN, AW, NZ, NI, NE, NG, NO, MP, OM, PK, PW, PA, PG, PY, PE, PH, PL, PT, PR, QA, RE, RO, RU, RW, BL, KN, LC, MF, PM, VC, SA, SN, RS, ME, SL, SG, SK, SI, SO, ZA, ES, LK, SR, SZ, SE, CH, TW, TZ, TH, TL, TG, TT, TN, TR, TM, AE, TC, UG, UA, GB, US, PS, UY, UZ, VU, VE, VN, VI, WF, YE, ZM, ZW, JP, CA, IR, KP, SD, SY, ZB</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
@@ -685,6 +685,10 @@ Parameters
  <tr>
  <td>[TH]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> 7.6.2</code></td>
+ <tr>
+ <td>[TL]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
  <tr>
  <td>[TG]</td>
  <td><code class="docutils literal notranslate">v7.0.0 -> 7.6.2</code></td>

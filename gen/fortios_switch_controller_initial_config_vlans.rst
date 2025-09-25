@@ -108,9 +108,30 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">quarantine</span> - VLAN for quarantined traffic. Source switch-controller.initial-config.template.name. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">optional_vlans</span> - Auto-generate pre-configured VLANs upon switch discovery. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>optional_vlans</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">quarantine</span> - VLAN for quarantined traffic. Source switch-controller.initial-config.template.name. <span class="li-normal">type: str</span>
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -124,8 +145,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">rspan</span> - VLAN for RSPAN/ERSPAN mirrored traffic. Source switch-controller.initial-config.template.name. <span class="li-normal">type: str</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -139,8 +160,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">video</span> - VLAN dedicated for video devices. Source switch-controller.initial-config.template.name. <span class="li-normal">type: str</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -154,8 +175,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">voice</span> - VLAN dedicated for voice devices. Source switch-controller.initial-config.template.name. <span class="li-normal">type: str</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -195,6 +216,7 @@ Examples
               default_vlan: "<your_own_value> (source switch-controller.initial-config.template.name)"
               nac: "<your_own_value> (source switch-controller.initial-config.template.name)"
               nac_segment: "<your_own_value> (source switch-controller.initial-config.template.name)"
+              optional_vlans: "enable"
               quarantine: "<your_own_value> (source switch-controller.initial-config.template.name)"
               rspan: "<your_own_value> (source switch-controller.initial-config.template.name)"
               video: "<your_own_value> (source switch-controller.initial-config.template.name)"

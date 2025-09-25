@@ -332,14 +332,14 @@ Parameters
  </tr>
  <tr>
  <td>forticlient_download_method</td>
- <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> v7.6.3 </code></td>
  </tr>
  <tr>
  <td>[direct]</td>
- <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> v7.6.3</code></td>
  <tr>
  <td>[ssl-vpn]</td>
- <td><code class="docutils literal notranslate">v7.6.1 -> 7.6.2</code></td>
+ <td><code class="docutils literal notranslate">v7.6.1 -> v7.6.3</code></td>
  </table>
  </div>
  </li>

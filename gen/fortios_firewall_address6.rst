@@ -674,7 +674,7 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">type</span> - Type of IPv6 address object . <span class="li-normal">type: str</span> <span class="li-normal">choices: ipprefix, iprange, fqdn, geography, dynamic, template, mac, route-tag</span>
+        <li> <span class="li-head">type</span> - Type of IPv6 address object . <span class="li-normal">type: str</span> <span class="li-normal">choices: ipprefix, iprange, fqdn, geography, dynamic, template, mac, route-tag, wildcard</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <table border="1">
@@ -715,6 +715,10 @@ Parameters
  <td>[route-tag]</td>
  <td><code class="docutils literal notranslate">v7.4.0 -> 7.6.2</code></td>
  </tr>
+ <tr>
+ <td>[wildcard]</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2</code></td>
+ </tr>
  </table>
  </div>
  </li>
@@ -751,6 +755,21 @@ Parameters
  <tr>
  <td>[disable]</td>
  <td><code class="docutils literal notranslate">v6.0.0 -> v6.2.7</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">wildcard</span> - IPv6 address and wildcard netmask. <span class="li-normal">type: str</span>
+ <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
+ <div id="label85" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>wildcard</td>
+ <td><code class="docutils literal notranslate">v7.6.4 -> 7.6.2 </code></td>
+ </tr>
  </table>
  </div>
  </li>
@@ -826,6 +845,7 @@ Examples
               type: "ipprefix"
               uuid: "<your_own_value>"
               visibility: "enable"
+              wildcard: "<your_own_value>"
 
 
 Return Values

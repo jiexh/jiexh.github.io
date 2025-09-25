@@ -84,9 +84,30 @@ Parameters
  </table>
  </div>
  </li>
-        <li> <span class="li-head">filter</span> - Syslog 4 filter. <span class="li-normal">type: str</span>
+        <li> <span class="li-head">debug</span> - Enable/disable debug logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td colspan="1">Supported Version Ranges</td>
+ </tr>
+ <tr>
+ <td>debug</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ </tr>
+ <tr>
+ <td>[enable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ <tr>
+ <td>[disable]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </table>
+ </div>
+ </li>
+        <li> <span class="li-head">filter</span> - Syslog 4 filter. <span class="li-normal">type: str</span>
+ <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <div id="label7" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -100,8 +121,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">filter_type</span> - Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
+ <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -121,8 +142,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">forti_switch</span> - Enable/disable Forti-Switch logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
+ <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -142,8 +163,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">forward_traffic</span> - Enable/disable forward traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -163,8 +184,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">free_style</span> - Free style filters. <span class="li-normal">type: list</span> <span style="font-family:'Courier New'" class="li-required">member_path: free_style:id</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
  <table border="1">
  <tr>
  <td></td><td colspan="1">Supported Version Ranges</td>
@@ -177,9 +198,9 @@ Parameters
  </div>
  </li>
             <ul class="ul-self">
-            <li> <span class="li-head">category</span> - Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: traffic, event, virus, webfilter, attack, spam, anomaly, voip, dlp, app-ctrl, waf, gtp, dns, ssh, ssl, file-filter, icap, virtual-patch, ztna</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
+            <li> <span class="li-head">category</span> - Log category. <span class="li-normal">type: str</span> <span class="li-normal">choices: traffic, event, virus, webfilter, attack, spam, anomaly, voip, dlp, app-ctrl, waf, gtp, dns, ssh, ssl, file-filter, icap, virtual-patch, debug, ztna</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -245,6 +266,10 @@ Parameters
  <td><code class="docutils literal notranslate">v7.4.1 -> 7.6.2</code></td>
  </tr>
  <tr>
+ <td>[debug]</td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2</code></td>
+ </tr>
+ <tr>
  <td>[ztna]</td>
  <td><code class="docutils literal notranslate">v7.0.1 -> v7.0.3</code></td>
  </tr>
@@ -252,8 +277,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">filter</span> - Free style filter string. <span class="li-normal">type: str</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -267,8 +292,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">filter_type</span> - Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: include, exclude</span>
- <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
- <div id="label19" style="display:none">
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -288,8 +313,8 @@ Parameters
  </div>
  </li>
             <li> <span class="li-head">id</span> - Entry ID. see <a href='#notes'>Notes</a>. <span class="li-normal">type: int</span> <span class="li-required">required: true</span>
- <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
- <div id="label21" style="display:none">
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -304,8 +329,8 @@ Parameters
  </li>
             </ul>
         <li> <span class="li-head">gtp</span> - Enable/disable GTP messages logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
- <div id="label23" style="display:none">
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -325,8 +350,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">http_transaction</span> - Enable/disable log HTTP transaction messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
- <div id="label25" style="display:none">
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -346,8 +371,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">local_traffic</span> - Enable/disable local in or out traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
- <div id="label27" style="display:none">
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -367,8 +392,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">multicast_traffic</span> - Enable/disable multicast traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
- <div id="label29" style="display:none">
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -388,8 +413,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">severity</span> - Lowest severity level to log. <span class="li-normal">type: str</span> <span class="li-normal">choices: emergency, alert, critical, error, warning, notification, information, debug</span>
- <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
- <div id="label31" style="display:none">
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -427,8 +452,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">sniffer_traffic</span> - Enable/disable sniffer traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
- <div id="label33" style="display:none">
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -448,8 +473,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">voip</span> - Enable/disable VoIP logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
- <div id="label35" style="display:none">
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -469,8 +494,8 @@ Parameters
  </div>
  </li>
         <li> <span class="li-head">ztna_traffic</span> - Enable/disable ztna traffic logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: enable, disable</span>
- <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
- <div id="label37" style="display:none">
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
  <table border="1">
  <tr>
  <td></td>
@@ -514,6 +539,7 @@ Examples
           vdom: "{{ vdom }}"
           log_syslogd4_override_filter:
               anomaly: "enable"
+              debug: "enable"
               filter: "<your_own_value>"
               filter_type: "include"
               forti_switch: "enable"
@@ -523,7 +549,7 @@ Examples
                       category: "traffic"
                       filter: "<your_own_value>"
                       filter_type: "include"
-                      id: "12"
+                      id: "13"
               gtp: "enable"
               http_transaction: "enable"
               local_traffic: "enable"
