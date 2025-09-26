@@ -33,7 +33,7 @@ Using member operation to add an element to an existing object.
 
 FortiOS Version Compatibility
 -----------------------------
-Supported Version Ranges: v7.6.3 -> v7.6.2
+Supported Version Ranges: v7.6.3 -> v7.6.4
 
 
 Parameters
@@ -58,7 +58,7 @@ Parameters
  </tr>
  <tr>
  <td>telemetry_controller_application_predefine</td>
- <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.4 </code></td>
  </tr>
  </table>
  </div>
@@ -74,7 +74,7 @@ Parameters
  </tr>
  <tr>
  <td>app_name</td>
- <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.2 </code></td>
+ <td><code class="docutils literal notranslate">v7.6.3 -> 7.6.4 </code></td>
  </tr>
  </table>
  </div>
