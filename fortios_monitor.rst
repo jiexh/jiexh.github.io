@@ -635,7 +635,7 @@ Parameters
         <li><span class="li-head">generate-key.system.api-user</span> - Generate a new api-key for the specified api-key-auth admin. The old api-key will be replaced. The response contains the only chance to read the new api-key plaintext in the api_key field. 
         <ul class="ul-self">
                 <li><span class="li-required">api-user</span> - Generate a new token for this api-user. <span class="li-normal">type: string  required: True </span> </li>
-                <li><span class="li-required">expiry</span> - Optional expiry of API key in minutes from now (valid range: 1 - 10080). <span class="li-normal">type: int  required: False </span> </li>
+                <li><span class="li-required">expiry</span> - Expiry of API key in minutes from now (valid range: 1 - 10080). This can only be set for Fortinet Support Tool user. <span class="li-normal">type: int  required: False </span> </li>
                 
             </ul>
         
@@ -1155,7 +1155,7 @@ Parameters
             </ul>
         
         </li>
-        <li><span class="li-head">set.system.private-data-encryption</span> - Sets private data encryption. 
+        <li><span class="li-head">set.system.private-data-encryption</span> - Sets private data encryption. To be deprecated and replaced by the CMDB REST API. 
         <ul class="ul-self">
                 <li><span class="li-required">enable</span> - Enable private data encryption. <span class="li-normal">type: boolean  required: True </span> </li>
                 <li><span class="li-required">password</span> - Admin password. <span class="li-normal">type: string  required: False </span> </li>
@@ -1349,7 +1349,7 @@ Parameters
             </ul>
         
         </li>
-        <li><span class="li-head">system.change-password</span> - Save admin and guest-admin passwords. 
+        <li><span class="li-head">system.change-password</span> - Save admin and guest-admin passwords. To be deprecated and replaced by the CMDB REST API. 
         <ul class="ul-self">
                 <li><span class="li-required">mkey</span> - User ID for password change. <span class="li-normal">type: string  required: False </span> </li>
                 <li><span class="li-required">old_password</span> - Old password. <span class="li-normal">type: string  required: False </span> </li>
